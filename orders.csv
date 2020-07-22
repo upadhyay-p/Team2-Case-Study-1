@@ -1,0 +1,1001 @@
+OrderID,CustomerID,Restaurant,ItemLine,Price,Quantity,Discount,Date
+11000,20057,Kings,Table Cloth 54x72 Colour,554,3,60,3/20/2020
+11000,20981,Debs,Fruit Mix - Light,632,9,50,10/21/2019
+11000,20171,Shelley,"Lemonade - Kiwi, 591 Ml",661,4,30,6/6/2020
+11000,20647,Mosinee,"Lettuce - Mini Greens, Whole",331,2,10,7/7/2020
+11000,20440,Upham,Mudslide,132,1,50,9/10/2019
+11001,20817,Nova,Island Oasis - Lemonade,611,2,10,2/24/2020
+11001,20960,Stuart,"Mushroom - Morels, Dry",281,4,60,12/9/2019
+11001,20071,Quincy,Wine - Chianti Classico Riserva,404,5,20,11/18/2019
+11002,20273,Dorton,Salt - Table,795,5,40,5/3/2020
+11002,20182,Ridgeview,Pork - Liver,784,1,20,11/30/2019
+11003,20697,Goodland,Chicken - Livers,202,3,30,7/19/2020
+11003,20361,Farwell,Soupfoamcont12oz 112con,114,6,40,5/8/2020
+11004,20197,Continental,Lettuce - Frisee,430,1,50,9/14/2019
+11004,20855,Michigan,Crawfish,988,9,60,3/6/2020
+11005,20262,Eagan,Appetizer - Seafood Assortment,47,2,50,7/7/2020
+11005,20154,Memorial,Halibut - Steaks,109,6,40,5/29/2020
+11008,20294,Fisk,Soup - Campbells Beef Stew,162,4,30,10/12/2019
+11008,20757,Bultman,Bread - Petit Baguette,90,3,10,11/27/2019
+11009,20360,Arapahoe,Salad Dressing,71,3,60,2/24/2020
+11010,20046,Porter,"Wine - Mas Chicet Rose, Vintage",890,6,60,9/11/2019
+11010,20688,Oriole,Chinese Foods - Thick Noodles,903,1,20,9/5/2019
+11010,20440,Ridge Oak,"Soup - Canadian Pea, Dry Mix",159,3,50,7/18/2020
+11011,20052,Pankratz,"Lamb - Leg, Bone In",641,10,40,2/13/2020
+11011,20628,Upham,"Beef - Tongue, Fresh",252,4,40,10/7/2019
+11011,20255,Del Mar,Muffin Chocolate Individual Wrap,190,5,40,11/18/2019
+11012,20587,Bonner,Soup Campbells Beef With Veg,278,7,40,9/24/2019
+11012,20531,Novick,Grapes - Black,895,4,40,1/10/2020
+11014,20164,Grasskamp,Beer - Fruli,226,6,60,12/6/2019
+11014,20199,Kedzie,"Wine - White, French Cross",209,1,60,9/15/2019
+11015,20440,Dexter,"Marsala - Sperone, Fine, D.o.c.",751,7,10,5/2/2020
+11015,20298,Trailsway,Pails With Lids,148,5,10,1/26/2020
+11016,20572,Huxley,Mousse - Passion Fruit,146,9,60,4/24/2020
+11016,20516,Mcbride,V8 Splash Strawberry Kiwi,750,1,10,4/29/2020
+11017,20116,Waubesa,Pineapple - Regular,718,8,40,3/29/2020
+11017,20641,Stuart,Puree - Guava,780,8,50,3/24/2020
+11017,20341,Hayes,"Juice - Grape, White",846,10,10,8/23/2019
+11018,20846,Mayer,Everfresh Products,354,6,10,1/5/2020
+11018,20306,Dawn,Yukon Jack,494,8,60,2/9/2020
+11019,20066,Redwing,Muffin Mix - Raisin Bran,868,8,30,4/25/2020
+11019,20736,Prairie Rose,"Wine - White, Chardonnay",872,5,50,1/1/2020
+11020,20945,Briar Crest,"Wine - White, Pinot Grigio",686,9,20,11/8/2019
+11021,20361,Scott,Bananas,137,10,30,10/14/2019
+11022,20596,Beilfuss,Black Currants,924,7,20,3/9/2020
+11024,20065,Mallory,"Jam - Blackberry, 20 Ml Jar",660,7,30,11/22/2019
+11025,20671,Monument,"Bar Mix - Pina Colada, 355 Ml",346,10,60,12/19/2019
+11027,20003,Hauk,Beets - Golden,755,3,10,9/10/2019
+11027,20078,Dwight,Sage - Ground,263,7,10,7/27/2019
+11028,20545,Melody,Sauce - Balsamic Viniagrette,925,8,30,12/10/2019
+11028,20729,Jana,Beets - Golden,305,2,50,1/29/2020
+11029,20695,Commercial,Muffin Mix - Carrot,676,5,20,2/16/2020
+11030,20781,Magdeline,Napkin White - Starched,815,2,60,12/22/2019
+11030,20304,Crest Line,Turkey Leg With Drum And Thigh,55,9,40,1/7/2020
+11032,20661,Golf View,Macaroons - Two Bite Choc,464,3,10,3/23/2020
+11033,20396,Cordelia,Bouq All Italian - Primerba,959,10,60,7/3/2020
+11035,20204,Anniversary,Kohlrabi,461,4,10,10/30/2019
+11036,20578,Tony,"Chilli Paste, Ginger Garlic",508,7,50,4/22/2020
+11036,20129,Weeping Birch,Plastic Arrow Stir Stick,550,6,30,4/13/2020
+11036,20655,Thackeray,Wine - Mondavi Coastal Private,443,9,60,1/29/2020
+11036,20513,Golf,Ham - Procutinni,806,4,10,11/13/2019
+11037,20244,Twin Pines,Wine - Magnotta - Cab Franc,977,9,20,5/17/2020
+11037,20041,Manufacturers,Wine - Ruffino Chianti,40,4,60,3/30/2020
+11037,20888,Acker,Lobster - Tail 6 Oz,920,7,60,11/12/2019
+11038,20221,Grayhawk,Food Colouring - Red,811,1,40,5/19/2020
+11041,20979,Shasta,Bar - Sweet And Salty Chocolate,713,10,40,7/12/2020
+11041,20262,7th,Green Scrubbie Pad H.duty,568,8,50,7/21/2020
+11042,20526,Lake View,"Rum - Spiced, Captain Morgan",375,8,20,2/19/2020
+11043,20455,Elka,Turkey Tenderloin Frozen,391,8,40,7/30/2019
+11043,20331,Westport,Mahi Mahi,683,1,40,7/7/2020
+11043,20692,Straubel,"Marjoram - Dried, Rubbed",891,3,60,4/7/2020
+11044,20029,Maple Wood,Munchies Honey Sweet Trail Mix,487,4,20,7/5/2020
+11044,20846,Mendota,Wine - Marlbourough Sauv Blanc,182,8,20,5/23/2020
+11044,20300,Kedzie,Chocolate - Compound Coating,858,6,50,11/27/2019
+11046,20948,Derek,"Wine - Magnotta - Red, Baco",890,10,50,3/10/2020
+11047,20846,Hollow Ridge,Nantucket - Orange Mango Cktl,316,6,10,4/12/2020
+11049,20371,Lakewood,Sprouts - Alfalfa,501,8,40,9/7/2019
+11049,20303,Brentwood,Cheese - Shred Cheddar / Mozza,701,4,40,3/3/2020
+11050,20590,Cottonwood,Cherries - Frozen,601,7,30,9/16/2019
+11052,20527,4th,"Brandy - Orange, Mc Guiness",458,7,40,8/10/2019
+11054,20508,Graedel,Muffin Hinge - 211n,472,1,20,7/27/2019
+11054,20400,Granby,"Pepper - Chillies, Crushed",315,10,20,3/9/2020
+11055,20924,Monterey,Ice Cream Bar - Oreo Sandwich,253,9,40,6/4/2020
+11055,20770,International,"Noodles - Cellophane, Thin",681,9,60,11/21/2019
+11055,20933,Blue Bill Park,Sesame Seed Black,945,1,30,8/24/2019
+11057,20387,Emmet,"Capon - Breast, Wing On",623,8,40,11/3/2019
+11058,20863,Shopko,Bread - Italian Roll With Herbs,201,2,10,10/7/2019
+11059,20543,Prairie Rose,Nori Sea Weed - Gold Label,806,10,40,1/31/2020
+11059,20365,Meadow Ridge,Beans - Kidney White,277,10,50,10/18/2019
+11059,20296,Sycamore,Pastry - Mini French Pastries,385,2,20,4/16/2020
+11059,20130,Victoria,Goulash Seasoning,934,5,30,11/15/2019
+11060,20436,Superior,Vaccum Bag 10x13,705,5,20,11/12/2019
+11060,20769,Bunker Hill,"Mushroom - Oyster, Fresh",575,8,40,3/1/2020
+11060,20353,David,Water - Aquafina Vitamin,395,2,40,7/27/2019
+11061,20267,Stuart,The Pop Shoppe - Root Beer,160,3,10,3/31/2020
+11062,20407,Talisman,Wine - Lou Black Shiraz,263,4,50,5/6/2020
+11063,20472,Merry,Bar Bran Honey Nut,656,8,20,6/9/2020
+11063,20668,Daystar,Jicama,334,10,20,3/13/2020
+11064,20320,Monument,Cookies - Englishbay Oatmeal,895,3,60,9/8/2019
+11067,20730,Scoville,Coconut - Whole,50,2,40,4/22/2020
+11067,20858,Fremont,"Lid - Translucent, 3.5 And 6 Oz",827,4,60,8/17/2019
+11067,20994,Roxbury,Soup - Campbells - Tomato,736,6,10,12/8/2019
+11068,20567,Golf View,Fireball Whisky,105,3,40,1/24/2020
+11068,20197,Anderson,Papadam,579,1,30,9/22/2019
+11069,20091,Menomonie,Sauce - Alfredo,603,6,60,2/8/2020
+11069,20522,Miller,Radish - Pickled,148,10,20,1/17/2020
+11069,20470,Muir,Red Currant Jelly,238,3,40,3/16/2020
+11070,20095,Tony,Bread Foccacia Whole,176,7,30,4/11/2020
+11071,20832,Weeping Birch,Chicken - Whole,957,1,30,2/10/2020
+11072,20084,Independence,Sole - Fillet,911,5,60,10/3/2019
+11073,20923,Bayside,Tuna - Bluefin,494,3,60,12/18/2019
+11073,20810,Bartillon,"Schnappes - Peach, Walkers",76,5,20,7/20/2020
+11073,20133,Mayfield,Oregano - Fresh,444,8,60,9/6/2019
+11075,20838,Clemons,"Plate - Foam, Bread And Butter",244,1,50,6/6/2020
+11075,20893,Sunfield,Crab - Soft Shell,534,2,10,11/24/2019
+11077,20336,Algoma,Garbag Bags - Black,770,8,40,6/3/2020
+11078,20430,Brickson Park,Flour - Pastry,658,2,30,5/1/2020
+11079,20401,Bluestem,Bread - Mini Hamburger Bun,59,8,30,5/1/2020
+11079,20985,Red Cloud,Paper Cocktail Umberlla 80 - 180,408,4,30,6/29/2020
+11080,20630,Mifflin,"Bread - Bagels, Mini",729,8,30,3/22/2020
+11082,20474,Morrow,Wine - Balbach Riverside,818,7,10,8/4/2019
+11082,20511,Carey,Numi - Assorted Teas,894,8,60,12/12/2019
+11082,20554,Pond,Peach - Fresh,296,9,10,7/14/2020
+11083,20502,Haas,Almonds Ground Blanched,995,5,50,9/1/2019
+11084,20140,Kensington,Hand Towel,713,4,50,5/1/2020
+11084,20078,South,Bread Base - Toscano,672,7,50,11/13/2019
+11085,20609,Lindbergh,Wine - Pinot Noir Pond Haddock,989,8,10,7/24/2019
+11085,20028,6th,Soup Campbells - Tomato Bisque,703,2,40,1/19/2020
+11085,20450,Knutson,"Rice Pilaf, Dry,package",557,6,30,12/24/2019
+11086,20664,Meadow Vale,"Spoon - Soup, Plastic",692,7,40,12/2/2019
+11086,20846,Maywood,Crab - Soft Shell,621,8,20,10/25/2019
+11087,20005,Melrose,Bay Leaf,895,7,60,12/2/2019
+11088,20808,Oxford,Mcguinness - Blue Curacao,164,8,20,3/18/2020
+11089,20597,Straubel,"Rum - Light, Captain Morgan",847,6,50,11/2/2019
+11090,20958,Division,"Pasta - Cannelloni, Sheets, Fresh",105,7,10,7/5/2020
+11091,20777,Esch,Pastry - Butterscotch Baked,489,2,60,8/23/2019
+11092,20137,Declaration,Cocoa Powder - Dutched,537,3,50,11/9/2019
+11092,20793,Gateway,"Turkey - Breast, Smoked",505,5,40,6/27/2020
+11093,20050,Raven,Rosemary - Dry,103,6,50,10/15/2019
+11094,20254,Dakota,Bacardi Mojito,442,6,30,2/15/2020
+11094,20235,Old Gate,Sauce - Salsa,542,3,60,10/14/2019
+11094,20995,Riverside,"Bread - Pumpernickle, Rounds",486,8,20,12/16/2019
+11095,20098,Maywood,Chicken - Tenderloin,83,8,40,7/11/2020
+11095,20298,Spaight,Wine - Sogrape Mateus Rose,582,6,20,2/28/2020
+11096,20876,Reindahl,Wine - Tio Pepe Sherry Fino,323,6,40,11/3/2019
+11096,20418,Loomis,Salmon Steak - Cohoe 6 Oz,204,1,40,8/8/2019
+11097,20701,Chinook,Lettuce - Spring Mix,952,7,40,8/3/2019
+11097,20330,Debs,Wine - Fat Bastard Merlot,803,5,30,9/13/2019
+11098,20129,Dixon,"Halibut - Whole, Fresh",268,10,10,10/4/2019
+11099,20400,Washington,Puree - Mocha,651,5,30,4/23/2020
+11101,20844,Buena Vista,"Wine - White, Ej",604,4,50,6/16/2020
+11101,20473,Merry,Oil - Cooking Spray,776,5,60,12/22/2019
+11102,20328,Buhler,Bagel - Everything,606,1,60,2/7/2020
+11102,20485,Pepper Wood,Wine - Muscadet Sur Lie,558,10,60,4/22/2020
+11105,20941,Manley,Flower - Carnations,893,2,10,9/20/2019
+11106,20954,Arapahoe,"Fish - Artic Char, Cold Smoked",566,4,60,1/12/2020
+11106,20077,Monument,Lamb Rack - Ontario,286,7,40,5/18/2020
+11107,20738,Waywood,Cheese - Perron Cheddar,73,5,50,2/22/2020
+11107,20570,Forest,Tomatoes - Hot House,122,6,20,5/5/2020
+11110,20739,Cambridge,Eggplant Oriental,303,7,50,8/22/2019
+11110,20367,Mallory,Oyster - In Shell,902,6,10,1/7/2020
+11110,20313,Jana,Grapes - Black,144,9,50,1/10/2020
+11111,20139,Little Fleur,Jameson Irish Whiskey,449,3,30,10/20/2019
+11111,20011,Coleman,"Beef - Bones, Cut - Up",622,6,30,9/24/2019
+11111,20696,Kennedy,Bread - Flat Bread,103,3,20,9/29/2019
+11111,20198,Linden,Grapefruit - Pink,922,6,50,10/1/2019
+11112,20086,Meadow Vale,External Supplier,305,1,50,3/10/2020
+11113,20395,Sheridan,Beer - Blue,546,4,30,3/9/2020
+11114,21000,Prentice,"Jam - Marmalade, Orange",887,9,10,7/23/2019
+11114,20284,Merry,Appetizer - Crab And Brie,628,10,20,1/3/2020
+11114,20326,Garrison,Bagelers - Cinn / Brown,597,1,60,8/6/2019
+11114,20736,Randy,"Split Peas - Yellow, Dry",93,2,40,4/4/2020
+11114,20810,Crest Line,Vaccum Bag 10x13,985,2,60,2/9/2020
+11115,20062,Northport,External Supplier,552,7,60,11/5/2019
+11117,20439,Dottie,Bread - Rosemary Focaccia,231,7,50,9/26/2019
+11117,20632,Forest Run,Pasta - Agnolotti - Butternut,574,6,50,10/25/2019
+11117,20593,Jenna,"Veal - Tenderloin, Untrimmed",285,1,40,2/4/2020
+11117,20847,Stone Corner,Crackers Cheez It,73,3,20,9/13/2019
+11118,20847,Lindbergh,Muffin Hinge 117n,92,9,20,3/16/2020
+11118,20608,Lukken,Cheese - La Sauvagine,623,10,20,9/9/2019
+11118,20157,Talmadge,"Mushroom - Enoki, Dry",226,6,20,7/7/2020
+11118,20714,Dexter,Muffin Mix - Chocolate Chip,255,6,60,9/9/2019
+11119,20036,Mitchell,Ham - Cooked Italian,681,4,30,5/23/2020
+11119,20959,Ohio,"Vermouth - Sweet, Cinzano",184,1,30,2/29/2020
+11120,20451,Pleasure,Juice - Apple Cider,736,3,60,7/18/2020
+11122,20303,Dorton,Water - Spring Water 500ml,142,10,40,5/2/2020
+11124,20041,Northridge,"Tabasco Sauce, 2 Oz",953,8,50,12/11/2019
+11128,20977,Grasskamp,Beans - Fine,669,7,50,11/23/2019
+11128,20398,Superior,Lady Fingers,562,1,60,10/31/2019
+11129,20657,Thompson,Otomegusa Dashi Konbu,91,2,10,8/8/2019
+11129,20757,Ruskin,Pimento - Canned,503,6,20,7/18/2020
+11129,20616,Florence,Sugar Thermometer,47,5,40,1/2/2020
+11129,20360,Delaware,Scallops - In Shell,308,5,30,1/17/2020
+11130,20466,Melvin,Ice Cream Bar - Oreo Cone,99,1,50,5/14/2020
+11131,20259,Ruskin,Cookie Double Choco,841,7,20,1/31/2020
+11132,20212,Weeping Birch,Pepper - Chili Powder,138,5,20,12/1/2019
+11132,20522,Eliot,Sobe - Orange Carrot,718,8,50,2/10/2020
+11132,20430,Scoville,Nantucket - Pomegranate Pear,197,8,20,12/22/2019
+11132,20168,Eastwood,Instant Coffee,428,4,10,3/7/2020
+11132,20782,Mayer,Phyllo Dough,802,3,60,6/2/2020
+11133,20277,Sunfield,Wakami Seaweed,597,7,30,6/3/2020
+11134,20448,Summerview,Fond - Neutral,40,10,50,7/25/2019
+11134,20228,5th,"Soup - Knorr, Country Bean",538,7,10,4/11/2020
+11135,20790,2nd,Juice - Orangina,196,8,10,1/10/2020
+11137,20636,Ridgeview,Bread Base - Italian,615,7,50,9/26/2019
+11137,20520,Hagan,Bread - Olive Dinner Roll,100,7,60,6/9/2020
+11137,20391,Dottie,Cake - French Pear Tart,153,2,40,8/4/2019
+11139,20187,Walton,Sesame Seed Black,761,2,20,9/14/2019
+11139,20149,John Wall,"Lid - Translucent, 3.5 And 6 Oz",398,9,30,12/22/2019
+11139,20771,John Wall,Soup - Campbells Chili Veg,456,6,10,5/7/2020
+11140,20619,Clove,"Pork - Loin, Bone - In",896,9,30,8/9/2019
+11140,20853,Namekagon,Wine - Zinfandel California 2002,707,3,60,3/24/2020
+11140,20839,Autumn Leaf,Sambuca - Opal Nera,280,3,50,10/28/2019
+11140,20261,Meadow Valley,Wine - Sawmill Creek Autumn,526,6,20,12/13/2019
+11140,20574,Basil,Almonds Ground Blanched,635,4,10,5/21/2020
+11144,20199,Del Sol,"Cheese - Mozzarella, Buffalo",425,10,60,7/30/2019
+11144,20849,Di Loreto,Dry Ice,710,9,30,9/10/2019
+11146,20730,Lakewood Gardens,Mushroom - White Button,448,3,30,6/3/2020
+11146,20586,Utah,"Soup - Campbells, Chix Gumbo",488,6,50,5/10/2020
+11147,20743,Lighthouse Bay,Beer - Original Organic Lager,294,8,40,11/12/2019
+11147,20713,West,V8 Pet,421,4,30,8/17/2019
+11148,20603,Dovetail,"Yogurt - Banana, 175 Gr",781,7,60,7/26/2019
+11149,20455,Independence,Muffin Mix - Raisin Bran,942,5,30,12/18/2019
+11150,20582,Towne,Pork - Smoked Kassler,371,9,20,9/29/2019
+11150,20508,Old Gate,Dried Peach,464,1,10,4/26/2020
+11150,20303,Northview,Appetizer - Escargot Puff,57,9,20,10/21/2019
+11151,20892,Hermina,Gatorade - Orange,949,10,40,3/30/2020
+11152,20420,Tomscot,Cake Slab,754,2,40,7/18/2020
+11152,20058,Sugar,Veal - Eye Of Round,422,7,60,6/7/2020
+11153,20447,Thierer,Cookie Trail Mix,987,1,20,11/23/2019
+11153,20792,Northview,Muffin Chocolate Individual Wrap,443,4,20,11/17/2019
+11153,20817,Norway Maple,Cheese - Mozzarella,153,6,40,9/4/2019
+11153,20821,Elka,Table Cloth 90x90 White,534,2,60,11/28/2019
+11154,20900,Karstens,"Dill - Primerba, Paste",757,6,20,9/24/2019
+11155,20809,Dawn,Beans - Butter Lrg Lima,420,8,40,1/8/2020
+11155,20425,Schlimgen,Carrots - Mini Red Organic,106,4,50,6/4/2020
+11155,20856,New Castle,"Oil - Truffle, Black",635,9,60,10/4/2019
+11155,20560,Packers,Beer - Heinekin,498,10,60,12/5/2019
+11156,20955,Oakridge,Garlic - Peeled,955,3,60,10/3/2019
+11159,20336,Mayer,Wine - Hardys Bankside Shiraz,472,8,30,2/11/2020
+11159,20933,Thierer,Bar Nature Valley,620,2,10,8/22/2019
+11159,20178,Hoepker,Bagelers - Cinn / Brown,134,2,30,3/5/2020
+11160,20088,Londonderry,"Pasta - Elbows, Macaroni, Dry",553,4,40,5/10/2020
+11161,20484,Golf Course,"Lid - Translucent, 3.5 And 6 Oz",967,10,50,8/16/2019
+11161,20893,Melvin,Flour - Rye,531,2,40,5/26/2020
+11162,20450,Forest,"Shrimp - Baby, Warm Water",808,6,40,7/9/2020
+11162,20751,East,Trout - Smoked,393,5,30,1/7/2020
+11163,20473,Quincy,"Crush - Orange, 355ml",241,5,30,3/10/2020
+11164,20892,Killdeer,Red Currants,274,1,40,6/4/2020
+11164,20230,Park Meadow,Shrimp - Black Tiger 26/30,576,3,60,3/14/2020
+11164,20291,Scofield,Dc - Sakura Fu,130,2,40,11/11/2019
+11165,20726,Sullivan,Wine - Delicato Merlot,305,5,20,10/28/2019
+11166,20279,Helena,Pork - Back Ribs,688,4,20,3/30/2020
+11168,20635,Coleman,"Bread - Roll, Whole Wheat",919,4,10,6/7/2020
+11168,20609,8th,"Water - Mineral, Carbonated",558,6,40,9/18/2019
+11169,20943,Buhler,Papayas,259,6,40,12/7/2019
+11169,20342,Ryan,Frangelico,718,6,30,5/23/2020
+11169,20296,Lerdahl,Pasta - Orecchiette,239,4,40,12/12/2019
+11171,20554,Haas,Sauce Bbq Smokey,328,10,60,1/8/2020
+11171,20023,Lotheville,Ham - Cooked Bayonne Tinned,499,2,40,6/23/2020
+11172,20476,Northview,Grapefruit - White,763,4,40,12/15/2019
+11172,20993,Lakeland,Longos - Penne With Pesto,660,4,60,1/17/2020
+11172,20874,Maple,Basil - Pesto Sauce,742,6,60,2/22/2020
+11172,20458,Marquette,"Nut - Cashews, Whole, Raw",180,5,10,8/17/2019
+11173,20550,Alpine,Squid - U - 10 Thailand,712,8,30,4/2/2020
+11173,20059,Jana,"Nut - Almond, Blanched, Sliced",490,10,60,10/24/2019
+11174,20744,Green,Bread Cranberry Foccacia,890,1,10,10/7/2019
+11174,20904,Carioca,"Wine - Red, Cooking",530,9,40,4/20/2020
+11174,20297,Sunbrook,French Pastry - Mini Chocolate,86,2,10,5/13/2020
+11175,20994,Pepper Wood,Coffee Cup 8oz 5338cd,928,7,60,4/29/2020
+11176,20285,Chinook,"Water - Mineral, Carbonated",789,5,40,7/20/2020
+11176,20698,Fair Oaks,"Salmon - Atlantic, Fresh, Whole",86,3,20,4/26/2020
+11177,20151,Esker,"Turkey - Breast, Bone - In",482,4,20,9/19/2019
+11178,20807,Carberry,"Tortillas - Flour, 12",854,5,10,10/14/2019
+11178,20599,Iowa,"Shrimp - 21/25, Peel And Deviened",481,5,10,10/3/2019
+11178,20647,Walton,Salt - Sea,814,8,50,5/29/2020
+11178,20589,Bartelt,Bread - Ciabatta Buns,114,4,30,5/8/2020
+11179,20303,Namekagon,Bread Base - Gold Formel,616,5,40,10/3/2019
+11179,20605,Hudson,Hersey Shakes,741,7,10,3/13/2020
+11180,20693,Kennedy,Energy - Boo - Koo,489,1,50,9/1/2019
+11180,20450,Manitowish,Sausage - Blood Pudding,103,10,20,7/31/2019
+11181,20053,Heath,Tomatoes Tear Drop Yellow,865,2,30,3/19/2020
+11181,20104,Maple Wood,Cookie - Dough Variety,75,7,30,2/22/2020
+11184,20080,Veith,"Trout - Rainbow, Fresh",897,4,40,7/7/2020
+11186,20034,Talisman,Icecream - Dibs,42,2,20,2/4/2020
+11186,20833,Delaware,Vinegar - Red Wine,383,9,50,1/15/2020
+11186,20221,Warner,Petit Baguette,977,7,10,8/17/2019
+11186,20372,Mayfield,Beef - Tender Tips,791,2,10,3/28/2020
+11188,20493,Karstens,Eggplant Italian,489,5,10,1/22/2020
+11188,20859,Judy,Wine - Port Late Bottled Vintage,86,10,30,4/16/2020
+11188,20996,Debra,Plasticspoonblack,377,8,10,10/11/2019
+11188,20903,Marquette,Chips - Assorted,517,6,30,6/12/2020
+11189,20693,Karstens,Chicken - Base,457,5,10,10/12/2019
+11189,20271,Lindbergh,"Beef - Ox Tail, Frozen",893,2,50,1/23/2020
+11189,20588,Glacier Hill,Nantucket Apple Juice,559,6,30,9/3/2019
+11189,20709,Magdeline,"Beef - Bones, Marrow",258,1,40,9/14/2019
+11190,20867,Raven,Wine - Sake,710,10,40,5/30/2020
+11191,20471,Bunting,Beer - Camerons Cream Ale,548,7,10,8/24/2019
+11191,20876,Buena Vista,"Wine - Red, Wolf Blass, Yellow",932,10,40,12/16/2019
+11192,20454,Anniversary,"Tabasco Sauce, 2 Oz",454,10,20,6/3/2020
+11193,20634,Iowa,"Coconut - Shredded, Unsweet",412,7,20,4/23/2020
+11194,20978,3rd,Longos - Lasagna Veg,147,8,60,11/26/2019
+11196,20179,Lien,"Wine - Red, Marechal Foch",199,7,20,1/11/2020
+11196,20515,Oakridge,Ecolab - Hand Soap Form Antibac,847,7,40,3/12/2020
+11196,20863,Nevada,Coffee - Frthy Coffee Crisp,779,6,60,8/17/2019
+11197,20862,Mitchell,Cups 10oz Trans,947,7,60,4/24/2020
+11197,20270,International,Lamb - Loin Chops,910,6,10,4/10/2020
+11198,20480,Kedzie,Cheese - Comte,192,4,60,9/12/2019
+11198,20826,Northland,Nori Sea Weed - Gold Label,553,9,20,7/14/2020
+11198,20941,Dahle,"Juice - V8, Tomato",255,9,40,5/10/2020
+11199,20118,Old Gate,"Salmon - Atlantic, No Skin",138,5,30,12/10/2019
+11200,20894,Sunnyside,"Pork - Loin, Bone - In",700,9,50,5/14/2020
+11200,20592,Orin,Longan,274,5,50,12/16/2019
+11201,20000,Crowley,Ice Cream - Vanilla,539,7,20,5/1/2020
+11202,20782,Derek,"Lid - Translucent, 3.5 And 6 Oz",623,8,30,4/26/2020
+11203,20670,Meadow Ridge,Beef - Shank,476,1,20,4/22/2020
+11203,20482,Elgar,Muffin Mix - Chocolate Chip,917,1,10,12/20/2019
+11204,20186,Doe Crossing,Bar Special K,624,9,60,7/4/2020
+11205,20665,Oak,Longos - Grilled Veg Sandwiches,444,5,60,5/24/2020
+11205,20003,Springview,"Mushroom - Enoki, Fresh",919,8,10,1/10/2020
+11206,20954,Gateway,"Star Anise, Whole",341,8,50,11/30/2019
+11206,20703,Blackbird,"Nut - Chestnuts, Whole",590,9,20,9/22/2019
+11207,20029,Transport,Apple - Fuji,831,2,40,1/6/2020
+11207,20764,Roxbury,Nougat - Paste / Cream,237,9,50,2/23/2020
+11207,20377,Summerview,Cheese - Pied De Vents,508,8,10,10/8/2019
+11207,20973,Ohio,Lotus Root,285,6,20,8/8/2019
+11208,20099,Westridge,Tia Maria,858,7,30,8/7/2019
+11208,20105,Ridge Oak,Flavouring - Orange,968,7,50,12/14/2019
+11209,20374,Ludington,"Beef - Bones, Cut - Up",963,6,40,12/1/2019
+11211,20120,Pennsylvania,Wine - Manischewitz Concord,303,7,50,12/10/2019
+11211,20469,Delaware,"Lemonade - Kiwi, 591 Ml",898,3,30,10/21/2019
+11213,20870,Summit,Tandoori Curry Paste,496,10,20,6/5/2020
+11214,20786,Valley Edge,Carbonated Water - Blackcherry,561,2,40,11/16/2019
+11214,20724,Merrick,Wine - Chablis J Moreau Et Fils,397,7,60,4/26/2020
+11214,20984,Bashford,Alize Red Passion,252,6,40,7/8/2020
+11215,20447,Talisman,Bagelers - Cinn / Brown,984,4,40,7/9/2020
+11215,20279,Victoria,Wine - Muscadet Sur Lie,128,1,10,1/20/2020
+11216,20119,Shoshone,Butter - Pod,453,7,50,1/12/2020
+11216,20223,Monica,Meldea Green Tea Liquor,630,4,30,1/8/2020
+11216,20807,Chinook,Wine - Sauvignon Blanc,80,6,60,10/28/2019
+11217,20086,Truax,Wine - Sauvignon Blanc,341,7,60,7/14/2020
+11217,20944,Hazelcrest,Ecolab - Mikroklene 4/4 L,387,4,40,3/26/2020
+11218,20958,Cascade,Pork - European Side Bacon,737,1,30,12/29/2019
+11218,20121,Sullivan,"Apple - Delicious, Red",708,7,40,8/20/2019
+11219,20151,Summerview,Rice - Brown,653,1,50,1/26/2020
+11220,20459,Morningstar,Flour - All Purpose,664,6,30,1/19/2020
+11220,20883,Ramsey,Kippers - Smoked,420,8,60,12/16/2019
+11221,20260,Hansons,Bread Roll Foccacia,973,7,20,11/19/2019
+11222,20385,Atwood,"Pasta - Lasagna, Dry",60,5,60,11/1/2019
+11223,20842,Mendota,Bread - Dark Rye,68,2,50,6/16/2020
+11224,20595,Lake View,Vaccum Bag 10x13,649,7,50,10/30/2019
+11225,20708,Warner,Soup - Campbells Mushroom,160,2,20,4/24/2020
+11225,20520,Michigan,Barramundi,896,2,10,6/15/2020
+11227,20519,Dayton,Onion Powder,666,2,50,7/2/2020
+11227,20037,Forest,Wine - Balbach Riverside,151,3,40,4/24/2020
+11227,20040,Nevada,Wine - Vineland Estate Semi - Dry,496,5,50,12/31/2019
+11228,20572,1st,Sun - Dried Tomatoes,151,7,30,10/10/2019
+11230,20714,Melvin,Skewers - Bamboo,694,9,10,5/6/2020
+11231,20158,Northwestern,Wine - Sawmill Creek Autumn,932,7,60,7/14/2020
+11232,20874,Ruskin,Cup - Translucent 7 Oz Clear,969,2,10,12/29/2019
+11233,20090,Laurel,Gatorade - Cool Blue Raspberry,921,5,40,4/4/2020
+11234,20902,Forest Dale,Shrimp - Black Tiger 26/30,426,6,50,3/16/2020
+11235,20797,Bowman,Temperature Recording Station,692,1,20,7/23/2019
+11236,20902,Daystar,"Chilli Paste, Hot Sambal Oelek",676,6,50,9/14/2019
+11237,20138,Truax,Sauce - Hollandaise,626,1,50,5/12/2020
+11240,20466,Sachs,Dried Peach,336,9,30,5/16/2020
+11240,20484,Brentwood,Muffin Mix - Banana Nut,882,4,20,1/20/2020
+11240,20309,Knutson,Squash - Pepper,711,8,10,5/23/2020
+11240,20296,Vernon,Pork - Sausage Casing,895,8,60,2/24/2020
+11242,20412,Corry,"Bread - Roll, Calabrese",129,7,30,6/17/2020
+11242,20513,Colorado,Flavouring - Orange,288,1,10,11/26/2019
+11244,20476,Del Mar,"Vodka - Hot, Lnferno",51,10,60,1/13/2020
+11244,20483,Pawling,Figs,469,4,50,4/9/2020
+11245,20801,Morning,Cocoa Butter,733,10,30,7/27/2019
+11246,20537,Roth,Foam Cup 6 Oz,192,2,50,3/22/2020
+11247,20768,Clove,Soup - Base Broth Beef,902,3,40,10/13/2019
+11247,20240,Russell,Ham - Cooked Bayonne Tinned,296,7,30,9/17/2019
+11248,20802,Kedzie,Cheese - Ricotta,917,9,30,3/30/2020
+11248,20280,East,Foil - 4oz Custard Cup,692,10,40,12/27/2019
+11248,20179,Riverside,Sage Derby,239,8,20,7/5/2020
+11249,20097,Dayton,Strawberries - California,782,1,50,3/5/2020
+11249,20700,Memorial,Soup Campbells - Italian Wedding,537,2,30,5/16/2020
+11250,20476,Waywood,Baking Powder,391,6,60,1/2/2020
+11250,20600,Ludington,Skirt - 24 Foot,928,9,60,5/7/2020
+11251,20278,Arizona,"Fish - Artic Char, Cold Smoked",576,5,60,9/26/2019
+11251,20686,Mallard,Garlic,434,7,20,10/22/2019
+11252,20745,Clarendon,Crab - Soft Shell,250,3,20,6/22/2020
+11252,20040,Farmco,Coriander - Ground,691,6,50,10/18/2019
+11252,20198,Butterfield,Nescafe - Frothy French Vanilla,551,3,50,12/6/2019
+11252,20682,Forest,Thyme - Fresh,107,10,40,4/24/2020
+11253,20514,Prairie Rose,Blueberries - Frozen,253,8,60,3/8/2020
+11254,20682,Pennsylvania,Pheasants - Whole,590,4,50,2/9/2020
+11255,20220,Express,Pear - Halves,784,6,50,9/29/2019
+11256,20140,Dawn,Bandage - Finger Cots,624,10,40,10/27/2019
+11256,20977,Blue Bill Park,Lidsoupcont Rp12dn,464,10,50,5/6/2020
+11257,20880,Eggendart,Anisette - Mcguiness,678,7,10,5/6/2020
+11257,20505,Nancy,Tofu - Soft,655,8,50,11/4/2019
+11257,20474,Memorial,"Cheese - Boursin, Garlic / Herbs",346,5,60,12/4/2019
+11258,20692,Harper,Temperature Recording Station,817,1,50,4/21/2020
+11259,20082,Warrior,Olives - Nicoise,369,1,30,6/20/2020
+11260,20673,Farwell,Straw - Regular,825,6,30,5/21/2020
+11260,20684,Fallview,Sausage - Andouille,302,10,20,1/9/2020
+11260,20218,Pleasure,"Marjoram - Dried, Rubbed",585,10,60,4/23/2020
+11263,20251,Little Fleur,Cheese - Roquefort Pappillon,169,2,40,12/13/2019
+11264,20065,Messerschmidt,Breadfruit,465,10,10,8/16/2019
+11265,20381,Grim,Salmon Steak - Cohoe 8 Oz,883,2,50,4/26/2020
+11266,20828,Manufacturers,Coriander - Seed,198,4,50,4/10/2020
+11266,20294,Longview,Dill Weed - Fresh,386,9,20,9/10/2019
+11267,20912,Rockefeller,Eel Fresh,895,6,60,10/21/2019
+11267,20953,Summerview,"C - Plus, Orange",549,9,10,3/1/2020
+11269,20860,Merrick,Red Pepper Paste,106,10,20,5/9/2020
+11272,20515,Transport,Monkfish Fresh - Skin Off,251,5,30,9/21/2019
+11272,20283,Scoville,Cheese - Blue,288,4,60,1/10/2020
+11273,20947,Forest,Wine - Sawmill Creek Autumn,236,3,30,3/14/2020
+11274,20370,Mifflin,Vinegar - Red Wine,775,7,50,8/4/2019
+11274,20168,Saint Paul,Pastry - Baked Scones - Mini,372,1,10,3/30/2020
+11275,20892,Northport,Island Oasis - Cappucino Mix,971,5,20,6/26/2020
+11275,20674,Southridge,Wine - Trimbach Pinot Blanc,766,6,10,10/3/2019
+11276,20510,Carey,Fennel - Seeds,603,8,20,8/29/2019
+11276,20288,Holy Cross,Table Cloth 54x72 Colour,905,10,30,4/24/2020
+11277,20072,Fairview,Appetiser - Bought,143,9,40,6/19/2020
+11278,20683,Dorton,"Tomatoes - Cherry, Yellow",566,5,50,5/14/2020
+11280,20069,Dennis,Table Cloth 81x81 White,723,1,20,2/23/2020
+11280,20724,Norway Maple,Ecolab Crystal Fusion,462,5,60,12/6/2019
+11281,20759,Grover,Venison - Denver Leg Boneless,777,6,50,8/23/2019
+11281,20209,Schiller,Lamb - Sausage Casings,260,3,60,10/29/2019
+11282,20255,Graedel,Sobe - Tropical Energy,67,4,10,2/21/2020
+11282,20232,Memorial,"Onions - Dried, Chopped",235,9,20,9/27/2019
+11282,20438,Sheridan,Wine - Pinot Noir Stoneleigh,765,3,30,5/30/2020
+11284,20101,Mallory,"Pail - 15l White, With Handle",535,2,60,1/19/2020
+11285,20015,Golf Course,Salmon - Fillets,913,7,40,8/9/2019
+11285,20869,Oriole,Bread - Assorted Rolls,466,9,30,1/29/2020
+11285,20711,Hallows,"Bread - Roll, Italian",72,2,50,12/5/2019
+11289,20755,Manitowish,Olives - Morracan Dired,609,9,20,1/31/2020
+11290,20235,Schmedeman,Five Alive Citrus,695,7,60,8/1/2019
+11291,20803,Carberry,Pastry - Banana Tea Loaf,339,2,40,5/1/2020
+11292,20818,Meadow Vale,Broccoli - Fresh,255,6,50,3/1/2020
+11293,20756,Loftsgordon,Breadfruit,481,3,50,4/17/2020
+11293,20479,Havey,Sesame Seed Black,186,9,50,10/5/2019
+11294,20578,Truax,Chevere Logs,353,5,10,10/13/2019
+11295,20455,Dwight,Longos - Chicken Cordon Bleu,979,1,50,5/6/2020
+11295,20174,1st,Tea - Decaf Lipton,678,3,60,1/21/2020
+11295,20596,Truax,"Seedlings - Buckwheat, Organic",509,10,50,12/6/2019
+11296,20518,Magdeline,Flour - Whole Wheat,79,5,30,8/1/2019
+11296,20465,Rusk,Pasta - Canelloni,840,10,40,10/14/2019
+11297,20483,North,Broccoli - Fresh,609,3,30,6/5/2020
+11297,20246,Sunbrook,Chips - Assorted,584,9,50,11/29/2019
+11297,20152,Mallory,Bouillion - Fish,986,4,20,12/8/2019
+11297,20604,Summit,"Juice - Tomato, 10 Oz",640,5,10,8/10/2019
+11297,20115,West,Flower - Potmums,983,3,40,9/9/2019
+11298,20651,Riverside,Onion Powder,308,6,60,1/4/2020
+11299,20269,Sauthoff,Soup - Campbells Bean Medley,496,1,10,1/30/2020
+11299,20999,Anhalt,"Doilies - 12, Paper",906,4,20,10/18/2019
+11300,20946,Welch,Wine - Jaboulet Cotes Du Rhone,132,9,30,10/17/2019
+11302,20376,Westridge,Juice - Propel Sport,487,6,20,11/4/2019
+11304,20130,Morrow,Extract - Lemon,209,2,20,8/24/2019
+11305,20032,Columbus,The Pop Shoppe Pinapple,793,9,10,5/23/2020
+11305,20770,Banding,White Fish - Filets,898,9,30,5/26/2020
+11305,20697,Golden Leaf,"Liqueur Banana, Ramazzotti",754,9,30,6/21/2020
+11308,20953,Charing Cross,Aspic - Amber,939,10,50,6/13/2020
+11309,20957,Pawling,Onions - Red,835,4,30,3/5/2020
+11310,20855,Little Fleur,"Wine - White, Gewurtzraminer",628,2,60,11/18/2019
+11310,20904,Washington,Bread - Corn Muffaletta,568,6,10,2/4/2020
+11310,20053,Bobwhite,"Potatoes - Instant, Mashed",878,9,20,10/8/2019
+11310,20403,Delaware,Garbage Bags - Clear,164,7,60,9/15/2019
+11311,20538,Maple Wood,"Cheese - Brie, Cups 125g",469,3,20,12/25/2019
+11312,20459,Spohn,Soup - French Onion,769,9,40,11/2/2019
+11313,20579,Pennsylvania,Steel Wool,780,1,10,5/15/2020
+11314,20792,La Follette,Amarula Cream,170,5,40,6/19/2020
+11314,20053,Fulton,Five Alive Citrus,951,10,30,3/9/2020
+11314,20580,Prairieview,Sauce - Oyster,240,10,30,10/22/2019
+11314,20373,Leroy,"Nut - Walnut, Pieces",799,8,20,11/22/2019
+11314,20464,Valley Edge,Pastry - Raisin Muffin - Mini,144,6,10,6/9/2020
+11314,20440,Meadow Ridge,Juice - Prune,402,7,30,3/5/2020
+11314,20067,Bluestem,Soho Lychee Liqueur,119,5,50,1/10/2020
+11316,20925,Mifflin,"Tart Shells - Savory, 4",544,6,40,11/2/2019
+11316,20781,Twin Pines,Rice - 7 Grain Blend,996,8,40,10/29/2019
+11316,20317,Manitowish,Kippers - Smoked,909,1,10,8/4/2019
+11317,20349,Haas,Tuna - Sushi Grade,272,4,50,4/17/2020
+11317,20687,Doe Crossing,Beef - Rib Eye Aaa,417,7,20,6/7/2020
+11319,20778,Elka,"Bread - Roll, Whole Wheat",943,5,40,7/29/2019
+11320,20267,Sheridan,Cream - 35%,961,2,50,6/15/2020
+11322,20811,Ruskin,"Lamb - Whole, Fresh",766,1,50,7/28/2019
+11323,20706,Birchwood,"Wine - Harrow Estates, Vidal",825,10,60,8/9/2019
+11323,20149,Mitchell,Eggroll,409,10,40,10/18/2019
+11324,20817,Cascade,Cup - Paper 10oz 92959,941,4,50,7/16/2020
+11324,20827,Forest Run,"Doilies - 12, Paper",649,9,20,8/1/2019
+11325,20474,Lindbergh,Appetizer - Escargot Puff,967,8,30,8/18/2019
+11325,20026,8th,"Thyme - Lemon, Fresh",248,1,50,5/16/2020
+11325,20477,Maywood,"Cheese - Cheddar, Medium",743,6,60,11/13/2019
+11326,20249,Mayfield,"Beans - Black Bean, Preserved",837,3,20,5/20/2020
+11326,20895,Main,Cranberries - Fresh,58,8,40,10/25/2019
+11327,20077,Mcbride,Amarula Cream,94,6,40,11/27/2019
+11328,20526,Elmside,Cheese - Colby,262,3,60,8/6/2019
+11328,20456,Pennsylvania,Longos - Assorted Sandwich,855,3,50,3/6/2020
+11329,20048,Kings,Chocolate Bar - Reese Pieces,880,6,60,10/10/2019
+11329,20217,Namekagon,Durian Fruit,339,7,30,2/22/2020
+11330,20449,Pearson,"Roe - Lump Fish, Red",298,6,20,3/12/2020
+11331,20593,Donald,Tumeric,708,4,30,3/8/2020
+11331,20835,International,Bar - Sweet And Salty Chocolate,366,3,60,7/6/2020
+11331,20251,Village Green,Cookie Double Choco,768,6,30,10/29/2019
+11333,20141,Buhler,Sesame Seed,736,10,20,4/26/2020
+11335,20120,Oakridge,Kahlua,982,2,60,12/21/2019
+11336,20551,Village Green,Shark - Loin,469,2,30,6/16/2020
+11336,20187,Loeprich,Ice Cream - Fudge Bars,292,2,40,4/20/2020
+11336,20732,Hudson,Appetizer - Assorted Box,110,5,60,12/25/2019
+11336,20757,Becker,Beef - Bresaola,850,1,30,3/26/2020
+11339,20164,Sommers,Carbonated Water - Strawberry,996,2,10,1/18/2020
+11339,20000,Steensland,Broccoli - Fresh,437,3,10,8/18/2019
+11339,20341,Veith,Cookie Chocolate Chip With,331,1,50,1/1/2020
+11341,20578,Browning,Honey - Comb,151,7,10,5/9/2020
+11342,20130,Golden Leaf,Crab - Meat Combo,398,2,20,2/29/2020
+11344,20778,Clove,Butter - Pod,237,5,30,7/28/2019
+11344,20983,Eggendart,Wine - Remy Pannier Rose,812,4,20,7/1/2020
+11345,20292,Spohn,Cape Capensis - Fillet,57,5,40,8/10/2019
+11346,20306,Summerview,"Beef - Roasted, Cooked",267,8,40,9/16/2019
+11346,20572,Thompson,"Lemonade - Island Tea, 591 Ml",483,2,10,5/5/2020
+11348,20004,Mitchell,Chocolate - Feathers,884,2,50,5/10/2020
+11350,20436,Pawling,Chocolate Bar - Reese Pieces,326,2,40,8/29/2019
+11351,20602,Fremont,Cotton Wet Mop 16 Oz,762,9,10,7/22/2019
+11351,20108,Eagan,Cheese Cloth,702,5,60,5/22/2020
+11352,20307,Hermina,Instant Coffee,360,2,30,10/6/2019
+11352,20229,Swallow,Vodka - Moskovskaya,137,1,30,3/7/2020
+11354,20549,Mayfield,"Basil - Primerba, Paste",519,3,60,9/23/2019
+11355,20501,Erie,Pie Filling - Pumpkin,165,8,60,8/23/2019
+11355,20306,Reindahl,Pan Grease,913,5,20,7/3/2020
+11355,20635,Artisan,"Bread - Roll, Canadian Dinner",865,7,30,3/24/2020
+11355,20004,International,English Muffin,183,7,50,1/24/2020
+11356,20193,Rowland,Flour - Bread,244,7,10,2/5/2020
+11356,20338,Prentice,Wine - Lamancha Do Crianza,483,4,40,2/23/2020
+11357,20103,Linden,Puff Pastry - Sheets,568,4,60,12/26/2019
+11357,20761,La Follette,Flavouring - Orange,815,5,60,5/23/2020
+11357,20191,Donald,"Mushroom - Shitake, Dry",547,10,50,7/5/2020
+11358,20181,Duke,Wine - Dubouef Macon - Villages,238,7,20,11/5/2019
+11360,20363,Sommers,Cheese - Cheddar With Claret,153,1,50,5/14/2020
+11361,20075,Northland,Lettuce - Lambs Mash,190,7,20,12/13/2019
+11362,20498,Heath,Blouse / Shirt / Sweater,374,1,10,5/19/2020
+11362,20054,Cherokee,Pop - Club Soda Can,642,2,20,2/7/2020
+11363,20825,Sherman,Myers Planters Punch,190,9,60,1/31/2020
+11363,20913,Park Meadow,"Wine - Mas Chicet Rose, Vintage",333,8,30,3/18/2020
+11364,20689,Cordelia,Cheese - Ricotta,856,9,40,2/4/2020
+11364,20836,Meadow Ridge,Ocean Spray - Kiwi Strawberry,98,10,30,1/20/2020
+11365,20095,Vermont,"Fish - Base, Bouillion",1000,9,20,6/30/2020
+11365,20148,Towne,Wine - Pinot Grigio Collavini,323,10,60,9/11/2019
+11365,20419,Buena Vista,Port - 74 Brights,808,2,30,10/7/2019
+11366,20763,Barby,Oil - Coconut,661,7,60,1/27/2020
+11366,20080,Forster,Tequila - Sauza Silver,587,7,40,6/11/2020
+11366,20108,1st,Soup - Campbells Beef Strogonoff,439,7,30,11/9/2019
+11366,20008,Gulseth,Mints - Striped Red,537,9,10,3/9/2020
+11367,20562,Kennedy,Cheese - Comtomme,893,8,10,1/29/2020
+11367,20602,Linden,Sobe - Liz Blizz,643,6,20,1/2/2020
+11368,20070,Judy,Pear - Asian,668,7,30,3/16/2020
+11368,20958,Sunfield,Soup - Campbells Mac N Cheese,787,9,20,7/31/2019
+11369,20678,Northport,Melon - Watermelon Yellow,644,5,40,5/11/2020
+11369,20282,Bunker Hill,Tarragon - Fresh,474,6,30,6/12/2020
+11369,20161,Thompson,Crab - Meat Combo,363,5,20,3/16/2020
+11370,20335,Macpherson,Muffin - Mix - Mango Sour Cherry,894,4,20,5/26/2020
+11371,20110,Pearson,Muskox - French Rack,135,1,30,9/16/2019
+11372,20670,Northview,Chutney Sauce,995,9,60,2/29/2020
+11372,20932,Randy,"Pasta - Spaghetti, Dry",396,9,10,7/13/2020
+11373,20359,Vidon,Oil - Pumpkinseed,407,2,40,3/2/2020
+11376,20998,7th,Beef - Inside Round,132,7,10,7/21/2020
+11376,20134,Johnson,Cloves - Ground,93,9,10,6/18/2020
+11377,20742,Shasta,"Juice - Grapefruit, 341 Ml",149,5,10,3/18/2020
+11377,20789,Hintze,Duck - Whole,637,4,10,4/19/2020
+11378,20078,Manitowish,Compound - Raspberry,876,6,20,5/8/2020
+11379,20737,Dorton,Pepperoni Slices,533,9,10,10/5/2019
+11379,20265,Maple Wood,"Bread - White, Sliced",248,2,40,12/8/2019
+11381,20843,Prentice,Container - Clear 32 Oz,83,10,60,1/13/2020
+11381,20475,Maple Wood,Salmon Steak - Cohoe 8 Oz,878,10,60,4/20/2020
+11381,20513,Hazelcrest,Soy Protein,149,10,30,9/22/2019
+11381,20330,Anzinger,Cape Capensis - Fillet,145,2,30,3/25/2020
+11382,20709,Summer Ridge,Chicken - White Meat With Tender,544,3,20,12/23/2019
+11383,20570,Bartillon,Apple - Royal Gala,553,8,50,9/12/2019
+11383,20419,Spenser,"Coke - Diet, 355 Ml",700,3,10,11/13/2019
+11383,20718,Heffernan,Pepper Squash,809,4,50,5/17/2020
+11383,20419,Superior,"Juice - Tomato, 48 Oz",914,7,60,12/17/2019
+11383,20273,Vera,"Nut - Almond, Blanched, Sliced",515,4,10,3/25/2020
+11383,20125,Corry,Rabbit - Saddles,561,8,20,2/7/2020
+11384,20269,Marquette,Mix - Cocktail Strawberry Daiquiri,131,8,10,8/21/2019
+11386,20559,Merchant,Wine - Stoneliegh Sauvignon,335,10,30,8/10/2019
+11388,20959,Columbus,Broom Handle,773,8,60,4/14/2020
+11389,20470,Meadow Vale,Flour Pastry Super Fine,204,6,30,7/31/2019
+11389,20981,Hazelcrest,"Bread - Sticks, Thin, Plain",921,2,10,4/18/2020
+11389,20385,Westend,"Wine - Red, Colio Cabernet",995,1,20,6/18/2020
+11390,20781,Becker,Vegetable - Base,517,8,30,7/7/2020
+11391,20651,Magdeline,Wine - Redchard Merritt,558,6,30,4/25/2020
+11392,20043,Sunfield,"Fish - Artic Char, Cold Smoked",119,10,30,10/7/2019
+11392,20480,Prairieview,Amaretto,327,6,40,10/13/2019
+11394,20393,Spohn,"Rum - Cream, Amarula",83,10,60,10/19/2019
+11395,20731,Anniversary,Bread - Italian Corn Meal Poly,59,6,40,9/5/2019
+11395,20594,Crescent Oaks,Wine - Toasted Head,263,6,10,3/4/2020
+11395,20166,Jenifer,Cake - Box Window 10x10x2.5,343,4,20,6/21/2020
+11396,20651,Luster,Oil - Sesame,155,3,20,2/17/2020
+11396,20845,Melvin,Apple - Custard,523,8,40,1/5/2020
+11396,20370,La Follette,"Chestnuts - Whole,canned",464,5,60,5/19/2020
+11396,20019,Roth,Apple - Macintosh,757,4,20,12/20/2019
+11397,20653,6th,Rosemary - Fresh,380,9,20,10/8/2019
+11397,20428,Park Meadow,"Juice - Apple, 500 Ml",252,6,40,12/18/2019
+11397,20982,Holy Cross,Chicken - Livers,182,5,10,8/13/2019
+11397,20656,Clarendon,Tomatillo,352,2,40,11/23/2019
+11397,20288,Carpenter,Huck White Towels,792,10,20,6/13/2020
+11397,20339,Fuller,Bread - Italian Roll With Herbs,97,10,20,12/5/2019
+11398,20782,Myrtle,"Pepper - Green, Chili",450,2,60,10/25/2019
+11398,20218,Commercial,"Juice - Cranberry, 341 Ml",873,4,20,10/21/2019
+11399,20862,Lerdahl,Vacuum Bags 12x16,952,5,40,8/18/2019
+11399,20710,Waywood,Longos - Grilled Veg Sandwiches,287,7,10,5/22/2020
+11400,20479,Old Gate,Squash - Sunburst,242,6,20,5/7/2020
+11400,20462,Burning Wood,Table Cloth 62x120 White,544,6,40,3/30/2020
+11401,20925,Darwin,Hagen Daza - Dk Choocolate,334,8,50,8/5/2019
+11402,20322,Delaware,Muffin Batt - Ban Dream Zero,351,2,40,11/1/2019
+11402,20094,Messerschmidt,Beef - Tenderloin,938,8,60,3/23/2020
+11404,20250,Stephen,Flax Seed,105,8,50,10/15/2019
+11404,20646,Longview,Lychee,489,8,50,11/2/2019
+11404,20537,Raven,"Pepsi, 355 Ml",329,8,50,8/9/2019
+11407,20119,Michigan,Lamb - Bones,975,5,60,4/11/2020
+11407,20960,Almo,"Beef - Ox Tongue, Pickled",541,6,20,4/1/2020
+11408,20003,Mcbride,Table Cloth 62x120 White,514,6,60,2/15/2020
+11408,20303,Nova,"Brocolinni - Gaylan, Chinese",237,3,40,7/26/2019
+11408,20092,Brickson Park,Beef - Tenderloin,689,7,50,6/9/2020
+11408,20295,Armistice,"Wine - Niagara,vqa Reisling",47,3,10,1/4/2020
+11409,20333,Cascade,Soup Bowl Clear 8oz92008,356,2,20,1/25/2020
+11409,20324,Scofield,Cookies - Englishbay Wht,246,1,30,10/25/2019
+11410,20040,Fulton,Bread - White Mini Epi,942,3,30,3/22/2020
+11412,20461,Farragut,Sauce - Roasted Red Pepper,682,5,30,5/9/2020
+11413,20473,Golf Course,Amaretto,172,5,30,9/11/2019
+11413,20380,Grim,Muffin Mix - Raisin Bran,423,10,10,12/28/2019
+11414,20236,Shopko,Bar Mix - Lemon,452,10,10,2/4/2020
+11414,20893,Swallow,Zucchini - Yellow,233,9,20,1/25/2020
+11415,20867,Riverside,Wine - Magnotta - Pinot Gris Sr,736,9,30,10/3/2019
+11415,20484,Reindahl,Flour - Rye,898,9,40,3/18/2020
+11417,20319,Holmberg,Tomatillo,438,10,40,3/29/2020
+11417,20140,Katie,Pate - Cognac,706,3,40,11/28/2019
+11417,20887,Sugar,"Pasta - Lasagna, Dry",695,10,50,9/15/2019
+11419,20334,Debs,Cheese - Ricotta,45,5,50,8/30/2019
+11419,20733,Schurz,Pastry - Lemon Danish - Mini,566,4,40,12/10/2019
+11420,20788,Marcy,"Nut - Pistachio, Shelled",230,4,20,10/30/2019
+11421,20656,Pine View,Vaccum Bag 10x13,77,10,10,1/31/2020
+11422,20934,Harbort,"Orange - Canned, Mandarin",930,7,50,1/3/2020
+11423,20068,Center,Peas Snow,183,10,20,2/1/2020
+11423,20019,Charing Cross,"Pasta - Linguini, Dry",602,8,10,12/16/2019
+11425,20114,Coolidge,Pears - Bosc,238,4,10,4/16/2020
+11425,20321,Anniversary,Pork - Belly Fresh,860,3,30,10/16/2019
+11425,20333,Roxbury,Dc - Frozen Momji,123,10,40,7/31/2019
+11426,20556,Prairie Rose,Kohlrabi,149,3,60,9/18/2019
+11427,20443,Golden Leaf,Squid - Breaded,564,7,40,5/4/2020
+11427,20084,Scoville,"Veal - Inside Round / Top, Lean",913,2,40,1/16/2020
+11428,20517,Almo,Plaintain,438,10,10,2/17/2020
+11428,20762,Milwaukee,Flour - Cake,44,8,60,2/4/2020
+11432,20474,Reindahl,Pasta - Cheese / Spinach Bauletti,624,2,10,11/21/2019
+11432,20792,Mayfield,"Mushroom - Enoki, Fresh",97,6,20,7/17/2020
+11432,20263,Pine View,"Chicken - Leg, Boneless",912,5,60,7/2/2020
+11434,20098,Pierstorff,Tea - English Breakfast,992,8,60,11/7/2019
+11434,20972,Vernon,Coffee - Hazelnut Cream,664,3,40,9/2/2019
+11434,20832,Nelson,Broom And Broom Rack White,701,10,10,10/16/2019
+11435,20012,Rowland,Greens Mustard,830,7,50,11/22/2019
+11435,20928,Shoshone,Cumin - Ground,253,10,20,2/16/2020
+11439,20770,Garrison,"Pasta - Rotini, Dry",740,8,10,4/24/2020
+11439,20530,Bayside,Wine - Sauvignon Blanc Oyster,302,8,40,5/20/2020
+11441,20048,Cottonwood,Shopper Bag - S - 4,302,9,10,11/27/2019
+11442,20145,Thierer,Soup Campbells - Italian Wedding,496,6,50,9/24/2019
+11444,20052,Heath,Lettuce - Spring Mix,949,10,20,4/7/2020
+11444,20606,Warrior,Wheat - Soft Kernal Of Wheat,630,2,60,8/29/2019
+11444,20044,Drewry,Cod - Fillets,635,8,10,7/29/2019
+11445,20691,Crowley,Kellogs Cereal In A Cup,815,3,20,4/4/2020
+11445,20178,4th,Sprouts - Peppercress,730,8,60,7/19/2020
+11446,20968,2nd,Soup - Campbells Tomato Ravioli,484,3,30,10/3/2019
+11447,20986,Mallard,Onions - Spanish,487,9,50,4/8/2020
+11447,20960,Toban,Syrup - Monin - Granny Smith,168,4,40,4/9/2020
+11448,20262,Loeprich,Beef - Top Sirloin,99,6,40,12/14/2019
+11448,20208,Helena,Table Cloth 54x72 White,957,4,50,8/6/2019
+11449,20424,Arrowood,Ecolab - Power Fusion,125,2,10,1/5/2020
+11449,20443,Melby,"Crab - Blue, Frozen",975,2,60,11/30/2019
+11449,20508,Pennsylvania,Cheese Cloth,315,7,60,9/22/2019
+11450,20503,Maple Wood,Smoked Tongue,40,6,20,8/30/2019
+11450,20567,Novick,Pie Filling - Apple,851,5,40,7/2/2020
+11450,20130,Northwestern,Wine - Wyndham Estate Bin 777,485,3,40,11/15/2019
+11450,20756,Fieldstone,Waffle Stix,206,9,50,2/17/2020
+11451,20264,Reinke,Bread - Italian Sesame Poly,124,6,20,12/30/2019
+11452,20672,Derek,"Crab - Claws, 26 - 30",631,6,60,8/16/2019
+11452,20057,Jackson,Pernod,104,1,20,5/1/2020
+11453,20084,Buhler,Cookies Almond Hazelnut,77,5,50,4/23/2020
+11453,20912,Ridgeway,Soup - Campbells,108,6,40,10/9/2019
+11453,20550,Golf,Baking Powder,80,1,30,6/27/2020
+11454,20462,Ridgeview,Bouillion - Fish,853,6,20,1/10/2020
+11456,20904,Kensington,Tea - Vanilla Chai,149,10,50,2/17/2020
+11456,20036,Hallows,Onions Granulated,886,1,20,6/25/2020
+11457,20159,Havey,Bread - Corn Muffaletta,751,3,60,4/8/2020
+11457,20048,Delladonna,Turkey Tenderloin Frozen,422,9,40,5/26/2020
+11458,20737,Northport,Soup Campbells - Tomato Bisque,335,9,10,9/28/2019
+11458,20312,Transport,"Mushroom - Enoki, Dry",484,5,10,3/28/2020
+11459,20680,Coolidge,Whmis - Spray Bottle Trigger,840,9,50,10/11/2019
+11460,20286,Anderson,Teriyaki Sauce,881,8,10,7/14/2020
+11460,20154,Novick,"Trout - Hot Smkd, Dbl Fillet",897,4,50,8/10/2019
+11460,20742,Karstens,Chicken Breast Wing On,291,3,20,3/12/2020
+11462,20695,Bay,Petit Baguette,842,6,50,4/13/2020
+11462,20723,Reindahl,"Juice - Cranberry, 341 Ml",824,3,60,6/19/2020
+11463,20549,Del Mar,"Lentils - Green, Dry",877,2,30,11/28/2019
+11463,20060,Oneill,"Potatoes - Yukon Gold, 80 Ct",272,9,50,1/16/2020
+11465,20614,Mariners Cove,Paper Towel Touchless,606,2,40,9/25/2019
+11467,20442,Alpine,Sobe - Lizard Fuel,326,2,20,5/16/2020
+11467,20466,Sutherland,Lemonade - Pineapple Passion,159,3,20,11/21/2019
+11467,20693,Lindbergh,Syrup - Monin - Blue Curacao,221,4,30,6/27/2020
+11467,20555,Acker,Hinge W Undercut,463,6,10,6/27/2020
+11467,20272,Vidon,Gelatine Powder,231,1,40,3/3/2020
+11468,20460,Veith,"Soup - Cream Of Broccoli, Dry",922,4,50,4/1/2020
+11468,20371,Grover,Cumin - Whole,566,4,40,1/2/2020
+11468,20218,Merchant,Mikes Hard Lemonade,166,6,30,5/5/2020
+11468,20645,Rockefeller,Lychee,917,6,60,7/19/2020
+11469,20773,Surrey,"Yogurt - Strawberry, 175 Gr",817,7,50,5/1/2020
+11470,20383,Westport,Yogurt - French Vanilla,107,4,60,12/24/2019
+11470,20212,Mariners Cove,Pineapple - Golden,665,1,40,3/6/2020
+11471,20303,Veith,Ice Cream - Vanilla,567,4,50,12/21/2019
+11473,20380,Badeau,"Croissant, Raw - Mini",349,8,10,7/15/2020
+11473,20772,Sullivan,Garlic Powder,256,7,60,1/23/2020
+11473,20627,Cambridge,Beef Ground Medium,599,1,60,7/17/2020
+11475,20581,Algoma,Prunes - Pitted,261,2,50,11/3/2019
+11475,20010,Di Loreto,Beef - Short Loin,83,8,30,3/11/2020
+11476,20013,Butterfield,"Placemat - Scallop, White",451,2,20,4/29/2020
+11476,20938,Anhalt,Beef - Flank Steak,427,4,50,7/23/2019
+11479,20253,Muir,Longan,602,9,40,7/15/2020
+11479,20657,Linden,Ice Cream Bar - Oreo Cone,902,8,20,4/11/2020
+11479,20264,Bellgrove,Bread - Triangle White,900,1,30,3/4/2020
+11480,20493,Fallview,Tomato Paste,143,10,20,5/1/2020
+11480,20935,Miller,Eggwhite Frozen,962,1,20,5/29/2020
+11480,20622,Russell,Ketchup - Tomato,333,8,60,9/12/2019
+11481,20440,Hanover,Wine - Ej Gallo Sierra Valley,701,10,30,11/24/2019
+11482,20771,American,Soup - Campbells Asian Noodle,927,10,60,7/7/2020
+11483,20324,Anderson,Tea - English Breakfast,357,1,30,12/24/2019
+11484,20060,Bashford,Pastry - Apple Large,153,7,30,1/28/2020
+11485,20798,Springview,Butter Balls Salted,296,5,50,11/16/2019
+11485,20014,Donald,"Loaf Pan - 2 Lb, Foil",973,6,40,4/14/2020
+11485,20858,Havey,Chocolate - Milk,991,9,30,4/18/2020
+11486,20542,Swallow,Oregano - Fresh,498,8,30,4/22/2020
+11486,20296,Fieldstone,"Pepper - Green, Chili",341,3,20,3/4/2020
+11486,20189,Jackson,"Beef - Rouladin, Sliced",726,3,10,8/17/2019
+11487,20139,Kings,Lobak,521,8,10,3/26/2020
+11487,20376,Mcbride,Honey - Comb,545,6,40,4/11/2020
+11488,20196,Mendota,Icecream Bar - Del Monte,716,7,30,8/20/2019
+11488,20113,Mayer,Plate Pie Foil,763,2,20,1/27/2020
+11489,20105,Hoffman,Mince Meat - Filling,913,6,10,1/30/2020
+11491,20482,Barnett,Soup - Cream Of Potato / Leek,513,5,50,10/7/2019
+11492,20777,Fair Oaks,Wine - Fat Bastard Merlot,967,10,20,4/12/2020
+11492,20056,Maywood,"Coke - Classic, 355 Ml",569,5,40,5/7/2020
+11495,20058,Lillian,Island Oasis - Wildberry,780,4,50,1/13/2020
+11495,20453,Granby,Water - San Pellegrino,733,5,40,9/21/2019
+11496,20376,Maple,Veal - Provimi Inside,723,3,60,8/26/2019
+11496,20059,Schurz,"Nut - Pecan, Pieces",898,6,30,5/28/2020
+11496,20013,Talmadge,Lemon Pepper,335,10,20,10/3/2019
+11497,20641,School,Cheese - Camembert,411,4,30,4/2/2020
+11497,20848,Crest Line,"Dill - Primerba, Paste",181,6,10,4/7/2020
+11498,20627,Carey,Appetiser - Bought,408,5,40,11/29/2019
+11498,20002,Darwin,"Beans - Turtle, Black, Dry",117,9,30,11/23/2019
+11498,20923,Hanover,Parsley Italian - Fresh,312,9,50,6/24/2020
+11498,20548,Clarendon,Sultanas,201,10,40,8/23/2019
+11499,20948,Scoville,Sole - Fillet,204,8,40,4/23/2020
+11500,20149,Jenifer,Chinese Foods - Pepper Beef,882,7,40,3/17/2020
+11500,20661,Randy,Aspic - Amber,130,5,20,5/8/2020
+11500,20087,Carberry,Cauliflower,151,1,50,2/26/2020
+11501,20237,Oak Valley,Buffalo - Striploin,282,5,20,8/16/2019
+11501,20824,Ilene,"Mushroom - Chanterelle, Dry",288,8,20,11/20/2019
+11502,20234,Warrior,Wine - Masi Valpolocell,240,6,30,2/11/2020
+11502,20338,Golf Course,Pepper - Scotch Bonnet,837,9,30,4/2/2020
+11503,20414,Sachs,Puff Pastry - Slab,246,2,60,4/27/2020
+11503,20149,East,Wine - Pinot Noir Pond Haddock,173,9,40,9/26/2019
+11504,20460,Orin,Shiratamako - Rice Flour,245,10,30,1/6/2020
+11506,20105,8th,The Pop Shoppe - Cream Soda,274,10,30,10/23/2019
+11506,20968,Porter,Cocktail Napkin Blue,951,9,40,5/22/2020
+11506,20818,Bunker Hill,Juice - Apple 284ml,633,1,10,9/24/2019
+11508,20759,Gina,"Tomatoes - Vine Ripe, Yellow",469,2,60,11/9/2019
+11508,20753,Lotheville,"Sauce - Black Current, Dry Mix",237,3,60,10/14/2019
+11508,20098,Fisk,Wine - Sawmill Creek Autumn,337,8,30,2/14/2020
+11509,20740,Tennessee,Pickles - Gherkins,292,7,10,2/10/2020
+11511,20389,Merry,Durian Fruit,472,5,30,6/8/2020
+11511,20199,Troy,Pasta - Cheese / Spinach Bauletti,590,9,20,12/5/2019
+11511,20890,Oak Valley,Beer - Fruli,177,9,20,2/4/2020
+11513,20279,Superior,"Flour - Corn, Fine",773,8,60,9/23/2019
+11513,20678,Service,Pork - Ground,460,4,10,6/3/2020
+11516,20225,Shoshone,Beef - Bresaola,359,6,20,10/3/2019
+11517,20519,American Ash,Dasheen,812,6,40,1/19/2020
+11517,20121,Emmet,Lamb Rack Frenched Australian,614,5,10,2/9/2020
+11518,20975,Meadow Vale,"Salt - Rock, Course",174,5,30,1/26/2020
+11518,20851,Saint Paul,Foam Cup 6 Oz,201,8,60,11/13/2019
+11519,20055,Troy,Rice - Aborio,277,10,50,2/15/2020
+11520,20075,Columbus,Tea - Green,393,1,30,7/5/2020
+11521,20988,Morningstar,Pastry - Choclate Baked,787,2,30,11/21/2019
+11522,20623,Pond,Vinegar - Sherry,331,6,20,9/4/2019
+11522,20524,Hollow Ridge,Garbage Bags - Clear,631,2,60,5/1/2020
+11522,20977,Paget,Molasses - Fancy,627,6,40,9/28/2019
+11524,20229,Troy,"Fish - Base, Bouillion",472,2,50,8/29/2019
+11525,20519,Express,Cheese - Swiss,985,7,50,6/3/2020
+11525,20144,Sunfield,Food Colouring - Green,194,3,60,6/1/2020
+11525,20365,Kensington,"Rum - Light, Captain Morgan",526,3,60,10/21/2019
+11525,20557,Johnson,Squash - Butternut,493,1,40,11/27/2019
+11526,20823,Starling,Hersey Shakes,554,9,30,11/2/2019
+11526,20762,Twin Pines,"Cheese - Cheddar, Medium",672,3,30,1/10/2020
+11527,20607,Graceland,Lettuce - Curly Endive,90,8,50,8/7/2019
+11527,20542,Hoepker,Tomatoes - Heirloom,73,7,60,2/4/2020
+11528,20093,Continental,"Wine - White, Pinot Grigio",665,9,50,11/4/2019
+11528,20440,Spaight,Dawn Professionl Pot And Pan,814,9,30,6/24/2020
+11530,20857,Cascade,Grouper - Fresh,606,1,40,8/5/2019
+11531,20606,School,Chinese Foods - Chicken,917,5,60,12/23/2019
+11531,20957,Hoffman,Sauce - Roasted Red Pepper,983,4,20,1/18/2020
+11533,20979,Monterey,Tea - Herbal - 6 Asst,618,1,60,6/17/2020
+11533,20978,Menomonie,Bar - Sweet And Salty Chocolate,938,2,40,3/10/2020
+11534,20113,Everett,Wine - Acient Coast Caberne,423,7,30,4/7/2020
+11534,20046,Division,Thyme - Fresh,182,7,20,4/27/2020
+11534,20009,Harbort,Bag Stand,255,9,40,11/23/2019
+11534,20782,Stang,Bread - White Mini Epi,643,2,30,3/10/2020
+11534,20815,Donald,Coriander - Ground,542,5,20,10/27/2019
+11534,20799,Luster,Halibut - Fletches,417,9,30,12/24/2019
+11535,20713,Waxwing,Water - Spring 1.5lit,458,2,10,8/2/2019
+11535,20467,Anzinger,Kippers - Smoked,728,2,40,5/29/2020
+11537,20482,Nevada,Soup Knorr Chili With Beans,568,8,30,1/18/2020
+11537,20622,Old Shore,"Capon - Breast, Double, Wing On",354,7,20,10/7/2019
+11538,20128,Melrose,Nescafe - Frothy French Vanilla,782,5,10,10/2/2019
+11538,20685,Sunnyside,"Turkey - Breast, Boneless Sk On",568,6,40,9/11/2019
+11539,20164,Paget,"Soup - Knorr, Chicken Noodle",661,2,30,11/19/2019
+11539,20586,Utah,Curry Paste - Madras,421,9,20,5/1/2020
+11540,20049,High Crossing,Pastry - Plain Baked Croissant,460,6,40,11/5/2019
+11542,20589,Vermont,Petite Baguette,178,6,20,12/15/2019
+11544,20977,Saint Paul,"Bread - Rolls, Corn",386,7,30,12/12/2019
+11545,20605,Katie,Lime Cordial - Roses,972,6,50,1/9/2020
+11545,20440,Nobel,Scrubbie - Scotchbrite Hand Pad,651,4,40,2/4/2020
+11545,20276,Crowley,Beef Cheek Fresh,215,8,50,4/2/2020
+11545,20478,Scott,Chocolate - Chips Compound,704,5,30,7/8/2020
+11547,20187,Bayside,"Cheese - Mozzarella, Shredded",422,6,50,5/21/2020
+11547,20023,Maple Wood,Radish,355,2,10,10/9/2019
+11548,20847,Prairie Rose,Mussels - Frozen,297,9,60,5/13/2020
+11548,20899,Superior,"Wine - Harrow Estates, Vidal",458,9,50,3/23/2020
+11549,20072,Mesta,Milk - Skim,332,5,60,3/20/2020
+11549,20597,Lotheville,Tea - Herbal Sweet Dreams,808,6,30,12/11/2019
+11550,20117,Mcbride,Ezy Change Mophandle,833,1,20,3/1/2020
+11550,20173,Farmco,Tea - Green,953,5,30,6/8/2020
+11550,20240,Logan,Muffin Mix - Chocolate Chip,918,6,60,5/28/2020
+11552,20008,Mendota,Lettuce - Red Leaf,259,3,10,2/20/2020
+11552,20867,Stoughton,"Veal - Chops, Split, Frenched",519,1,20,7/27/2019
+11555,20862,Roxbury,Wakami Seaweed,249,7,10,8/21/2019
+11555,20068,Dapin,Okra,229,8,30,7/8/2020
+11555,20824,Lien,Tuna - Loin,669,2,40,12/4/2019
+11556,20213,Hoepker,Spring Roll Veg Mini,645,6,60,4/4/2020
+11557,20807,Algoma,Grenadillo,731,3,10,8/1/2019
+11557,20340,Mariners Cove,Cookie Dough - Peanut Butter,702,10,50,4/9/2020
+11557,20860,Farragut,Scallop - St. Jaques,949,6,40,6/8/2020
+11558,20887,Sherman,Pastry - Trippleberry Muffin - Mini,880,6,60,12/8/2019
+11558,20143,Bay,Clementine,892,2,60,6/7/2020
+11559,20303,Autumn Leaf,"Jam - Strawberry, 20 Ml Jar",73,10,60,2/5/2020
+11560,20014,Jay,Instant Coffee,844,8,50,9/28/2019
+11561,20184,Mccormick,Chips - Doritos,954,4,40,7/13/2020
+11561,20168,Bartillon,"Tomatoes - Plum, Canned",595,9,30,12/26/2019
+11561,20412,Waxwing,Garlic - Peeled,70,10,40,7/14/2020
+11562,20316,Mcguire,"Cod - Salted, Boneless",767,7,20,11/17/2019
+11563,20789,Morrow,Kellogs Cereal In A Cup,378,6,50,4/23/2020
+11564,20928,Surrey,Lidsoupcont Rp12dn,148,10,50,1/21/2020
+11564,20232,Johnson,Eggplant Oriental,942,4,40,8/1/2019
+11565,20175,Lawn,Lotus Rootlets - Canned,356,2,20,8/11/2019
+11565,20221,Mandrake,Nantucket Orange Juice,887,4,40,1/12/2020
+11566,20949,Jenifer,"Cheese - Romano, Grated",974,5,10,7/11/2020
+11567,20567,Division,Juice - Cranberry 284ml,253,1,50,11/18/2019
+11568,20219,Fordem,Fond - Chocolate,457,4,10,5/25/2020
+11568,20316,Kinsman,Tea - Honey Green Tea,336,6,20,9/14/2019
+11568,20493,Mccormick,"Ranchero - Primerba, Paste",531,8,30,9/26/2019
+11570,20546,Eagle Crest,Gherkin - Sour,987,8,30,2/29/2020
+11570,20976,Fair Oaks,Wine - Zinfandel Rosenblum,523,6,10,7/2/2020
+11571,20333,American Ash,"Iced Tea - Lemon, 460 Ml",487,1,50,9/26/2019
+11571,20127,Clove,Spice - Chili Powder Mexican,806,2,50,11/3/2019
+11572,20410,Pearson,Cake - Box Window 10x10x2.5,307,2,10,10/6/2019
+11572,20290,Gulseth,"Napkin - Dinner, White",200,5,20,10/15/2019
+11574,20128,Clarendon,Ecolab Silver Fusion,687,7,10,9/25/2019
+11575,20419,Mandrake,"Syrup - Golden, Lyles",985,7,40,11/9/2019
+11575,20693,Elgar,Wood Chips - Regular,416,6,40,7/11/2020
+11575,20817,Mendota,Lemon Tarts,958,2,10,7/19/2020
+11576,20844,Sherman,Venison - Racks Frenched,438,2,20,11/8/2019
+11578,20750,Atwood,Corn Shoots,89,3,40,3/14/2020
+11578,20432,Main,Squid - Tubes / Tenticles 10/20,214,4,30,10/16/2019
+11578,20700,Anhalt,Mustard - Individual Pkg,467,3,20,7/25/2019
+11579,20079,Westridge,Sauce - Rosee,778,1,60,12/21/2019
+11580,20425,Dwight,Lidsoupcont Rp12dn,621,4,30,4/12/2020
+11580,20857,Blackbird,Carbonated Water - Wildberry,513,7,60,4/26/2020
+11586,20409,Jay,Muffin - Blueberry Individual,85,9,60,12/25/2019
+11586,20286,Packers,Cheese - Swiss,706,7,20,5/28/2020
+11588,20156,Birchwood,"Red Snapper - Fillet, Skin On",46,8,30,3/15/2020
+11588,20004,Sunfield,Wine - Masi Valpolocell,45,7,20,3/10/2020
+11588,20890,Pennsylvania,Beets - Mini Golden,112,9,50,10/1/2019
+11589,20511,Heffernan,Mustard - Dijon,390,2,40,7/27/2019
+11590,20613,Roxbury,Lettuce - Romaine,956,9,50,12/14/2019
+11591,20105,Spenser,Cranberries - Frozen,559,4,40,4/5/2020
+11592,20381,3rd,Corn Kernels - Frozen,473,7,20,2/15/2020
+11593,20097,Badeau,Scallops - In Shell,557,3,40,5/22/2020
+11594,20241,Park Meadow,Juice - Propel Sport,424,6,30,6/29/2020
+11594,20448,Oakridge,Muffin Mix - Raisin Bran,815,6,20,7/8/2020
+11594,20318,Montana,Whmis - Spray Bottle Trigger,99,2,60,2/6/2020
+11594,20621,Jenifer,"Coconut - Shredded, Unsweet",860,7,10,12/21/2019
+11595,20497,Ohio,Flavouring Vanilla Artificial,335,5,30,8/13/2019
+11595,20158,Dwight,Capers - Pickled,417,10,40,10/26/2019
+11596,20371,Corscot,Beef - Texas Style Burger,192,6,20,11/17/2019
+11598,20112,West,Bols Melon Liqueur,324,4,50,8/23/2019
+11599,20509,Daystar,Rum - Mount Gay Eclipes,637,10,10,12/10/2019
+11599,20842,Moulton,Bread - Assorted Rolls,648,2,20,5/11/2020
+11599,20964,Melby,"Extract - Vanilla,artificial",136,4,40,6/5/2020
+11599,20057,Fieldstone,Sole - Iqf,513,5,50,12/24/2019
+11601,20566,Hovde,Salt - Table,991,4,30,7/10/2020
+11601,20054,Cambridge,Cranberries - Fresh,187,5,60,2/14/2020
+11602,20527,Swallow,Chivas Regal - 12 Year Old,457,4,10,12/12/2019
+11603,20645,Sugar,Flour - Fast / Rapid,778,4,30,10/12/2019
+11604,20898,Crescent Oaks,Oil - Safflower,385,8,30,7/4/2020
+11604,20478,Alpine,Tuna - Bluefin,823,1,10,11/5/2019
+11604,20215,Golden Leaf,Kahlua,516,9,60,7/26/2019
+11606,20822,Carioca,Pear - Halves,288,5,40,10/13/2019
+11606,20868,Lindbergh,Tea - Herbal I Love Lemon,943,3,40,4/15/2020
+11606,20965,Riverside,"Cheese - Mozzarella, Buffalo",435,7,10,1/13/2020
+11606,20370,Chinook,"Cheese - Brie,danish",872,6,60,10/21/2019
+11607,20397,Onsgard,Passion Fruit,51,9,20,6/10/2020
+11607,20725,Heath,"Glass - Wine, Plastic, Clear 5 Oz",287,1,10,5/17/2020
+11607,20379,Chive,Chocolate Bar - Oh Henry,630,6,50,7/10/2020
+11608,20058,Clemons,Onion Powder,931,6,50,12/21/2019
+11609,20550,Bartillon,"Cup - 3.5oz, Foam",267,8,20,2/14/2020
+11610,20538,Judy,Chick Peas - Dried,567,6,10,1/7/2020
+11611,20881,Graceland,Potatoes - Peeled,615,1,10,8/20/2019
+11611,20091,Fuller,Chicken Giblets,108,10,40,8/29/2019
+11612,20734,Colorado,Wine - Guy Sage Touraine,174,1,10,7/31/2019
+11612,20265,Leroy,Cheese - Swiss Sliced,826,3,60,4/22/2020
+11613,20711,Burrows,Wine - Black Tower Qr,835,2,20,3/5/2020
+11613,20477,Lien,Wine - Touraine Azay - Le - Rideau,789,7,30,4/21/2020
+11613,20743,Mifflin,Corn Meal,349,2,60,11/11/2019
+11615,20418,Summer Ridge,Asparagus - Mexican,215,7,30,6/12/2020
+11615,20432,Pawling,Cheese - Swiss,410,8,40,9/6/2019
+11615,20853,Heffernan,Rosemary - Fresh,827,5,10,4/12/2020
+11616,20736,Sunfield,Bagel - Sesame Seed Presliced,501,4,10,8/8/2019
+11616,20935,Ridge Oak,Wine - Sicilia Igt Nero Avola,144,6,50,3/31/2020
+11616,20312,Mallard,Evaporated Milk - Skim,156,6,40,8/21/2019
+11617,20858,Nelson,"Wine - White, Antinore Orvieto",576,8,60,11/28/2019
+11617,20304,Grasskamp,Appetizer - Asian Shrimp Roll,202,5,40,4/20/2020
+11617,20411,Waxwing,"Pasta - Shells, Medium, Dry",834,9,50,10/10/2019
+11618,20764,Jackson,"Tea - Darjeeling, Azzura",888,8,30,1/2/2020
+11618,20009,Grim,Ice Cream Bar - Oreo Cone,810,8,50,10/15/2019
+11619,20449,Darwin,Cheese - Grie Des Champ,693,3,40,2/23/2020
+11620,20203,Lillian,"Chilli Paste, Sambal Oelek",937,6,20,4/28/2020
+11621,20889,Del Sol,Sugar - Palm,829,1,20,6/23/2020
+11621,20492,Manley,Pomello,368,7,10,11/24/2019
+11621,20751,Anderson,"Nut - Walnut, Pieces",80,10,30,12/24/2019
+11622,20138,Laurel,"Pail - 15l White, With Handle",79,1,60,3/12/2020
+11624,20161,Lien,Foil Cont Round,986,2,30,5/7/2020
+11624,20619,Schiller,Blackberries,644,1,10,4/11/2020
+11624,20500,Fisk,Oil - Canola,638,3,30,11/21/2019
+11625,20938,Rigney,Eggs - Extra Large,861,6,50,10/8/2019
+11625,20596,Oneill,Grenadine,581,3,50,7/17/2020
+11626,20105,Maryland,Onions Granulated,606,9,60,11/21/2019
+11626,20654,Sunfield,Corn - On The Cob,100,9,40,4/19/2020
+11626,20326,Ohio,Seabream Whole Farmed,362,4,50,9/3/2019
+11626,20364,Tony,Sauce - Demi Glace,666,7,30,7/27/2019
+11627,20461,Independence,Oil - Olive Bertolli,209,3,40,1/18/2020
+11627,20678,Drewry,Baking Powder,559,9,50,3/15/2020
+11628,20567,Hoepker,"Mushroom - Enoki, Fresh",131,3,30,3/14/2020
+11628,20600,Upham,Sauce - Fish 25 Ozf Bottle,157,8,20,10/4/2019
+11628,20077,Tony,Nantucket Apple Juice,380,9,30,8/11/2019
+11628,20234,East,Juice - Lemon,165,3,10,6/20/2020
+11628,20142,Prentice,Miso - Soy Bean Paste,154,10,50,3/4/2020
+11628,20890,Linden,Onions - White,650,10,20,8/30/2019
+11630,20424,Schmedeman,Bread Sour Rolls,797,1,50,9/22/2019
+11630,20773,Kings,Tea - Honey Green Tea,582,1,50,1/15/2020
+11630,20109,Pepper Wood,Onions - Spanish,397,8,60,12/27/2019
+11630,20055,Paget,Persimmons,942,8,40,2/5/2020
+11630,20976,Schlimgen,Longan,333,3,60,1/21/2020
+11631,20596,Memorial,"Radish - Black, Winter, Organic",931,8,10,2/17/2020
+11631,20709,Dixon,"Soup - Campbells, Creamy",800,6,60,3/16/2020
+11631,20883,Badeau,Trout - Smoked,588,6,10,9/12/2019
+11631,20072,Sloan,Cookies - Englishbay Chochip,217,3,40,3/2/2020
+11631,20738,Ramsey,Coconut - Whole,140,9,30,10/2/2019
+11632,20846,Sutherland,Vol Au Vents,595,8,40,4/6/2020
+11632,20756,Saint Paul,Soup - Campbells,591,6,10,9/2/2019
+11633,20958,Cordelia,Veal - Striploin,143,7,30,6/29/2020
+11633,20773,Hansons,Chocolate Liqueur - Godet White,965,7,60,1/23/2020
+11635,20417,Bunker Hill,Ginsing - Fresh,529,10,10,7/27/2019
+11635,20463,Redwing,Lentils - Green Le Puy,937,1,30,8/4/2019
+11637,20795,2nd,"Rum - White, Gg White",483,7,60,10/2/2019
+11638,20124,Chinook,Wine - Ej Gallo Sonoma,46,2,30,12/31/2019
+11638,20078,Ruskin,Juice - Ocean Spray Cranberry,693,1,60,12/7/2019
+11638,20683,Express,Sauce - Hp,100,6,20,4/20/2020
+11639,20769,Brickson Park,Smirnoff Green Apple Twist,331,3,10,2/15/2020
+11639,20471,Eliot,"Wine - Red, Antinori Santa",716,4,20,3/3/2020
+11640,20476,Knutson,Cheese - Le Cru Du Clocher,825,3,50,9/2/2019
+11640,20676,Upham,Flour Pastry Super Fine,549,7,60,1/5/2020
+11641,20677,Del Mar,Appetizer - Mushroom Tart,614,10,60,1/29/2020
+11641,20071,Stephen,Milk - Chocolate 250 Ml,520,7,20,12/9/2019
+11641,20813,Washington,"Crab - Dungeness, Whole",79,9,50,9/21/2019
+11641,20333,Merchant,Canadian Emmenthal,626,8,60,8/15/2019
+11641,20488,Kennedy,Crackers - Melba Toast,188,10,40,4/3/2020
+11642,20413,Coleman,"Fish - Atlantic Salmon, Cold",503,3,40,1/12/2020
+11643,20267,Bashford,Veal - Slab Bacon,445,8,30,1/10/2020
+11643,20244,Mosinee,Chocolate - Feathers,115,10,60,11/25/2019
+11643,20621,Starling,Wine - Duboeuf Beaujolais,308,9,10,2/6/2020
+11644,20932,Northview,Cocoa Powder - Natural,362,7,60,4/14/2020
+11644,20097,Fairview,Vegetable - Base,916,4,40,12/29/2019
+11644,20402,Sommers,"Rum - Spiced, Captain Morgan",526,3,50,6/13/2020
+11645,20036,Everett,Napkin White - Starched,220,5,10,11/28/2019
+11645,20339,Oxford,Rhubarb,298,7,60,2/6/2020
+11646,20950,Mallard,Initation Crab Meat,645,10,60,6/16/2020
+11647,20305,Truax,Tahini Paste,97,6,10,10/9/2019
+11648,20972,Marquette,Bread Crumbs - Japanese Style,45,1,10,12/1/2019
+11649,20165,Rutledge,Soup - Campbells Beef Stew,288,9,40,6/14/2020
+11649,20581,Del Sol,Milk - Chocolate 250 Ml,280,1,10,7/21/2020
