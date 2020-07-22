@@ -34,7 +34,7 @@ func toJSON(orders []order) {
 }
 
 func main() {
-	csvFile, err := os.Open("./orders.csv")
+	csvFile, err := os.Open("./orders2.csv")
 	checkErr(err)
 	r := csv.NewReader(csvFile)
 	var orderObj order
