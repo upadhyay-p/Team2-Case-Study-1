@@ -77,6 +77,7 @@ func clubRecords(records [][]string) []order {
 			orderObj.Quantity += itemObj.Quantity
 		}
 	}
+	clubbedRecords = append(clubbedRecords, orderObj)
 	fmt.Printf("Records after clubbing: %v\n", len(clubbedRecords))
 	return clubbedRecords
 }
