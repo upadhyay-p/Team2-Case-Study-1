@@ -10,7 +10,7 @@ import (
 	"strconv"
 )
 
-func checkErr(err error) {
+func CheckErr(err error) {
 	if err != nil {
 		panic(err)
 	}
@@ -35,9 +35,9 @@ type order struct {
 
 func toJSON(orders []order, filename string) {
 	f, err := json.MarshalIndent(orders, "", "	")
-	checkErr(err)
+	CheckErr(err)
 	err = ioutil.WriteFile(filename+".json", f, 0644)
-	checkErr(err)
+	CheckErr(err)
 	fmt.Println("Output file is stored as: " + filename + ".json")
 }
 
@@ -84,7 +84,7 @@ func clubRecords(records [][]string) []order {
 
 func readCSV(filename string) [][]string {
 	csvFile, err := os.Open(filename)
-	checkErr(err)
+	CheckErr(err)
 	r := csv.NewReader(csvFile)
 	_, _ = r.Read()
 	var records [][]string
@@ -93,7 +93,7 @@ func readCSV(filename string) [][]string {
 		if err == io.EOF {
 			break
 		}
-		checkErr(err)
+		CheckErr(err)
 		records = append(records, record)
 	}
 	fmt.Printf("Records processed: %v\n", len(records))

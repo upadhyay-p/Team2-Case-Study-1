@@ -1,8 +1,11 @@
 package main
 
 import (
+	"AvgPrice"
 	"CSV2JSON"
+	"bufio"
 	"os"
+	"strings"
 )
 
 func main() {
@@ -10,6 +13,10 @@ func main() {
 	if len(args) == 1 {
 		CSV2JSON.INIT(args[0])
 	} else {
-		println("Please Give File name as an Argument!")
+		reader :=bufio.NewReader(os.Stdin)
+		println("Enter the Json file name for report:")
+		fname, err := reader.ReadString('\n')
+		CSV2JSON.CheckErr(err)
+		AvgPrice.INIT(strings.TrimSpace(fname))
 	}
 }
