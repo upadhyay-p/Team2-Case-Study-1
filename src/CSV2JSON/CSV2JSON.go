@@ -16,11 +16,17 @@ func checkErr(err error) {
 	}
 }
 
+type item struct {
+	Name     string
+	Price    float64
+	Quantity int64
+}
+
 type order struct {
 	OrderID    int64
 	CustomerID int64
 	Restaurant string
-	ItemLine   []string
+	ItemLine   []item
 	Price      float64
 	Quantity   int64
 	Discount   int64
@@ -39,12 +45,13 @@ func parseRecord(record []string) order {
 	OID, _ := strconv.ParseInt(record[0], 10, 64)
 	CID, _ := strconv.ParseInt(record[1], 10, 64)
 	Rest := record[2]
-	item := record[3]
+	itemName := record[3]
 	Price, _ := strconv.ParseFloat(record[4], 64)
 	Quantity, _ := strconv.ParseInt(record[5], 10, 64)
 	Discount, _ := strconv.ParseInt(record[6], 10, 64)
 	date := record[7]
-	orderObj := order{OID, CID, Rest, []string{item}, Price, Quantity, Discount, date}
+	itemObj := item{itemName, Price, Quantity}
+	orderObj := order{OID, CID, Rest, []item{itemObj}, Price, Quantity, Discount, date}
 	return orderObj
 }
 
@@ -52,17 +59,22 @@ func clubRecords(records [][]string) []order {
 	var clubbedRecords []order
 	prev := "INF"
 	var orderObj order
+	var itemObj item
 	flag := false
 	for _, record := range records {
+		tempObj := parseRecord(record)
 		if record[0] != prev {
 			if flag == true {
 				clubbedRecords = append(clubbedRecords, orderObj)
 			}
 			flag = true
-			orderObj = parseRecord(record)
+			orderObj = tempObj
 			prev = record[0]
 		} else {
-			orderObj.ItemLine = append(orderObj.ItemLine, record[3])
+			itemObj = tempObj.ItemLine[0]
+			orderObj.ItemLine = append(orderObj.ItemLine, itemObj)
+			orderObj.Price += itemObj.Price
+			orderObj.Quantity += itemObj.Quantity
 		}
 	}
 	fmt.Printf("Records after clubbing: %v\n", len(clubbedRecords))
