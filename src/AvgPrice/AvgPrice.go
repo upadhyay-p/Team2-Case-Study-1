@@ -1,17 +1,18 @@
 package AvgPrice
 
 import (
-	"../CSV2JSON"
+	"Structs"
 	"fmt"
 	"github.com/tidwall/gjson"
 	"io/ioutil"
 )
 
 
-func AvgPriceReport(filename string) {
+
+func AvgPriceReport(filename string) []Structs.AvgPriceInfo {
 
 	file, err := ioutil.ReadFile(filename)
-	CSV2JSON.CheckErr(err)
+	CheckError(err)
 
 	ItemPrices:= make([]float64, 0, 5)
 	price := gjson.GetBytes(file,"#.Price").Array()
@@ -34,14 +35,26 @@ func AvgPriceReport(filename string) {
 		custSpend[cid.Int()] += ItemPrices[i]
 	}
 	var n int64
+	avgPrices := make([] Structs.AvgPriceInfo,0,50)
 	for cid, cost := range custSpend {
 		n = custOrders[cid]
-		fmt.Printf("Customer ID: %v No of Orders: %v Average Price: %.2f \n", cid, n, cost/float64(n))
+		avgP := cost/float64(n)
+		obj := Structs.AvgPriceInfo{CustomerID:cid, AvgPrice:avgP, AvgOrders:n}
+		avgPrices = append(avgPrices, obj)
+		//fmt.Printf("Customer ID: %v No of Orders: %v Average Price: %.2f \n", cid, n, cost/float64(n))
+	}
+	return avgPrices
+}
+
+func CheckError(err error){
+	if err!=nil{
+		panic(err)
 	}
 }
 
-func INIT(filename string) {
+func INIT(filename string) []Structs.AvgPriceInfo{
 //	"./orders.json"
 	fmt.Println("Reading " + filename)
-	AvgPriceReport(filename)
+	res := AvgPriceReport(filename)
+	return res
 }
