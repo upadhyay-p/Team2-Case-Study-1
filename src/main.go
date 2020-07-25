@@ -6,6 +6,7 @@ import (
 	"os"
 )
 
+// This is the main function executed at the beginning
 func main() {
 	args := os.Args[1:]
 	if len(args) == 1 {
