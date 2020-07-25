@@ -11,9 +11,9 @@ repo for case study 1
 ### Now, The webserver will run on localhost:9001.
 
 To fetch different query :-
-1.  "localhost:9001/api/" for HomePage
-2.  "localhost:9001/api/orders" for fetching all orders
-3.  "localhost:9001/api/avg-price" for average price of orders per customer
-3.  "localhost:9001/api/top-buyers/:numBuyers" for top-customers based on expenditure
-4.  "localhost:9001/api/top-restaurants/:numRestau" for top-restaurants based on its revenue
-5.  "localhost:9001/api/new-order" to place a new order
+*  "localhost:9001/api/" for HomePage
+*  "localhost:9001/api/orders" for fetching all orders
+*  "localhost:9001/api/avg-price" for average price of orders per customer
+*  "localhost:9001/api/top-buyers/:numBuyers" for top-customers based on expenditure
+*  "localhost:9001/api/top-restaurants/:numRestau" for top-restaurants based on its revenue
+*  "localhost:9001/api/new-order" to place a new order
