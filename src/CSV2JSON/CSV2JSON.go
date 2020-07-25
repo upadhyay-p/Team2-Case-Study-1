@@ -10,6 +10,7 @@ import (
 	"strconv"
 )
 
+// checking the error
 func checkErr(err error) {
 	if err != nil {
 		panic(err)
@@ -33,6 +34,7 @@ type order struct {
 	Date       string
 }
 
+// Write the orders in json file
 func toJSON(orders []order, filename string) {
 	f, err := json.MarshalIndent(orders, "", "	")
 	checkErr(err)
@@ -41,6 +43,7 @@ func toJSON(orders []order, filename string) {
 	fmt.Println("Output file is stored as: " + filename + ".json")
 }
 
+// Parse the record into its parameters
 func parseRecord(record []string) order {
 	OID, _ := strconv.ParseInt(record[0], 10, 64)
 	CID, _ := strconv.ParseInt(record[1], 10, 64)
@@ -55,6 +58,7 @@ func parseRecord(record []string) order {
 	return orderObj
 }
 
+// Club the records in slice of order interface
 func clubRecords(records [][]string) []order {
 	var clubbedRecords []order
 	prev := "INF"
@@ -82,6 +86,7 @@ func clubRecords(records [][]string) []order {
 	return clubbedRecords
 }
 
+// Read the csv file and store as a string in records variable
 func readCSV(filename string) [][]string {
 	csvFile, err := os.Open(filename)
 	checkErr(err)
@@ -100,6 +105,7 @@ func readCSV(filename string) [][]string {
 	return records
 }
 
+// Initialise to convert the csv file to json format (json object)
 func INIT(filename string) {
 	fmt.Println("Reading " + filename)
 	records := readCSV(filename)

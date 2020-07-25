@@ -18,33 +18,39 @@ var data []structs.Order
 var byteValue []byte
 var fname string
 
+// HomePage for this webserver
 func GetIndex(c *gin.Context) {
 	c.JSON(http.StatusOK, gin.H{
 		"Team 2": "Hello from Aadithya, Abhishek, Priya, Shashi!",
 	})
 }
 
+// To get all the orders
 func GetAllOrders(c *gin.Context) {
 	c.JSON(http.StatusOK, &data)
 }
 
+// To get average price of orders per customer
 func GetAvgPrice(c *gin.Context) {
 	avgPrices := AvgPrice.INIT(strings.TrimSpace(fname))
 	c.JSON(http.StatusOK, &avgPrices)
 }
 
+// To get "n" top-customers based on expenditure
 func GetTopBuyers(c *gin.Context) {
 	numberOfBuyers, _ := strconv.ParseInt(c.Param("numBuyers"), 10, 64)
 	topCustomersList := Toprestaubuyers.FindTopBuyers(byteValue, numberOfBuyers)
 	c.JSON(http.StatusOK, &topCustomersList)
 }
 
+// To get "n" top-restaurants based on its revenue
 func GetTopRestaurants(c *gin.Context) {
 	numberOfRestaurants, _ := strconv.ParseInt(c.Param("numRestau"), 10, 64)
 	topRestaurantsList := Toprestaubuyers.FindTopRestaurants(byteValue, numberOfRestaurants)
 	c.JSON(http.StatusOK, &topRestaurantsList)
 }
 
+// To place a new order
 func PostOrder(c *gin.Context) {
 	body := c.Request.Body
 	byteContent, err := ioutil.ReadAll(body)
@@ -63,6 +69,7 @@ func PostOrder(c *gin.Context) {
 	fmt.Println("New Entry Added")
 }
 
+// To update the json file  and the byteValue slice
 func toJSON() {
 	byteValue, _ = json.MarshalIndent(data, "", "	  ")
 	err := ioutil.WriteFile(fname, byteValue, 0644)
@@ -72,6 +79,7 @@ func toJSON() {
 	fmt.Println("Output file is stored as: " + fname)
 }
 
+// for starting the server
 func INIT(filename string) {
 
 	fmt.Println("hello from API INIT function")
@@ -95,10 +103,4 @@ func INIT(filename string) {
 	apiRouter.POST("/new-order", PostOrder)
 
 	router.Run("localhost:9001")
-}
-
-func CheckError(err error) {
-	if err != nil {
-		panic(err)
-	}
 }

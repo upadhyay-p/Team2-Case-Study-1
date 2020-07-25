@@ -8,6 +8,7 @@ import (
 	"github.com/tidwall/gjson"
 )
 
+// Generate the Average-Price of orders per customer
 func AvgPriceReport(filename string) []structs.AvgPriceInfo {
 
 	file, err := ioutil.ReadFile(filename)
@@ -51,6 +52,7 @@ func CheckError(err error) {
 	}
 }
 
+// Initialise the AvgPrice package's function
 func INIT(filename string) []structs.AvgPriceInfo {
 	//	"./orders.json"
 	fmt.Println("Reading " + filename)

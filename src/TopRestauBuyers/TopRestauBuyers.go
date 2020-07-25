@@ -9,6 +9,7 @@ import (
 	"github.com/tidwall/gjson"
 )
 
+// Find the n-top-restaurants
 func FindTopRestaurants(byteValue []byte, numRestau int64) []structs.TopRestaurants {
 	resps := gjson.GetManyBytes(byteValue, "#.Restaurant", "#.Price")
 	restaurantsRevenue := make(map[string]float64)
@@ -46,6 +47,7 @@ func FindTopRestaurants(byteValue []byte, numRestau int64) []structs.TopRestaura
 	return topRestaurantsList
 }
 
+// Find the n-top-customers
 func FindTopBuyers(byteValue []byte, numCust int64) []structs.TopCustomers {
 	resps := gjson.GetManyBytes(byteValue, "#.CustomerID", "#.Price")
 	customersExpenditure := make(map[string]float64)
@@ -81,10 +83,4 @@ func FindTopBuyers(byteValue []byte, numCust int64) []structs.TopCustomers {
 		topCustomersList = append(topCustomersList, topCustomers[ind])
 	}
 	return topCustomersList
-}
-
-func CheckError(err error) {
-	if err != nil {
-		panic(err)
-	}
 }
