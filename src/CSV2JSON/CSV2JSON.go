@@ -1,6 +1,7 @@
 package CSV2JSON
 
 import (
+	"Err"
 	"encoding/csv"
 	"encoding/json"
 	"fmt"
@@ -9,12 +10,6 @@ import (
 	"os"
 	"strconv"
 )
-
-func checkErr(err error) {
-	if err != nil {
-		panic(err)
-	}
-}
 
 type item struct {
 	Name     string
@@ -35,9 +30,9 @@ type order struct {
 
 func toJSON(orders []order, filename string) {
 	f, err := json.MarshalIndent(orders, "", "	")
-	checkErr(err)
+	Err.CheckError(err)
 	err = ioutil.WriteFile(filename+".json", f, 0644)
-	checkErr(err)
+	Err.CheckError(err)
 	fmt.Println("Output file is stored as: " + filename + ".json")
 }
 
@@ -84,7 +79,7 @@ func clubRecords(records [][]string) []order {
 
 func readCSV(filename string) [][]string {
 	csvFile, err := os.Open(filename)
-	checkErr(err)
+	Err.CheckError(err)
 	r := csv.NewReader(csvFile)
 	_, _ = r.Read()
 	var records [][]string
@@ -93,7 +88,7 @@ func readCSV(filename string) [][]string {
 		if err == io.EOF {
 			break
 		}
-		checkErr(err)
+		Err.CheckError(err)
 		records = append(records, record)
 	}
 	fmt.Printf("Records processed: %v\n", len(records))
