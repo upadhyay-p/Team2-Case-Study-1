@@ -1,0 +1,5 @@
+pkg
+src/github.com
+src/google.golang.org
+src/gopkg.in
+src/golang.org
