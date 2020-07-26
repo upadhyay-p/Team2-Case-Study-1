@@ -1,31 +1,31 @@
 package AvgPrice
 
 import (
+	"Structs"
 	"fmt"
-	"io/ioutil"
-	"structs"
-
 	"github.com/tidwall/gjson"
+	"io/ioutil"
 )
 
-// Generate the Average-Price of orders per customer
-func AvgPriceReport(filename string) []structs.AvgPriceInfo {
+
+
+func AvgPriceReport(filename string) []Structs.AvgPriceInfo {
 
 	file, err := ioutil.ReadFile(filename)
 	CheckError(err)
 
-	ItemPrices := make([]float64, 0, 5)
-	price := gjson.GetBytes(file, "#.Price").Array()
+	ItemPrices:= make([]float64, 0, 5)
+	price := gjson.GetBytes(file,"#.Price").Array()
 
 	for _, val := range price {
 		ItemPrices = append(ItemPrices, val.Float())
 	}
 
-	cids := gjson.GetBytes(file, "#.CustomerID").Array()
-	custOrders := make(map[int64]int64)
-	custSpend := make(map[int64]float64)
+	cids := gjson.GetBytes(file,"#.CustomerID").Array()
+	custOrders := make(map[int64] int64)
+	custSpend := make(map[int64] float64)
 
-	for i, cid := range cids {
+	for i,cid := range cids {
 		_, f := custOrders[cid.Int()]
 		if f == false {
 			custOrders[cid.Int()] = 0
@@ -35,26 +35,25 @@ func AvgPriceReport(filename string) []structs.AvgPriceInfo {
 		custSpend[cid.Int()] += ItemPrices[i]
 	}
 	var n int64
-	avgPrices := make([]structs.AvgPriceInfo, 0, 50)
+	avgPrices := make([] Structs.AvgPriceInfo,0,50)
 	for cid, cost := range custSpend {
 		n = custOrders[cid]
-		avgP := cost / float64(n)
-		obj := structs.AvgPriceInfo{CustomerID: cid, AvgPrice: avgP, AvgOrders: n}
+		avgP := cost/float64(n)
+		obj := Structs.AvgPriceInfo{CustomerID:cid, AvgPrice:avgP, AvgOrders:n}
 		avgPrices = append(avgPrices, obj)
 		//fmt.Printf("Customer ID: %v No of Orders: %v Average Price: %.2f \n", cid, n, cost/float64(n))
 	}
 	return avgPrices
 }
 
-func CheckError(err error) {
-	if err != nil {
+func CheckError(err error){
+	if err!=nil{
 		panic(err)
 	}
 }
 
-// Initialise the AvgPrice package's function
-func INIT(filename string) []structs.AvgPriceInfo {
-	//	"./orders.json"
+func INIT(filename string) []Structs.AvgPriceInfo{
+//	"./orders.json"
 	fmt.Println("Reading " + filename)
 	res := AvgPriceReport(filename)
 	return res
