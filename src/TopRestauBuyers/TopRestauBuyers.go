@@ -7,19 +7,13 @@ import (
 	"math"
 	"os"
 	"sort"
+	"Err"
+	"Structs"
 )
 
-type topCustomers struct {
-	CustomerID string
-	Expenditure float64
-}
 
-type topRestaurants struct {
-	Restaurant string
-	Revenue float64
-}
-
-func findTopRestaurants (byteValue []byte, numRestau int) {
+func FindTopRestaurants (byteValue []byte, numRestau int64) []Structs.TopRestaurants {
+	TopNRestaurantsList := make([] Structs.TopRestaurants, 0)
 	resps := gjson.GetManyBytes(byteValue, "#.Restaurant","#.Price")
 	restaurantsRevenue := make(map[string] float64)
 	var restaurants []string
@@ -40,20 +34,24 @@ func findTopRestaurants (byteValue []byte, numRestau int) {
 	}
 	//fmt.Println(len(restaurantsRevenue))
 
-	var TopRestaurants []topRestaurants
+	var TopRestaurantsList []Structs.TopRestaurants
 	for rests, revs := range restaurantsRevenue {
-		TopRestaurants = append(TopRestaurants, topRestaurants{rests, revs})
+		TopRestaurantsList = append(TopRestaurantsList, Structs.TopRestaurants{rests, revs})
 	}
-	sort.Slice(TopRestaurants, func(i, j int) bool {
-		return TopRestaurants[i].Revenue > TopRestaurants[j].Revenue
+	sort.Slice(TopRestaurantsList, func(i, j int) bool {
+		return TopRestaurantsList[i].Revenue > TopRestaurantsList[j].Revenue
 	})
 	fmt.Println("The top-5 Restaurants having following revenues are:")
-	for ind := 0; ind < int(math.Min(float64(numRestau), float64(len(TopRestaurants)))); ind++ {
-		fmt.Println(TopRestaurants[ind])
+	for ind := 0; ind < int(math.Min(float64(numRestau), float64(len(TopRestaurantsList)))); ind++ {
+		fmt.Println(TopRestaurantsList[ind])
+		TopNRestaurantsList = append(TopNRestaurantsList, TopRestaurantsList[ind])
 	}
+
+	return TopNRestaurantsList
 }
 
-func findTopBuyers (byteValue []byte, numCust int) {
+func FindTopBuyers (byteValue []byte, numCust int64) []Structs.TopCustomers{
+	TopNCustomersList := make([]Structs.TopCustomers, 0)
 	resps := gjson.GetManyBytes(byteValue, "#.CustomerID","#.Price")
 	customersExpenditure := make(map[string] float64)
 	var customers []string
@@ -74,28 +72,30 @@ func findTopBuyers (byteValue []byte, numCust int) {
 	}
 	//fmt.Println(len(customersExpenditure))
 
-	var TopCustomers []topCustomers
+	var TopCustomersList []Structs.TopCustomers
 	for custs, expd := range customersExpenditure {
-		TopCustomers = append(TopCustomers, topCustomers{custs, expd})
+		TopCustomersList = append(TopCustomersList, Structs.TopCustomers{custs, expd})
 	}
-	sort.Slice(TopCustomers, func(i, j int) bool {
-		return TopCustomers[i].Expenditure > TopCustomers[j].Expenditure
+	sort.Slice(TopCustomersList, func(i, j int) bool {
+		return TopCustomersList[i].Expenditure > TopCustomersList[j].Expenditure
 	})
 	fmt.Println("The top-5 Buyers having following expenditures are:")
-	for ind := 0; ind < int(math.Min(float64(numCust), float64(len(TopCustomers)))); ind++ {
-		fmt.Println(TopCustomers[ind])
+	for ind := 0; ind < int(math.Min(float64(numCust), float64(len(TopCustomersList)))); ind++ {
+		fmt.Println(TopCustomersList[ind])
+		TopNCustomersList = append(TopNCustomersList,TopCustomersList[ind] )
 	}
+	return TopNCustomersList
 }
 
 func RestauBuyers(filename string) {
 	jsonFile, err := os.Open(filename)
-	checkError(err)
+	Err.CheckError(err)
 	fmt.Println("Successfully Opened orders.json")
 	defer jsonFile.Close()
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
-	findTopRestaurants(byteValue, 5)      // number of top restaurants you want
-	findTopBuyers(byteValue, 5)			   // number of top customer who buys most
+	FindTopRestaurants(byteValue, 5)      // number of top restaurants you want
+	FindTopBuyers(byteValue, 5)			   // number of top customer who buys most
 }
 
 func INIT(filename string) {
@@ -103,8 +103,3 @@ func INIT(filename string) {
 	RestauBuyers(filename)
 }
 
-func checkError(err error) {
-	if err != nil {
-		panic(err)
-	}
-}

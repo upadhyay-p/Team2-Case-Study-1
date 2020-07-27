@@ -23,3 +23,13 @@ type AvgPriceInfo struct{
 	AvgPrice float64
 	AvgOrders int64
 }
+
+type TopCustomers struct {
+	CustomerID string
+	Expenditure float64
+}
+
+type TopRestaurants struct {
+	Restaurant string
+	Revenue float64
+}

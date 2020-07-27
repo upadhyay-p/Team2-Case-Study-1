@@ -2,19 +2,19 @@ package Apisgo
 
 import (
 	"AvgPrice"
-	"Toprestaubuyers"
+	"Structs"
+	"TopRestauBuyers"
 	"encoding/json"
 	"fmt"
 	"io/ioutil"
 	"net/http"
 	"strconv"
 	"strings"
-	"structs"
 
 	"github.com/gin-gonic/gin"
 )
 
-var data []structs.Order
+var data []Structs.Order
 var byteValue []byte
 var fname string
 
@@ -30,7 +30,7 @@ func GetAllOrders(c *gin.Context) {
 	c.JSON(http.StatusOK, &data)
 }
 
-// To get average price of orders per customer
+// To get average order price and average number of orders per customer
 func GetAvgPrice(c *gin.Context) {
 	avgPrices := AvgPrice.INIT(strings.TrimSpace(fname))
 	c.JSON(http.StatusOK, &avgPrices)
@@ -39,14 +39,14 @@ func GetAvgPrice(c *gin.Context) {
 // To get "n" top-customers based on expenditure
 func GetTopBuyers(c *gin.Context) {
 	numberOfBuyers, _ := strconv.ParseInt(c.Param("numBuyers"), 10, 64)
-	topCustomersList := Toprestaubuyers.FindTopBuyers(byteValue, numberOfBuyers)
+	topCustomersList := TopRestauBuyers.FindTopBuyers(byteValue, numberOfBuyers)
 	c.JSON(http.StatusOK, &topCustomersList)
 }
 
 // To get "n" top-restaurants based on its revenue
 func GetTopRestaurants(c *gin.Context) {
 	numberOfRestaurants, _ := strconv.ParseInt(c.Param("numRestau"), 10, 64)
-	topRestaurantsList := Toprestaubuyers.FindTopRestaurants(byteValue, numberOfRestaurants)
+	topRestaurantsList := TopRestauBuyers.FindTopRestaurants(byteValue, numberOfRestaurants)
 	c.JSON(http.StatusOK, &topRestaurantsList)
 }
 
@@ -58,7 +58,7 @@ func PostOrder(c *gin.Context) {
 		fmt.Println("Sorry no content found: ", err.Error())
 	}
 
-	var NewOrder structs.Order
+	var NewOrder Structs.Order
 	_ = json.Unmarshal(byteContent, &NewOrder)
 	data = append(data, NewOrder)
 	toJSON()
