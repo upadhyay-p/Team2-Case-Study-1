@@ -1,0 +1,69 @@
+syntax="proto3";
+
+package order;
+
+option go_package="order/orderProto";
+
+message OrderRequest {
+	int64 OrderID = 1;
+	int64 CustomerID = 2;
+	string Restaurant = 3;
+	message Item {
+    	string Name = 1;
+    	float Price = 2;
+    	int64 Quantity = 3;
+    }
+	repeated Item ItemLine = 4;
+	float Price = 5;
+	int64 Quantity = 6;
+	int64 Discount = 7;
+	string Date = 8;
+}
+
+message AvgPriceInfoRequest {
+	int64 CustomerID = 1;
+	float AvgPrice = 2;
+	int64 AvgOrders = 3;
+}
+
+message AvgPriceInfoResponse {
+	int64 CustomerID = 1;
+	float AvgPrice = 2;
+	int64 AvgOrders = 3;
+}
+
+message TopCustomersRequest {
+	string CustomerID = 1;
+	float Expenditure =2;
+}
+
+message TopCustomersResponse {
+	string CustomerID = 1;
+	float Expenditure =2;
+}
+
+message TopRestaurantsRequest {
+	string Restaurant = 1;
+	float Revenue = 2;
+}
+
+message TopRestaurantsResponse {
+	string Restaurant = 1;
+	float Revenue = 2;
+}
+
+service Order {
+  rpc CreateOrder (OrderRequest) returns (OrderResponse) {}
+  rpc GetAvgPricesOrders(AvgPriceInfoRequest) returns (AvgPriceInfoResponse) {}
+  rpc GetTopCustomers(TopCustomersRequest) returns (TopCustomersResponse) {}
+  rpc GetTopRest (TopRestaurantsRequest) returns (TopRestaurantsResponse) {}
+}
+
+message OrderResponse {
+  int64 OrderID = 1;
+  int64 CustomerID = 2;
+  string Restaurant = 3;
+}
+message OrderFilter {
+  string keyword = 1;
+}
