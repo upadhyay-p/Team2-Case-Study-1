@@ -4,6 +4,7 @@
     <list default="true" id="4094621e-871d-4bbe-b5f2-9e9bc4104620" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Apisgo/Apisgo.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Apisgo/Apisgo.go" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Structs/Structs.go" beforeDir="false" afterPath="$PROJECT_DIR$/src/Structs/Structs.go" afterDir="false" />
     </list>
@@ -33,7 +34,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Apisgo/Apisgo.go">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="397">
@@ -41,6 +42,18 @@
               <folding>
                 <element signature="e#16#247#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="270">
+                <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -105,7 +118,6 @@
         <option value="$PROJECT_DIR$/src/Handlers/Handlers.go" />
         <option value="$PROJECT_DIR$/src/TopRestauBuyers/TopRestauBuyers.go" />
         <option value="$PROJECT_DIR$/src/CSV2JSON/CSV2JSON.go" />
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/src/order/order-proto/order.proto" />
         <option value="$PROJECT_DIR$/src/main.go" />
         <option value="$PROJECT_DIR$/src/order/orderProto/order.pb.go" />
@@ -114,6 +126,7 @@
         <option value="$PROJECT_DIR$/src/server/server.go" />
         <option value="$PROJECT_DIR$/src/order/orderProto/order.proto" />
         <option value="$PROJECT_DIR$/src/Apisgo/Apisgo.go" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -135,42 +148,6 @@
             <path>
               <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
               <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="AvgPrice" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="order" type="462c0819:PsiDirectoryNode" />
-              <item name="orderProto" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="server" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="Team2-Case-Study-1" type="b2602c69:ProjectViewProjectNode" />
-              <item name="Team2-Case-Study-1" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="Structs" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -310,16 +287,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="120">
-            <caret line="8" column="63" selection-start-line="8" selection-start-column="63" selection-end-line="8" selection-end-column="63" />
-          </first_editor>
-          <second_editor />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/AvgPrice/AvgPrice.go">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
@@ -375,6 +342,16 @@
           <folding>
             <element signature="e#16#247#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="270">
+            <caret line="18" column="51" selection-start-line="18" selection-start-column="51" selection-end-line="18" selection-end-column="51" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
