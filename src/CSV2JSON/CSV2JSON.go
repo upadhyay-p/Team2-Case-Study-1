@@ -29,12 +29,13 @@ type order struct {
 }
 
 // Write the orders in json file
-func toJSON(orders []order, filename string) {
+func toJSON(orders []order, filename string) string {
 	f, err := json.MarshalIndent(orders, "", "	")
 	Err.CheckError(err)
 	err = ioutil.WriteFile(filename+".json", f, 0644)
 	Err.CheckError(err)
 	fmt.Println("Output file is stored as: " + filename + ".json")
+	return filename+".json"
 }
 
 // Parse the record into its parameters
@@ -100,9 +101,10 @@ func readCSV(filename string) [][]string {
 }
 
 // Initialise to convert the csv file to json format (json object)
-func INIT(filename string) {
-	fmt.Println("Reading " + filename)
-	records := readCSV(filename)
+func INIT(filename string) string {
+	fmt.Println("Reading " + filename+".csv")
+	records := readCSV(filename+".csv")
 	orders := clubRecords(records)
-	toJSON(orders, filename)
+	outputFIle := toJSON(orders, filename)
+	return outputFIle
 }
