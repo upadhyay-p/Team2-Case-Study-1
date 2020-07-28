@@ -3,7 +3,7 @@ repo for case study 1
 
 ## Lets first have a walkthrough our project :-
 
-![Screenshot](assets/walkthrough.png)
+![Screenshot](assets/walk_through.png)
 
 ### To run this project, follow the below steps :-
 1. Clone this repo.
