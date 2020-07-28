@@ -1,6 +1,10 @@
 # Team2-Case-Study-1
 repo for case study 1
 
+## Lets first have a walkthrough our project :-
+
+![Screenshot](assets/walk_through.png)
+
 ### To run this project, follow the below steps :-
 1. Clone this repo.
 2. Change the GOPATH = pwd of Team2-Case-Study-1
