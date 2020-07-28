@@ -17,24 +17,25 @@ type server struct{}
 func (*server) CreateOrder(ctx context.Context, req *orderProto.OrderRequest) (*orderProto.OrderResponse, error){
 	fmt.Println("Function called... ")
 	//var obj *orderProto.OrderRequest
-	orderID := req.GetOrderID()
-	customerID := req.GetCustomerID()
-	restaurant := req.GetRestaurant()
-	//itemLine := req.GetItemLine()
-	price := req.GetPrice()
-	quantity := req.GetQuantity()
-	discount := req.GetDiscount()
-	date := req.GetDate()
+	orderID := req.OrdReq.GetOrderID()
+	customerID := req.OrdReq.GetCustomerID()
+	restaurant := req.OrdReq.GetRestaurant()
+	itemLine := req.OrdReq.GetItemLine()
+	price := req.OrdReq.GetPrice()
+	quantity := req.OrdReq.GetQuantity()
+	discount := req.OrdReq.GetDiscount()
+	date := req.OrdReq.GetDate()
 
-	res := &orderProto.OrderResponse{
+	res := &orderProto.OrderResponse{OrdRes:&orderProto.OrderStruct{
 		OrderID:    orderID,
 		CustomerID: customerID,
 		Restaurant: restaurant,
-		//ItemLine:   itemLine,
+		ItemLine:   itemLine,
 		Price:      price,
 		Quantity:   quantity,
 		Discount:   discount,
 		Date:       date,
+	},
 	}
 	return res,nil
 

@@ -39,19 +39,20 @@ func GetIndex(c *gin.Context) {
 func GetAllOrders(c *gin.Context) {
 	//c.JSON(http.StatusOK, &data)
 	for i := range data {
-		var items []*orderProto.OrderRequest_Item
+		var items []*orderProto.OrderStruct_Item
 		for j := range data[i].ItemLine {
-			items = append(items,&orderProto.OrderRequest_Item{Name:data[i].ItemLine[j].Name, Price:data[i].ItemLine[j].Price, Quantity:data[i].ItemLine[j].Quantity})
+			items = append(items,&orderProto.OrderStruct_Item{Name:data[i].ItemLine[j].Name, Price:data[i].ItemLine[j].Price, Quantity:data[i].ItemLine[j].Quantity})
 		}
-		req := &orderProto.OrderRequest{
-			OrderID:      data[i].OrderID,
+		req := &orderProto.OrderRequest{OrdReq:&orderProto.OrderStruct{
+			OrderID:    data[i].OrderID,
 			CustomerID: data[i].CustomerID,
-			Restaurant:  data[i].Restaurant,
-			ItemLine: items,
-			Price: data[i].Price,
-			Quantity: data[i].Quantity,
-			Discount: data[i].Discount,
-			Date: data[i].Date,
+			Restaurant: data[i].Restaurant,
+			ItemLine:   items,
+			Price:      data[i].Price,
+			Quantity:   data[i].Quantity,
+			Discount:   data[i].Discount,
+			Date:       data[i].Date,
+		},
 		}
 
 		res, err := OrderClient.CreateOrder(c, req)
@@ -63,14 +64,14 @@ func GetAllOrders(c *gin.Context) {
 		}
 
 		c.JSON(http.StatusOK, gin.H{
-			"orderID": res.OrderID,
-			"customerID": res.CustomerID,
-			"rest": res.Restaurant,
-			//"item": res.ItemLine,
-			"Price": res.Price,
-			"Quantity": res.Quantity,
-			"Discount": res.Discount,
-			"Date": res.Date,
+			"orderID": res.OrdRes.OrderID,
+			"customerID": res.OrdRes.CustomerID,
+			"rest": res.OrdRes.Restaurant,
+			"item": res.OrdRes.ItemLine,
+			"Price": res.OrdRes.Price,
+			"Quantity": res.OrdRes.Quantity,
+			"Discount": res.OrdRes.Discount,
+			"Date": res.OrdRes.Date,
 		})
 	}
 }
