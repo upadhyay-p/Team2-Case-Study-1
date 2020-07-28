@@ -21,15 +21,20 @@ func (*server) CreateOrder(ctx context.Context, req *orderProto.OrderRequest) (*
 	customerID := req.GetCustomerID()
 	restaurant := req.GetRestaurant()
 	//itemLine := req.GetItemLine()
-	//price := req.GetPrice()
-	//quantity := req.GetQuantity()
-	//discount := req.GetDiscount()
-	//date := req.GetDate()
+	price := req.GetPrice()
+	quantity := req.GetQuantity()
+	discount := req.GetDiscount()
+	date := req.GetDate()
 
 	res := &orderProto.OrderResponse{
-		OrderID: orderID,
+		OrderID:    orderID,
 		CustomerID: customerID,
 		Restaurant: restaurant,
+		//ItemLine:   itemLine,
+		Price:      price,
+		Quantity:   quantity,
+		Discount:   discount,
+		Date:       date,
 	}
 	return res,nil
 

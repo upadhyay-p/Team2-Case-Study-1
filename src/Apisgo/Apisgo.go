@@ -66,6 +66,11 @@ func GetAllOrders(c *gin.Context) {
 			"orderID": res.OrderID,
 			"customerID": res.CustomerID,
 			"rest": res.Restaurant,
+			//"item": res.ItemLine,
+			"Price": res.Price,
+			"Quantity": res.Quantity,
+			"Discount": res.Discount,
+			"Date": res.Date,
 		})
 	}
 }
