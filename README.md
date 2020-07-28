@@ -6,6 +6,7 @@ repo for case study 1
 2. Change the GOPATH = pwd of Team2-Case-Study-1
 3. To install gjson, use : go get -u "github.com/tidwall/gjson"
 4. To install GIN, use : go get -u "github.com/gin-gonic/gin"
+5. To install gRPC, use go get -u "google.golang.org/grpc"
 5. Now, run command in Team2-Case-Study-1/src/server -> go run server.go
 6. Now, run command in Team2-Case-Study-1/src -> go run main.go
 
