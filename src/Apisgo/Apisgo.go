@@ -25,7 +25,7 @@ var fname string
 var OrderClient orderProto.OrderClient
 
 type server struct{
-	protoBufData []orderProto.OrderRequest
+
 }
 
 // HomePage for this webserver
