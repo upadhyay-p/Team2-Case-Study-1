@@ -179,6 +179,13 @@ func toJSON() {
 	fmt.Println("Output file is stored as: " + fname)
 }
 
+// for basic authentication
+func basicAuth() gin.HandlerFunc {
+	return gin.BasicAuth(gin.Accounts{
+		"team2": "xurde",
+	})
+}
+
 // for starting the server
 func INIT(filename string) {
 
@@ -199,8 +206,15 @@ func INIT(filename string) {
 	OrderClient = orderProto.NewOrderClient(conn)
 
 
-	router := gin.Default()
+	// router := gin.Default()
+
+	router := gin.New()
+	router.Use(gin.Logger())
+	router.Use(gin.Recovery())
+
 	apiRouter := router.Group("/api")
+	authRouter := router.Group("/auth")
+	authRouter.Use(basicAuth())
 
 	apiRouter.GET("/", GetIndex)
 
@@ -208,11 +222,11 @@ func INIT(filename string) {
 
 	apiRouter.GET("/avg-price", GetAvgPricesOrders)
 
-	apiRouter.GET("/top-buyers/:numBuyers", GetTopBuyers)
+	authRouter.GET("/top-buyers/:numBuyers", GetTopBuyers)
 
-	apiRouter.GET("/top-restaurants/:numRestau", GetTopRestaurants)
+	authRouter.GET("/top-restaurants/:numRestau", GetTopRestaurants)
 
-	apiRouter.POST("/new-order", PostOrder)
+	authRouter.POST("/new-order", PostOrder)
 
 	router.Run("localhost:9001")
 }
