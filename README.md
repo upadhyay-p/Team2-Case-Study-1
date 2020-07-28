@@ -1,7 +1,7 @@
 # Team2-Case-Study-1
 repo for case study 1
 
-## Lets have a walkthrough our project :-
+## Lets first have a walkthrough our project :-
 
 ![Screenshot](assets/walkthrough.png)
 
