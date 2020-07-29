@@ -51,6 +51,7 @@ func FindTopRestaurants (byteValue []byte, numRestau int64) []Structs.TopRestaur
 }
 
 func FindTopBuyers (byteValue []byte, numCust int64) []Structs.TopCustomers{
+	fmt.Println("In top buyers")
 	TopNCustomersList := make([]Structs.TopCustomers, 0)
 	resps := gjson.GetManyBytes(byteValue, "#.CustomerID","#.Price")
 	customersExpenditure := make(map[string] float64)
@@ -72,6 +73,7 @@ func FindTopBuyers (byteValue []byte, numCust int64) []Structs.TopCustomers{
 	}
 	//fmt.Println(len(customersExpenditure))
 
+	fmt.Println("num;[; ", numCust)
 	var TopCustomersList []Structs.TopCustomers
 	for custs, expd := range customersExpenditure {
 		TopCustomersList = append(TopCustomersList, Structs.TopCustomers{custs, expd})
