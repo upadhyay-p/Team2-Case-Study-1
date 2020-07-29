@@ -1,6 +1,7 @@
 package main
 
 import (
+	"Team2CaseStudy1/pkg/order/orderProto"
 	"context"
 	"encoding/json"
 	"fmt"
@@ -10,19 +11,18 @@ import (
 	"log"
 	"net"
 
-	"order/orderProto"
-
 	"strings"
 
-	"AvgPrice"
-	"Structs"
-	"TopRestauBuyers"
+	"Team2CaseStudy1/pkg/AvgPrice"
+	//"Team2CaseStudy1/pkg/Err"
+	"Team2CaseStudy1/pkg/Models"
+	"Team2CaseStudy1/pkg/TopRestauBuyers"
 )
 
-var data []Structs.Order
+var data []Models.Order
 var byteValue []byte
 
-const fname = "../../assets/data.json"
+const fname = "assets/data.json"
 
 type server struct{}
 
@@ -73,7 +73,7 @@ func (*server) GetTopCustomers(ctx context.Context, req *orderProto.TopCustomers
 	fmt.Println("TopCustomer Function called... ")
 	numberOfBuyers := req.GetNum()
 	topCustomersList := TopRestauBuyers.FindTopBuyers(byteValue, numberOfBuyers)
-	fmt.Println(topCustomersList)
+	//fmt.Println(topCustomersList)
 	var allCust []*orderProto.TopCustomer
 	for i := range topCustomersList {
 		allCust = append(allCust, &orderProto.TopCustomer{
@@ -122,16 +122,16 @@ func (*server) PostOrder(ctx context.Context, req *orderProto.PostRequest) (*ord
 		Date:       date,
 	},
 	}
-	var items []Structs.Item
+	var items []Models.Item
 	for i := range itemLine {
-		items = append(items, Structs.Item{
+		items = append(items, Models.Item{
 			Name:     itemLine[i].GetName(),
 			Price:    itemLine[i].GetPrice(),
 			Quantity: itemLine[i].GetQuantity(),
 		})
 	}
 
-	NewOrder := Structs.Order{
+	NewOrder := Models.Order{
 		OrderID:    orderID,
 		CustomerID: customerID,
 		Restaurant: restaurant,
