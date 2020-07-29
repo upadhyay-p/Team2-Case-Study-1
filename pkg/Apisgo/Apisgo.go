@@ -1,12 +1,14 @@
 package Apisgo
 
 import (
-	"AvgPrice"
-	"Structs"
-	"TopRestauBuyers"
+	"Team2CaseStudy1/pkg/AvgPrice"
+	"Team2CaseStudy1/pkg/Err"
+	"Team2CaseStudy1/pkg/Models"
+	"Team2CaseStudy1/pkg/TopRestauBuyers"
+	"Team2CaseStudy1/pkg/order/orderProto"
 	"encoding/json"
 	"fmt"
-	//"io"
+
 	"io/ioutil"
 	"log"
 	"net/http"
@@ -14,18 +16,15 @@ import (
 	"strings"
 
 	"github.com/gin-gonic/gin"
-	"order/orderProto"
-	"Err"
 	"google.golang.org/grpc"
 )
 
-var data []Structs.Order
+var data []Models.Order
 var byteValue []byte
 var fname string
 var OrderClient orderProto.OrderClient
 
-type server struct{
-
+type server struct {
 }
 
 // HomePage for this webserver
@@ -41,9 +40,9 @@ func GetAllOrders(c *gin.Context) {
 	for i := range data {
 		var items []*orderProto.OrderStruct_Item
 		for j := range data[i].ItemLine {
-			items = append(items,&orderProto.OrderStruct_Item{Name:data[i].ItemLine[j].Name, Price:data[i].ItemLine[j].Price, Quantity:data[i].ItemLine[j].Quantity})
+			items = append(items, &orderProto.OrderStruct_Item{Name: data[i].ItemLine[j].Name, Price: data[i].ItemLine[j].Price, Quantity: data[i].ItemLine[j].Quantity})
 		}
-		req := &orderProto.OrderRequest{OrdReq:&orderProto.OrderStruct{
+		req := &orderProto.OrderRequest{OrdReq: &orderProto.OrderStruct{
 			OrderID:    data[i].OrderID,
 			CustomerID: data[i].CustomerID,
 			Restaurant: data[i].Restaurant,
@@ -64,27 +63,26 @@ func GetAllOrders(c *gin.Context) {
 		}
 
 		c.JSON(http.StatusOK, gin.H{
-			"orderID": res.OrdRes.OrderID,
+			"orderID":    res.OrdRes.OrderID,
 			"customerID": res.OrdRes.CustomerID,
-			"rest": res.OrdRes.Restaurant,
-			"item": res.OrdRes.ItemLine,
-			"Price": res.OrdRes.Price,
-			"Quantity": res.OrdRes.Quantity,
-			"Discount": res.OrdRes.Discount,
-			"Date": res.OrdRes.Date,
+			"rest":       res.OrdRes.Restaurant,
+			"item":       res.OrdRes.ItemLine,
+			"Price":      res.OrdRes.Price,
+			"Quantity":   res.OrdRes.Quantity,
+			"Discount":   res.OrdRes.Discount,
+			"Date":       res.OrdRes.Date,
 		})
 	}
 }
 
-
 // To get average order price and average number of orders per customer
 func GetAvgPricesOrders(c *gin.Context) {
 	avgPrices := AvgPrice.INIT(strings.TrimSpace(fname))
-	for i := range avgPrices{
+	for i := range avgPrices {
 		req := &orderProto.AvgPriceInfoRequest{
 			CustomerID: avgPrices[i].CustomerID,
-			AvgPrice: float32(avgPrices[i].AvgPrice),
-			AvgOrders: avgPrices[i].AvgOrders,
+			AvgPrice:   float32(avgPrices[i].AvgPrice),
+			AvgOrders:  avgPrices[i].AvgOrders,
 		}
 		res, err := OrderClient.GetAvgPricesOrders(c, req)
 		if err != nil {
@@ -95,22 +93,21 @@ func GetAvgPricesOrders(c *gin.Context) {
 		}
 
 		c.JSON(http.StatusOK, gin.H{
-			"customerID": res.CustomerID,
-			"avg .price": res.AvgPrice,
+			"customerID":  res.CustomerID,
+			"avg .price":  res.AvgPrice,
 			"avg. orders": res.AvgOrders,
 		})
 	}
 	//c.JSON(http.StatusOK, &avgPrices)
 }
 
-
 // To get "n" top-customers based on expenditure
 func GetTopBuyers(c *gin.Context) {
 	numberOfBuyers, _ := strconv.ParseInt(c.Param("numBuyers"), 10, 64)
 	topCustomersList := TopRestauBuyers.FindTopBuyers(byteValue, numberOfBuyers)
-	for i := range topCustomersList{
+	for i := range topCustomersList {
 		req := &orderProto.TopCustomersRequest{
-			CustomerID: topCustomersList[i].CustomerID,
+			CustomerID:  topCustomersList[i].CustomerID,
 			Expenditure: float32(topCustomersList[i].Expenditure),
 		}
 		res, err := OrderClient.GetTopCustomers(c, req)
@@ -122,23 +119,22 @@ func GetTopBuyers(c *gin.Context) {
 		}
 
 		c.JSON(http.StatusOK, gin.H{
-			"CustomerID": res.CustomerID,
+			"CustomerID":  res.CustomerID,
 			"Expenditure": res.Expenditure,
 		})
 	}
 	//c.JSON(http.StatusOK, &topCustomersList)
 }
 
-
 // To get "n" top-restaurants based on its revenue
 func GetTopRestaurants(c *gin.Context) {
 	numberOfRestaurants, _ := strconv.ParseInt(c.Param("numRestau"), 10, 64)
 	topRestaurantsList := TopRestauBuyers.FindTopRestaurants(byteValue, numberOfRestaurants)
 
-	for i := range topRestaurantsList{
+	for i := range topRestaurantsList {
 		req := &orderProto.TopRestaurantsRequest{
 			Restaurant: topRestaurantsList[i].Restaurant,
-			Revenue: float32(topRestaurantsList[i].Revenue),
+			Revenue:    float32(topRestaurantsList[i].Revenue),
 		}
 		res, err := OrderClient.GetTopRest(c, req)
 		if err != nil {
@@ -150,7 +146,7 @@ func GetTopRestaurants(c *gin.Context) {
 
 		c.JSON(http.StatusOK, gin.H{
 			"Restaurant": res.Restaurant,
-			"Revenue": res.Revenue,
+			"Revenue":    res.Revenue,
 		})
 	}
 	//c.JSON(http.StatusOK, &topRestaurantsList)
@@ -164,7 +160,7 @@ func PostOrder(c *gin.Context) {
 		fmt.Println("Sorry no content found: ", err.Error())
 	}
 
-	var NewOrder Structs.Order
+	var NewOrder Models.Order
 	_ = json.Unmarshal(byteContent, &NewOrder)
 	data = append(data, NewOrder)
 	toJSON()
@@ -201,18 +197,15 @@ func INIT(filename string) {
 	err := json.Unmarshal(byteValue, &data)
 	Err.CheckError(err)
 
-	conn ,err := grpc.Dial("localhost:5051",grpc.WithInsecure())
+	conn, err := grpc.Dial("localhost:5051", grpc.WithInsecure())
 
-	if err!=nil {
+	if err != nil {
 		log.Fatalf("Sorry client cannot talk to server: %v", err)
 	}
 
 	defer conn.Close()
 
 	OrderClient = orderProto.NewOrderClient(conn)
-
-
-	// router := gin.Default()
 
 	router := gin.New()
 	router.Use(gin.Logger())
