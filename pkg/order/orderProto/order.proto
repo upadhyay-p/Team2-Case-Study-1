@@ -1,0 +1,90 @@
+syntax="proto3";
+
+package order;
+
+option go_package="order/orderProto";
+
+
+message OrderStruct {
+    int64 OrderID = 1;
+	int64 CustomerID = 2;
+	string Restaurant = 3;
+	message Item {
+    	string Name = 1;
+    	float Price = 2;
+    	int64 Quantity = 3;
+    }
+	repeated Item ItemLine = 4;
+	float Price = 5;
+	int64 Quantity = 6;
+	int64 Discount = 7;
+	string Date = 8;
+}
+
+message OrderRequest {
+	//OrderStruct ordReq = 1;
+}
+
+message OrderResponse {
+	repeated OrderStruct ordRes = 1;
+}
+
+message AvgPriceInfo{
+    int64 CustomerID = 1;
+	float AvgPrice = 2;
+	int64 AvgOrders = 3;
+}
+
+message AvgPriceInfoRequest {
+
+}
+
+message AvgPriceInfoResponse {
+	repeated AvgPriceInfo res = 1;
+}
+
+message TopCustomer{
+    string CustomerID = 1;
+	float Expenditure =2;
+}
+
+message TopCustomersRequest {
+    int64 Num = 1;
+}
+
+message TopCustomersResponse {
+	repeated TopCustomer res = 1;
+}
+
+message TopRest {
+    string Restaurant = 1;
+	float Revenue = 2;
+}
+message TopRestaurantsRequest {
+    int64 Num = 1;
+}
+
+message TopRestaurantsResponse {
+	repeated TopRest res = 1;
+}
+
+message PostRequest{
+    OrderStruct res = 1;
+}
+
+message PostResponse{
+    OrderStruct res = 1;
+}
+
+service Order {
+  rpc CreateOrder (OrderRequest) returns (OrderResponse) {}
+  rpc GetAvgPricesOrders(AvgPriceInfoRequest) returns (AvgPriceInfoResponse) {}
+  rpc GetTopCustomers(TopCustomersRequest) returns (TopCustomersResponse) {}
+  rpc GetTopRest (TopRestaurantsRequest) returns (TopRestaurantsResponse) {}
+  rpc PostOrder (PostRequest) returns (PostResponse) {}
+}
+
+
+message OrderFilter {
+  string keyword = 1;
+}
