@@ -79,7 +79,7 @@ func FindTopBuyers(byteValue []byte, numCust int64) []Models.TopCustomers {
 	sort.Slice(TopCustomersList, func(i, j int) bool {
 		return TopCustomersList[i].Expenditure > TopCustomersList[j].Expenditure
 	})
-	fmt.Println("The top-5 Buyers having following expenditures are:")
+	fmt.Println("The top Buyers having following expenditures are:")
 	for ind := 0; ind < int(math.Min(float64(numCust), float64(len(TopCustomersList)))); ind++ {
 		fmt.Println(TopCustomersList[ind])
 		TopNCustomersList = append(TopNCustomersList, TopCustomersList[ind])

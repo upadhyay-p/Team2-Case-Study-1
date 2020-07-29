@@ -14,16 +14,16 @@ func AvgPriceReport(filename string) []Models.AvgPriceInfo {
 	file, err := ioutil.ReadFile(filename)
 	Err.CheckError(err)
 
-	ItemPrices := make([]float32, 0, 5)
+	ItemPrices := make([]float64, 0, 5)
 	price := gjson.GetBytes(file, "#.Price").Array()
 
 	for _, val := range price {
-		ItemPrices = append(ItemPrices, float32(val.Float()))
+		ItemPrices = append(ItemPrices, val.Float())
 	}
 
 	cids := gjson.GetBytes(file, "#.CustomerID").Array()
 	custOrders := make(map[int64]int64)
-	custSpend := make(map[int64]float32)
+	custSpend := make(map[int64]float64)
 
 	for i, cid := range cids {
 		_, f := custOrders[cid.Int()]
@@ -38,12 +38,18 @@ func AvgPriceReport(filename string) []Models.AvgPriceInfo {
 	avgPrices := make([]Models.AvgPriceInfo, 0, 50)
 	for cid, cost := range custSpend {
 		n = custOrders[cid]
-		avgP := cost / float32(n)
+		avgP := float32(cost) / float32(n)
 		obj := Models.AvgPriceInfo{CustomerID: cid, AvgPrice: avgP, AvgOrders: n}
 		avgPrices = append(avgPrices, obj)
-		//fmt.Printf("Customer ID: %v No of Orders: %v Average Price: %.2f \n", cid, n, cost/float32(n))
+		//fmt.Printf("Customer ID: %v No of Orders: %v Average Price: %.2f \n", cid, n, cost/float64(n))
 	}
 	return avgPrices
+}
+
+func CheckError(err error) {
+	if err != nil {
+		panic(err)
+	}
 }
 
 func INIT(filename string) []Models.AvgPriceInfo {

@@ -22,39 +22,58 @@ message OrderStruct {
 }
 
 message OrderRequest {
-	OrderStruct ordReq = 1;
+	//OrderStruct ordReq = 1;
+}
+
+message OrderResponse {
+	repeated OrderStruct ordRes = 1;
+}
+
+message AvgPriceInfo{
+    int64 CustomerID = 1;
+	float AvgPrice = 2;
+	int64 AvgOrders = 3;
 }
 
 message AvgPriceInfoRequest {
-	int64 CustomerID = 1;
-	float AvgPrice = 2;
-	int64 AvgOrders = 3;
+
 }
 
 message AvgPriceInfoResponse {
-	int64 CustomerID = 1;
-	float AvgPrice = 2;
-	int64 AvgOrders = 3;
+	repeated AvgPriceInfo res = 1;
+}
+
+message TopCustomer{
+    string CustomerID = 1;
+	float Expenditure =2;
 }
 
 message TopCustomersRequest {
-	string CustomerID = 1;
-	float Expenditure =2;
+    int64 Num = 1;
 }
 
 message TopCustomersResponse {
-	string CustomerID = 1;
-	float Expenditure =2;
+	repeated TopCustomer res = 1;
 }
 
-message TopRestaurantsRequest {
-	string Restaurant = 1;
+message TopRest {
+    string Restaurant = 1;
 	float Revenue = 2;
+}
+message TopRestaurantsRequest {
+    int64 Num = 1;
 }
 
 message TopRestaurantsResponse {
-	string Restaurant = 1;
-	float Revenue = 2;
+	repeated TopRest res = 1;
+}
+
+message PostRequest{
+    OrderStruct res = 1;
+}
+
+message PostResponse{
+    OrderStruct res = 1;
 }
 
 service Order {
@@ -62,11 +81,9 @@ service Order {
   rpc GetAvgPricesOrders(AvgPriceInfoRequest) returns (AvgPriceInfoResponse) {}
   rpc GetTopCustomers(TopCustomersRequest) returns (TopCustomersResponse) {}
   rpc GetTopRest (TopRestaurantsRequest) returns (TopRestaurantsResponse) {}
+  rpc PostOrder (PostRequest) returns (PostResponse) {}
 }
 
-message OrderResponse {
-	OrderStruct ordRes = 1;
-}
 
 message OrderFilter {
   string keyword = 1;
