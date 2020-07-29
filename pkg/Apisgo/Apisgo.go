@@ -1,31 +1,20 @@
 package Apisgo
 
 import (
-	"Team2CaseStudy1/pkg/AvgPrice"
-	"Team2CaseStudy1/pkg/Err"
 	"Team2CaseStudy1/pkg/Models"
-	"Team2CaseStudy1/pkg/TopRestauBuyers"
 	"Team2CaseStudy1/pkg/order/orderProto"
 	"encoding/json"
 	"fmt"
-
 	"io/ioutil"
 	"log"
 	"net/http"
 	"strconv"
-	"strings"
 
 	"github.com/gin-gonic/gin"
 	"google.golang.org/grpc"
 )
 
-var data []Models.Order
-var byteValue []byte
-var fname string
 var OrderClient orderProto.OrderClient
-
-type server struct {
-}
 
 // HomePage for this webserver
 func GetIndex(c *gin.Context) {
@@ -37,118 +26,75 @@ func GetIndex(c *gin.Context) {
 // To get all the orders
 func GetAllOrders(c *gin.Context) {
 	//c.JSON(http.StatusOK, &data)
-	for i := range data {
-		var items []*orderProto.OrderStruct_Item
-		for j := range data[i].ItemLine {
-			items = append(items, &orderProto.OrderStruct_Item{Name: data[i].ItemLine[j].Name, Price: data[i].ItemLine[j].Price, Quantity: data[i].ItemLine[j].Quantity})
-		}
-		req := &orderProto.OrderRequest{OrdReq: &orderProto.OrderStruct{
-			OrderID:    data[i].OrderID,
-			CustomerID: data[i].CustomerID,
-			Restaurant: data[i].Restaurant,
-			ItemLine:   items,
-			Price:      data[i].Price,
-			Quantity:   data[i].Quantity,
-			Discount:   data[i].Discount,
-			Date:       data[i].Date,
-		},
-		}
-
-		res, err := OrderClient.CreateOrder(c, req)
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{
-				"error": err.Error(),
-			})
-			return
-		}
-
-		c.JSON(http.StatusOK, gin.H{
-			"orderID":    res.OrdRes.OrderID,
-			"customerID": res.OrdRes.CustomerID,
-			"rest":       res.OrdRes.Restaurant,
-			"item":       res.OrdRes.ItemLine,
-			"Price":      res.OrdRes.Price,
-			"Quantity":   res.OrdRes.Quantity,
-			"Discount":   res.OrdRes.Discount,
-			"Date":       res.OrdRes.Date,
+	req := &orderProto.OrderRequest{}
+	res, err := OrderClient.CreateOrder(c, req)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
 		})
+		return
 	}
+
+	c.JSON(http.StatusOK, gin.H{"response": res.OrdRes})
+
 }
 
-// To get average order price and average number of orders per customer
+//To get average order price and average number of orders per customer
 func GetAvgPricesOrders(c *gin.Context) {
-	avgPrices := AvgPrice.INIT(strings.TrimSpace(fname))
-	for i := range avgPrices {
-		req := &orderProto.AvgPriceInfoRequest{
-			CustomerID: avgPrices[i].CustomerID,
-			AvgPrice:   float32(avgPrices[i].AvgPrice),
-			AvgOrders:  avgPrices[i].AvgOrders,
-		}
-		res, err := OrderClient.GetAvgPricesOrders(c, req)
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{
-				"error": err.Error(),
-			})
-			return
-		}
+	req := &orderProto.AvgPriceInfoRequest{}
 
-		c.JSON(http.StatusOK, gin.H{
-			"customerID":  res.CustomerID,
-			"avg .price":  res.AvgPrice,
-			"avg. orders": res.AvgOrders,
+	res, err := OrderClient.GetAvgPricesOrders(c, req)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
 		})
+		return
 	}
-	//c.JSON(http.StatusOK, &avgPrices)
+
+	c.JSON(http.StatusOK, gin.H{
+		"response": res.Res,
+	})
+
 }
 
 // To get "n" top-customers based on expenditure
 func GetTopBuyers(c *gin.Context) {
 	numberOfBuyers, _ := strconv.ParseInt(c.Param("numBuyers"), 10, 64)
-	topCustomersList := TopRestauBuyers.FindTopBuyers(byteValue, numberOfBuyers)
-	for i := range topCustomersList {
-		req := &orderProto.TopCustomersRequest{
-			CustomerID:  topCustomersList[i].CustomerID,
-			Expenditure: float32(topCustomersList[i].Expenditure),
-		}
-		res, err := OrderClient.GetTopCustomers(c, req)
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{
-				"error": err.Error(),
-			})
-			return
-		}
-
-		c.JSON(http.StatusOK, gin.H{
-			"CustomerID":  res.CustomerID,
-			"Expenditure": res.Expenditure,
-		})
+	req := &orderProto.TopCustomersRequest{
+		Num: numberOfBuyers,
 	}
+	res, err := OrderClient.GetTopCustomers(c, req)
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"response": res.Res,
+	})
 	//c.JSON(http.StatusOK, &topCustomersList)
 }
 
 // To get "n" top-restaurants based on its revenue
 func GetTopRestaurants(c *gin.Context) {
 	numberOfRestaurants, _ := strconv.ParseInt(c.Param("numRestau"), 10, 64)
-	topRestaurantsList := TopRestauBuyers.FindTopRestaurants(byteValue, numberOfRestaurants)
-
-	for i := range topRestaurantsList {
-		req := &orderProto.TopRestaurantsRequest{
-			Restaurant: topRestaurantsList[i].Restaurant,
-			Revenue:    float32(topRestaurantsList[i].Revenue),
-		}
-		res, err := OrderClient.GetTopRest(c, req)
-		if err != nil {
-			c.JSON(http.StatusInternalServerError, gin.H{
-				"error": err.Error(),
-			})
-			return
-		}
-
-		c.JSON(http.StatusOK, gin.H{
-			"Restaurant": res.Restaurant,
-			"Revenue":    res.Revenue,
-		})
+	req := &orderProto.TopRestaurantsRequest{
+		Num: numberOfRestaurants,
 	}
+	res, err := OrderClient.GetTopRest(c, req)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"response": res.Res,
+	})
 	//c.JSON(http.StatusOK, &topRestaurantsList)
 }
 
@@ -159,29 +105,41 @@ func PostOrder(c *gin.Context) {
 	if err != nil {
 		fmt.Println("Sorry no content found: ", err.Error())
 	}
-
 	var NewOrder Models.Order
 	_ = json.Unmarshal(byteContent, &NewOrder)
-	data = append(data, NewOrder)
-	toJSON()
-
-	c.JSON(http.StatusCreated, gin.H{
-		"message": NewOrder,
-	})
-	fmt.Println("New Entry Added")
-}
-
-// To update the json file  and the byteValue slice
-func toJSON() {
-	byteValue, _ = json.MarshalIndent(data, "", "	  ")
-	err := ioutil.WriteFile(fname, byteValue, 0644)
-	if err != nil {
-		fmt.Println("Error in writing the file")
+	var items []*orderProto.OrderStruct_Item
+	for j := range NewOrder.ItemLine {
+		items = append(items, &orderProto.OrderStruct_Item{Name: NewOrder.ItemLine[j].Name,
+			Price:    NewOrder.ItemLine[j].Price,
+			Quantity: NewOrder.ItemLine[j].Quantity})
 	}
-	fmt.Println("Output file is stored as: " + fname)
+	req := &orderProto.PostRequest{Res: &orderProto.OrderStruct{
+		OrderID:    NewOrder.OrderID,
+		CustomerID: NewOrder.CustomerID,
+		Restaurant: NewOrder.Restaurant,
+		ItemLine:   items,
+		Price:      NewOrder.Price,
+		Quantity:   NewOrder.Quantity,
+		Discount:   NewOrder.Discount,
+		Date:       NewOrder.Date,
+	},
+	}
+
+	res, err := OrderClient.PostOrder(c, req)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{
+		"response": res.Res,
+	})
 }
 
-// for basic authentication
+//// for basic authentication
 func basicAuth() gin.HandlerFunc {
 	return gin.BasicAuth(gin.Accounts{
 		"team2": "xurde",
@@ -189,14 +147,9 @@ func basicAuth() gin.HandlerFunc {
 }
 
 // for starting the server
-func INIT(filename string) {
+func INIT() {
 
 	fmt.Println("hello from API INIT function")
-	fname = filename
-	byteValue, _ = ioutil.ReadFile(filename)
-	err := json.Unmarshal(byteValue, &data)
-	Err.CheckError(err)
-
 	conn, err := grpc.Dial("localhost:5051", grpc.WithInsecure())
 
 	if err != nil {
@@ -206,6 +159,8 @@ func INIT(filename string) {
 	defer conn.Close()
 
 	OrderClient = orderProto.NewOrderClient(conn)
+
+	// router := gin.Default()
 
 	router := gin.New()
 	router.Use(gin.Logger())
