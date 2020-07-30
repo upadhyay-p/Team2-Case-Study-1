@@ -1,27 +1,38 @@
 # Team2-Case-Study-1
-Repo for Case Study 1
+Repo for case study 1
 
-![Screenshot](assets/walk_through.png)
+### To run this project, follow the below steps :
+-  Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
+-  Start the Servers : `make server`
 
-### Libraries Required (Automatically get installed while running the application)
-1. To install gjson, use : `go get -u "github.com/tidwall/gjson"`
-2. To install GIN, use : `go get -u "github.com/gin-gonic/gin"`
-3. To install gRPC, use : `go get -u "google.golang.org/grpc"`
+### To Perform Unit Testing :
+- Customer API Testing: run `make c-tests`
+- Restaurant API Testing: run `make r-tests`
 
-### To run this project, follow the below steps :-
-- Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
-- Initialise the DB with: `go run cmd/DB/main.go`
-- Start the Application using command: `go run cmd/API/main.go`
-- Start the gRPC Serve using command: `go run cmd/Server/main.go`
 
-### Now, The webserver will run on localhost:9001.
+### EndPoints exposed by the API to deal with Customer and Orders: 
 
-To fetch different query :
-- `"localhost:9001/api"` for HomePage
-- `"localhost:9001/api/orders"` for fetching all orders
-- `"localhost:9001/api/avg-price"` for average price of orders per customer
-- `"localhost:9001/auth/top-buyers/:numBuyers"` for top-customers based on expenditure
-- `"localhost:9001/auth/top-restaurants/:numRestau"` for top-restaurants based on its revenue
-- `"localhost:9001/auth/new-order"` to place a new order
+- `POST /login`                 Sign in the Admin to use the API
+- `POST /customer`              Add a new customer
+- `GET /customers`              Get all customers
+- `GET /customer/{cid}`         Get a particular customer  
+- `GET /customer{cid}/orders`   Get all orders of a particular customer
+- `POST /order`                 Add a new order
+- `GET /order/{oid}`            Get a particular order
+- `PUT /order`                  Update an existing order
+- `PUT /order/item`             Add item to an order
+- `DELETE /order{oid}`          Delete an order
+- `DELETE /order/{oid}/{item}`  Delete an item from the order
+- `POST /order/discount`        Apply discount coupon to an order [need to verify this]
 
-#### The url with `auth` in path will require `username` = `team2` & `password` = `xurde`
+### EndPoints exposed by the API to deal with Restaurants:
+  
+- `POST /restaurant`                                    Add a new Restaurant
+- `GET /restaurants`                                    Get all restaurant
+- `GET /restaurant/{rid}`                               Get a particular restaurant
+- `POST /restaurant/item`                               Add a new item to a restaurant
+- `PUT /restaurant/item`                                Update an item to a restaurant
+- `DELETE /restaurant/{rid}/item`                       Delete an item from a restaurant
+- `GET /restaurant/{rid}/items`                         Get all items from a restaurant
+- `GET /restaurant/{rid}/item/{itemId}`                 Get particular item from a restaurant
+- `GET /restaurant/{rid}/items?min={min}&max={max}`     Get items from a restaurant in a price range
