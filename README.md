@@ -1,21 +1,38 @@
 # Team2-Case-Study-1
-repo for case study 1
+Repo for case study 1
 
-### To run this project, follow the below steps :-
-1. Clone this repo.
-2. Change the GOPATH = pwd of Team2-Case-Study-1
-3. To install gjson, use : go get -u "github.com/tidwall/gjson"
-4. To install GIN, use : go get -u "github.com/gin-gonic/gin"
-5. Now, run command in Team2-Case-Study-1/src -> go run main.go
+### To run this project, follow the below steps :
+-  Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
+-  Start the Servers : `make server`
 
-### Now, The webserver will run on localhost:9001.
+### To Perform Unit Testing :
+- Customer API Testing: run `make c-tests`
+- Restaurant API Testing: run `make r-tests`
 
-To fetch different query :-
-*  "localhost:9001/api" for HomePage
-*  "localhost:9001/api/orders" for fetching all orders
-*  "localhost:9001/api/avg-price" for average price of orders per customer
-*  "localhost:9001/auth/top-buyers/:numBuyers" for top-customers based on expenditure
-*  "localhost:9001/auth/top-restaurants/:numRestau" for top-restaurants based on its revenue
-*  "localhost:9001/auth/new-order" to place a new order
 
-#### The url with "auth" in path will require username = team2 & password = xurde
+### EndPoints exposed by the API to deal with Customer and Orders: 
+
+- `POST /login`                 Sign in the Admin to use the API
+- `POST /customer`              Add a new customer
+- `GET /customers`              Get all customers
+- `GET /customer/{cid}`         Get a particular customer  
+- `GET /customer{cid}/orders`   Get all orders of a particular customer
+- `POST /order`                 Add a new order
+- `GET /order/{oid}`            Get a particular order
+- `PUT /order`                  Update an existing order
+- `PUT /order/item`             Add item to an order
+- `DELETE /order{oid}`          Delete an order
+- `DELETE /order/{oid}/{item}`  Delete an item from the order
+- `POST /order/discount`        Apply discount coupon to an order [need to verify this]
+
+### EndPoints exposed by the API to deal with Restaurants:
+  
+- `POST /restaurant`                                    Add a new Restaurant
+- `GET /restaurants`                                    Get all restaurant
+- `GET /restaurant/{rid}`                               Get a particular restaurant
+- `POST /restaurant/item`                               Add a new item to a restaurant
+- `PUT /restaurant/item`                                Update an item to a restaurant
+- `DELETE /restaurant/{rid}/item`                       Delete an item from a restaurant
+- `GET /restaurant/{rid}/items`                         Get all items from a restaurant
+- `GET /restaurant/{rid}/item/{itemId}`                 Get particular item from a restaurant
+- `GET /restaurant/{rid}/items?min={min}&max={max}`     Get items from a restaurant in a price range

@@ -1,25 +1,25 @@
 package TopRestauBuyers
 
 import (
+	"Team2CaseStudy1/pkg/Err"
+	"Team2CaseStudy1/pkg/Models"
 	"fmt"
-	"github.com/tidwall/gjson"
 	"io/ioutil"
 	"math"
 	"os"
 	"sort"
-	"Err"
-	"Structs"
+
+	"github.com/tidwall/gjson"
 )
 
-
-func FindTopRestaurants (byteValue []byte, numRestau int64) []Structs.TopRestaurants {
-	TopNRestaurantsList := make([] Structs.TopRestaurants, 0)
-	resps := gjson.GetManyBytes(byteValue, "#.Restaurant","#.Price")
-	restaurantsRevenue := make(map[string] float64)
+func FindTopRestaurants(byteValue []byte, numRestau int64) []Models.TopRestaurants {
+	TopNRestaurantsList := make([]Models.TopRestaurants, 0)
+	resps := gjson.GetManyBytes(byteValue, "#.Restaurant", "#.Price")
+	restaurantsRevenue := make(map[string]float64)
 	var restaurants []string
 	var revenues []float64
-	for i,resp := range resps {
-		if i==0 {
+	for i, resp := range resps {
+		if i == 0 {
 			for _, rest := range resp.Array() {
 				restaurants = append(restaurants, rest.String())
 			}
@@ -34,9 +34,9 @@ func FindTopRestaurants (byteValue []byte, numRestau int64) []Structs.TopRestaur
 	}
 	//fmt.Println(len(restaurantsRevenue))
 
-	var TopRestaurantsList []Structs.TopRestaurants
+	var TopRestaurantsList []Models.TopRestaurants
 	for rests, revs := range restaurantsRevenue {
-		TopRestaurantsList = append(TopRestaurantsList, Structs.TopRestaurants{rests, revs})
+		TopRestaurantsList = append(TopRestaurantsList, Models.TopRestaurants{Restaurant: rests, Revenue: float32(revs)})
 	}
 	sort.Slice(TopRestaurantsList, func(i, j int) bool {
 		return TopRestaurantsList[i].Revenue > TopRestaurantsList[j].Revenue
@@ -50,14 +50,14 @@ func FindTopRestaurants (byteValue []byte, numRestau int64) []Structs.TopRestaur
 	return TopNRestaurantsList
 }
 
-func FindTopBuyers (byteValue []byte, numCust int64) []Structs.TopCustomers{
-	TopNCustomersList := make([]Structs.TopCustomers, 0)
-	resps := gjson.GetManyBytes(byteValue, "#.CustomerID","#.Price")
-	customersExpenditure := make(map[string] float64)
+func FindTopBuyers(byteValue []byte, numCust int64) []Models.TopCustomers {
+	TopNCustomersList := make([]Models.TopCustomers, 0)
+	resps := gjson.GetManyBytes(byteValue, "#.CustomerID", "#.Price")
+	customersExpenditure := make(map[string]float64)
 	var customers []string
 	var expenditure []float64
-	for i,resp := range resps {
-		if i==0 {
+	for i, resp := range resps {
+		if i == 0 {
 			for _, rest := range resp.Array() {
 				customers = append(customers, rest.String())
 			}
@@ -72,17 +72,17 @@ func FindTopBuyers (byteValue []byte, numCust int64) []Structs.TopCustomers{
 	}
 	//fmt.Println(len(customersExpenditure))
 
-	var TopCustomersList []Structs.TopCustomers
+	var TopCustomersList []Models.TopCustomers
 	for custs, expd := range customersExpenditure {
-		TopCustomersList = append(TopCustomersList, Structs.TopCustomers{custs, expd})
+		TopCustomersList = append(TopCustomersList, Models.TopCustomers{CustomerID: custs, Expenditure: float32(expd)})
 	}
 	sort.Slice(TopCustomersList, func(i, j int) bool {
 		return TopCustomersList[i].Expenditure > TopCustomersList[j].Expenditure
 	})
-	fmt.Println("The top-5 Buyers having following expenditures are:")
+	fmt.Println("The top Buyers having following expenditures are:")
 	for ind := 0; ind < int(math.Min(float64(numCust), float64(len(TopCustomersList)))); ind++ {
 		fmt.Println(TopCustomersList[ind])
-		TopNCustomersList = append(TopNCustomersList,TopCustomersList[ind] )
+		TopNCustomersList = append(TopNCustomersList, TopCustomersList[ind])
 	}
 	return TopNCustomersList
 }
@@ -94,12 +94,11 @@ func RestauBuyers(filename string) {
 	defer jsonFile.Close()
 
 	byteValue, _ := ioutil.ReadAll(jsonFile)
-	FindTopRestaurants(byteValue, 5)      // number of top restaurants you want
-	FindTopBuyers(byteValue, 5)			   // number of top customer who buys most
+	FindTopRestaurants(byteValue, 5) // number of top restaurants you want
+	FindTopBuyers(byteValue, 5)      // number of top customer who buys most
 }
 
 func INIT(filename string) {
 	fmt.Println("Reading json file" + filename)
 	RestauBuyers(filename)
 }
-
