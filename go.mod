@@ -3,9 +3,8 @@ module Team2CaseStudy1
 go 1.14
 
 require (
-	github.com/gin-gonic/gin v1.6.3
-	github.com/golang/protobuf v1.4.2
-	github.com/tidwall/gjson v1.6.0
-	google.golang.org/grpc v1.30.0
-	google.golang.org/protobuf v1.25.0
+	github.com/aws/aws-sdk-go v1.33.15
+	github.com/davecgh/go-spew v1.1.1 // indirect
+	golang.org/x/text v0.3.2 // indirect
+	gopkg.in/yaml.v2 v2.2.8 // indirect
 )

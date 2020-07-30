@@ -1,5 +1,5 @@
 # Team2-Case-Study-1
-Repo for case study 1
+Repository for Case Study 1
 
 ### To run this project, follow the below steps :
 -  Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
