@@ -23,7 +23,7 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 		// fmt.Println("Customer is: ", customer)
 
 		params := &dynamodb.PutItemInput{
-			TableName: aws.String("T1-Customer"),
+			TableName: aws.String("T2-Customer"),
 			Item:      customerItem,
 		}
 
@@ -43,7 +43,7 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 	name := "Simonette"
 
 	params := &dynamodb.GetItemInput{
-		TableName: aws.String("T1-Customer"),
+		TableName: aws.String("T2-Customer"),
 		Key: map[string]*dynamodb.AttributeValue{
 			"CustomerId": {
 				S: aws.String(customerID),

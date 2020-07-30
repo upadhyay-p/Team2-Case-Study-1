@@ -10,7 +10,7 @@ import (
 func CustomerDBInit(db *dynamodb.DynamoDB, filename string) {
 
 	awsParams := &dynamodb.CreateTableInput{
-		TableName: aws.String("T1-Customer"),
+		TableName: aws.String("T2-Customer"),
 		KeySchema: []*dynamodb.KeySchemaElement{
 			{AttributeName: aws.String("CustomerId"), KeyType: aws.String("HASH")},
 			{AttributeName: aws.String("Name"), KeyType: aws.String("RANGE")},
