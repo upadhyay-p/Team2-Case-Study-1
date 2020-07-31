@@ -7,18 +7,18 @@ import (
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 )
 
-func CustomerDBInit(db *dynamodb.DynamoDB, filename string) {
+func OrderDBInit(db *dynamodb.DynamoDB, filename string) {
 
 	awsParams := &dynamodb.CreateTableInput{
-		TableName: aws.String("T2-Customer"),
+		TableName: aws.String("T2-Order"),
 		KeySchema: []*dynamodb.KeySchemaElement{
-			{AttributeName: aws.String("CustomerId"), KeyType: aws.String("HASH")},
-			{AttributeName: aws.String("Name"), KeyType: aws.String("RANGE")},
+			{AttributeName: aws.String("OrderId"), KeyType: aws.String("HASH")},
+			{AttributeName: aws.String("CustomerId"), KeyType: aws.String("RANGE")},
 		},
 
 		AttributeDefinitions: []*dynamodb.AttributeDefinition{
+			{AttributeName: aws.String("OrderId"), AttributeType: aws.String("N")},
 			{AttributeName: aws.String("CustomerId"), AttributeType: aws.String("N")},
-			{AttributeName: aws.String("Name"), AttributeType: aws.String("S")},
 		},
 
 		ProvisionedThroughput: &dynamodb.ProvisionedThroughput{

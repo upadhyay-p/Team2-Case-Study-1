@@ -1,0 +1,19 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "_id",
+            "AttributeType": "S"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 10,
+        "ReadCapacityUnits": 5
+    },
+    "TableName": "customers",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "_id"
+        }
+    ]
+}

@@ -1,18 +1,15 @@
 package Models
 
 type Item struct {
-	Name     string
-	Price    float32
-	Quantity int64
+	Name  string
+	Price float32
 }
 
 type Order struct {
-	OrderID    int64
-	CustomerID int64
-	Restaurant string
-	ItemLine   []Item
-	Price      float32
-	Quantity   int64
-	Discount   int64
-	Date       string
+	OrderId      int64
+	CustomerId   int64
+	RestaurantId int64
+	ItemLine     []Item
+	Price        float32
+	Discount     int64
 }
