@@ -1,40 +1,25 @@
-package CSV2JSON
+package Controller
 
 import (
 	"Team2CaseStudy1/pkg/Err"
-	"Team2CaseStudy1/pkg/Models"
+	"Team2CaseStudy1/pkg/Order/Models"
 	"encoding/csv"
-	"encoding/json"
 	"fmt"
 	"io"
-	"io/ioutil"
 	"os"
 	"strconv"
 )
 
-// Write the orders in json file
-func toJSON(orders []Models.Order, filename string) string {
-	f, err := json.MarshalIndent(orders, "", "	")
-	Err.CheckError(err)
-	err = ioutil.WriteFile(filename+".json", f, 0644)
-	Err.CheckError(err)
-	fmt.Println("Output file is stored as: " + filename + ".json")
-	return filename + ".json"
-}
-
 // Parse the record into its parameters
 func parseRecord(record []string) Models.Order {
-	OID, _ := strconv.ParseInt(record[0], 10, 64)
-	CID, _ := strconv.ParseInt(record[1], 10, 64)
-	Rest := record[2]
-	itemName := record[3]
-	Price, _ := strconv.ParseFloat(record[4], 64)
-	Quantity, _ := strconv.ParseInt(record[5], 10, 64)
-	Discount, _ := strconv.ParseInt(record[6], 10, 64)
-	date := record[7]
-	// PriceF := float32(Price)
-	itemObj := Models.Item{Name: itemName, Price: float32(Price), Quantity: Quantity}
-	orderObj := Models.Order{OrderID: OID, CustomerID: CID, Restaurant: Rest, ItemLine: []Models.Item{itemObj}, Price: float32(Price), Quantity: Quantity, Discount: Discount, Date: date}
+	OID := record[0]
+	CID := record[1]
+	RestID := record[2]
+	Discount := record[3]
+	itemName := record[4]
+	Cost := record[5]
+	itemObj := Models.Item{Name: itemName, Price: Cost}
+	orderObj := Models.Order{OrderId: OID, CustomerId: CID, RestaurantId: RestID, ItemLine: []Models.Item{itemObj}, Price: Cost, Discount: Discount}
 	return orderObj
 }
 
@@ -57,8 +42,11 @@ func clubRecords(records [][]string) []Models.Order {
 		} else {
 			itemObj = tempObj.ItemLine[0]
 			orderObj.ItemLine = append(orderObj.ItemLine, itemObj)
-			orderObj.Price += itemObj.Price
-			orderObj.Quantity += itemObj.Quantity
+			orderObjPrice, _ := strconv.ParseFloat(orderObj.Price, 64)
+			itemObjPrice, _ := strconv.ParseFloat(itemObj.Price, 64)
+			orderObjPrice += itemObjPrice
+			orderObj.Price = fmt.Sprintf("%.2f", orderObjPrice)
+
 		}
 	}
 	clubbedRecords = append(clubbedRecords, orderObj)
@@ -86,10 +74,9 @@ func readCSV(filename string) [][]string {
 }
 
 // Initialise to convert the csv file to json format (json object)
-func INIT(filename string) string {
+func CsvDataForDynamoDB(filename string) []Models.Order {
 	fmt.Println("Reading " + filename)
 	records := readCSV(filename)
 	orders := clubRecords(records)
-	outputFIle := toJSON(orders, filename)
-	return outputFIle
+	return orders
 }
