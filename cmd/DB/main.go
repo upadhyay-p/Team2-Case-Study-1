@@ -3,7 +3,6 @@ package main
 import (
 	CustomerController "Team2CaseStudy1/pkg/Customer/Controller"
 	OrderController "Team2CaseStudy1/pkg/Order/Controller"
-
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
