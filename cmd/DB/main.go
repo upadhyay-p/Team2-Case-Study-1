@@ -1,7 +1,8 @@
 package main
 
 import (
-	"Team2CaseStudy1/pkg/Customer/Controller"
+	CustomerController "Team2CaseStudy1/pkg/Customer/Controller"
+	OrderController "Team2CaseStudy1/pkg/Order/Controller"
 
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
@@ -13,8 +14,7 @@ func main() {
 		Endpoint: aws.String("http://localhost:8000"),
 		Region:   aws.String("us-east-1"),
 	}))
-
 	db := dynamodb.New(sess)
-	Controller.CustomerDBInit(db, "../../assets/customer.csv")
-
+	CustomerController.CustomerDBInit(db, "../../assets/customer.csv")
+	OrderController.OrderDBInit(db, "../../assets/orders.csv")
 }
