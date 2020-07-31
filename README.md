@@ -36,3 +36,63 @@ Repository for Case Study 1
 - `GET /restaurant/{rid}/items`                         Get all items from a restaurant
 - `GET /restaurant/{rid}/item/{itemId}`                 Get particular item from a restaurant
 - `GET /restaurant/{rid}/items?min={min}&max={max}`     Get items from a restaurant in a price range
+
+### Data Model of the DB
+
+Customer
+----
+
+```json
+{
+    "_id": "<string>",
+    "name": "<string>",
+    "phone": "<string>",
+    "addr": "<string>"
+}
+```
+
+Order
+----
+
+```json
+{
+    "_id": "<string>",
+    "c_id": "<string>",
+    "r_id": "<string>",
+    "itemline": [
+        {
+            "name":"<string>",
+            "price":"<string>"
+        },
+        {
+            "name":"<string>",
+            "price":"<string>"
+        }
+    ],
+    "price":"<string>",
+    "discount":"<string>"
+}
+```
+
+Restaurant
+----
+
+```json
+{
+    "_id": "<string>",
+    "name": "<string>",
+    "online": "<string>",
+    "menu": [
+        {
+            "name":"<string>",
+            "price":"<string>"
+        },
+        {
+            "name":"<string>",
+            "price":"<string>"
+        }
+    ],
+    "rating":"<string>",
+    "category":"<string>"
+}
+```
