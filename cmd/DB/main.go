@@ -2,7 +2,7 @@ package main
 
 import (
 	"Team2CaseStudy1/pkg/Customer/Controller"
-
+	"Team2CaseStudy1/pkg/Restaurant/InitDB"
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
@@ -16,5 +16,5 @@ func main() {
 
 	db := dynamodb.New(sess)
 	Controller.CustomerDBInit(db, "../../assets/customer.csv")
-
+	InitDB.InitRestaurant(db,"../../assets/rest.csv")
 }
