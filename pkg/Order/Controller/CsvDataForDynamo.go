@@ -12,14 +12,14 @@ import (
 
 // Parse the record into its parameters
 func parseRecord(record []string) Models.Order {
-	OID := record[0]
-	CID := record[1]
-	RestID := record[2]
-	Discount := record[3]
+	OID, _ := strconv.ParseInt(record[0], 10, 64)
+	CID, _ := strconv.ParseInt(record[1], 10, 64)
+	RestID, _ := strconv.ParseInt(record[2], 10, 64)
+	Discount, _ := strconv.ParseInt(record[3], 10, 64)
 	itemName := record[4]
-	Cost := record[5]
-	itemObj := Models.Item{Name: itemName, Price: Cost}
-	orderObj := Models.Order{OrderId: OID, CustomerId: CID, RestaurantId: RestID, ItemLine: []Models.Item{itemObj}, Price: Cost, Discount: Discount}
+	Cost, _ := strconv.ParseFloat(record[5], 64)
+	itemObj := Models.Item{Name: itemName, Price: float32(Cost)}
+	orderObj := Models.Order{OrderId: OID, CustomerId: CID, RestaurantId: RestID, ItemLine: []Models.Item{itemObj}, Price: float32(Cost), Discount: Discount}
 	return orderObj
 }
 
@@ -42,11 +42,7 @@ func clubRecords(records [][]string) []Models.Order {
 		} else {
 			itemObj = tempObj.ItemLine[0]
 			orderObj.ItemLine = append(orderObj.ItemLine, itemObj)
-			orderObjPrice, _ := strconv.ParseFloat(orderObj.Price, 64)
-			itemObjPrice, _ := strconv.ParseFloat(itemObj.Price, 64)
-			orderObjPrice += itemObjPrice
-			orderObj.Price = fmt.Sprintf("%.2f", orderObjPrice)
-
+			orderObj.Price += itemObj.Price
 		}
 	}
 	clubbedRecords = append(clubbedRecords, orderObj)

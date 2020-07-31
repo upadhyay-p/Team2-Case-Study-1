@@ -46,7 +46,7 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 		TableName: aws.String("T2-Customer"),
 		Key: map[string]*dynamodb.AttributeValue{
 			"CustomerId": {
-				S: aws.String(customerID),
+				N: aws.String(customerID),
 			},
 			"Name": {
 				S: aws.String(name),
