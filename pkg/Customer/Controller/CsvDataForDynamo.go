@@ -7,11 +7,12 @@ import (
 	"fmt"
 	"io"
 	"os"
+	"strconv"
 )
 
 // Parse the record into its parameters
 func parseRecord(record []string) Models.Customer {
-	CID := record[0]
+	CID, _ := strconv.ParseInt(record[0], 10, 64)
 	CName := record[1]
 	CAddress := record[2]
 	CPhone := record[3]

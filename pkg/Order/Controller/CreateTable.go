@@ -17,8 +17,8 @@ func OrderDBInit(db *dynamodb.DynamoDB, filename string) {
 		},
 
 		AttributeDefinitions: []*dynamodb.AttributeDefinition{
-			{AttributeName: aws.String("OrderId"), AttributeType: aws.String("S")},
-			{AttributeName: aws.String("CustomerId"), AttributeType: aws.String("S")},
+			{AttributeName: aws.String("OrderId"), AttributeType: aws.String("N")},
+			{AttributeName: aws.String("CustomerId"), AttributeType: aws.String("N")},
 		},
 
 		ProvisionedThroughput: &dynamodb.ProvisionedThroughput{

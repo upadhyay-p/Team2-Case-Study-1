@@ -2,14 +2,14 @@ package Models
 
 type Item struct {
 	Name  string
-	Price string
+	Price float32
 }
 
 type Order struct {
-	OrderId      string
-	CustomerId   string
-	RestaurantId string
+	OrderId      int64
+	CustomerId   int64
+	RestaurantId int64
 	ItemLine     []Item
-	Price        string
-	Discount     string
+	Price        float32
+	Discount     int64
 }

@@ -1,7 +1,7 @@
 package Models
 
 type Customer struct {
-	CustomerId string
+	CustomerId int64
 	Name       string
 	Address    string
 	Phone      string

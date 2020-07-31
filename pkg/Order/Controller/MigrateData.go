@@ -39,17 +39,17 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 
 	// to check the data
 	// query parameters
-	orderID := "2"
-	customerID := "278"
+	orderID := "4"
+	customerID := "395"
 
 	params := &dynamodb.GetItemInput{
 		TableName: aws.String("T2-Order"),
 		Key: map[string]*dynamodb.AttributeValue{
 			"OrderId": {
-				S: aws.String(orderID),
+				N: aws.String(orderID),
 			},
 			"CustomerId": {
-				S: aws.String(customerID),
+				N: aws.String(customerID),
 			},
 		},
 	}
@@ -58,4 +58,5 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 		fmt.Println("Sorry item not found...")
 	}
 	fmt.Println(resp)
+	fmt.Println("Migration of Order table completed")
 }
