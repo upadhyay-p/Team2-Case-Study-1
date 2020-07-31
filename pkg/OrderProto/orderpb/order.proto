@@ -1,0 +1,85 @@
+// to compile this file
+// go get -u github.com/golang/protobuf/protoc-gen-go
+// find GOPATH using go env GOPATH
+// export PATH=$PATH:GOPATH/bin
+// protoc OrderProto/orderpb/order.proto --go_out=plugins=grpc:.
+syntax="proto3";
+
+package OrderProto;
+
+option go_package="OrderProto/orderpb";
+
+message Item {
+    string Name = 1;
+   	float Price = 2;
+}
+
+message Order {
+    int64 OrderID = 1;
+	int64 CustomerID = 2;
+	string RestaurantID = 3;
+	repeated Item ItemLine = 4;
+	float Price = 5;
+	int64 Discount = 7;
+}
+
+message Customer {
+	int64 CustomerID = 1;
+	string Name = 2;
+	string Phone = 3;
+    string Address = 4;
+}
+
+message Restaurant {
+    int64 RestaurantID = 1;
+    string Name = 2;
+    string Available = 3;
+    repeated Item ItemLine = 4;
+    float Rating = 5;
+    string Category = 6;
+}
+
+message OrderRequest{
+   //Order ord = 1;
+}
+
+message OrderResponse{
+    //repeated Order res = 1;
+    string dummyRes = 1;
+}
+
+message CustomerRequest{
+   //Customer cust = 1;
+}
+
+message CustomerResponse{
+    //repeated Customer res = 1;
+    string dummyRes = 1;
+}
+
+message RestaurantRequest{
+   // Restaurant rest = 1;
+}
+
+message RestaurantResponse{
+    //repeated Restaurant res = 1;
+    string dummyRes = 1;
+}
+
+message NoParamRequest {
+
+}
+
+message PostResponse {
+    string dummyRes = 1;
+}
+
+service QueryService {
+    rpc AddOrder (OrderRequest) returns (PostResponse) {}
+    rpc AddCustomer (CustomerRequest) returns (PostResponse) {}
+    rpc AddRestaurant (RestaurantRequest) returns (PostResponse) {}
+
+    rpc GetOrders (NoParamRequest) returns (OrderResponse) {}
+    rpc GetCustomers (NoParamRequest) returns (CustomerResponse) {}
+    rpc GetRestaurants (NoParamRequest) returns (RestaurantResponse) {}
+}
