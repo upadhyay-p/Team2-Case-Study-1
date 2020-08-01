@@ -1,4 +1,4 @@
-package Controller
+package DBInit
 
 import (
 	"fmt"
@@ -11,11 +11,11 @@ import (
 func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 
 	// Get table items from customer.csv
-	orderList := CsvDataForDynamoDB(filename)
+	customerList := CsvDataForDynamoDB(filename)
 
-	for _, order := range orderList {
+	for _, customer := range customerList {
 
-		orderItem, err := dynamodbattribute.MarshalMap(order)
+		customerItem, err := dynamodbattribute.MarshalMap(customer)
 
 		if err != nil {
 			panic("Got error marshalling Customer map: dynamodb")
@@ -23,8 +23,8 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 		// fmt.Println("Customer is: ", customer)
 
 		params := &dynamodb.PutItemInput{
-			TableName: aws.String("T2-Order"),
-			Item:      orderItem,
+			TableName: aws.String("T2-Customer"),
+			Item:      customerItem,
 		}
 
 		// fmt.Println("CustomerParams is: ", params)
@@ -39,17 +39,17 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 
 	// to check the data
 	// query parameters
-	orderID := "4"
-	customerID := "395"
+	customerID := "6"
+	name := "Simonette"
 
 	params := &dynamodb.GetItemInput{
-		TableName: aws.String("T2-Order"),
+		TableName: aws.String("T2-Customer"),
 		Key: map[string]*dynamodb.AttributeValue{
-			"OrderId": {
-				N: aws.String(orderID),
-			},
 			"CustomerId": {
 				N: aws.String(customerID),
+			},
+			"Name": {
+				S: aws.String(name),
 			},
 		},
 	}
@@ -58,5 +58,4 @@ func MigrateCustomerData(db *dynamodb.DynamoDB, filename string) {
 		fmt.Println("Sorry item not found...")
 	}
 	fmt.Println(resp)
-	fmt.Println("Migration of Order table completed")
 }

@@ -1,29 +1,39 @@
 package main
 
 import (
+	CustomerServices "Team2CaseStudy1/pkg/Customer/Services"
+	OrderServices "Team2CaseStudy1/pkg/Order/Services"
+	// CustomerModels "Team2CaseStudy1/pkg/Customer/Models"
 	"Team2CaseStudy1/pkg/OrderProto/orderpb"
 	"context"
 	"fmt"
-
 	"log"
 	"net"
 
+	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/session"
+	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"google.golang.org/grpc"
 )
+
+// var customerTable []CustomerModels.Customer
+var allCustomers []*orderpb.Customer
+var allOrders []*orderpb.Order
 
 type server struct{}
 
 // fetch orders from db and give it as response to client
 func (*server) GetOrders(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.OrderResponse, error) {
 	fmt.Println("GetOrders Function called... ")
-	res := &orderpb.OrderResponse{DummyRes: "Hi this is a test call"}
+	res := &orderpb.OrderResponse{Res: allOrders}
 	return res, nil
 }
 
 // fetch customers from db and give it as response to client
 func (*server) GetCustomers(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.CustomerResponse, error) {
 	fmt.Println("GetCustomers Function called... ")
-	res := &orderpb.CustomerResponse{DummyRes: "Hi this is a test call"}
+
+	res := &orderpb.CustomerResponse{Res: allCustomers}
 	return res, nil
 }
 
@@ -55,11 +65,17 @@ func (*server) AddRestaurant(ctx context.Context, req *orderpb.RestaurantRequest
 	return res, nil
 }
 
-
-
-
 func main() {
 	fmt.Println("Hello from grpc server.")
+
+	sess := session.Must(session.NewSession(&aws.Config{
+		Endpoint: aws.String("http://localhost:8000"),
+		Region:   aws.String("us-east-1"),
+	}))
+	db := dynamodb.New(sess)
+
+	allCustomers = CustomerServices.FetchCustomerTable(db)
+	allOrders = OrderServices.FetchOrderTable(db)
 
 	lis, err := net.Listen("tcp", "0.0.0.0:5051")
 	if err != nil {

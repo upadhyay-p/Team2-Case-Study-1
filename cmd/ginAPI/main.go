@@ -29,10 +29,9 @@ func GetAllOrders(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"response": res.DummyRes})
+	c.JSON(http.StatusOK, gin.H{"response": res.Res})
 
 }
-
 
 // To get all the customers
 func GetAllCustomers(c *gin.Context) {
@@ -45,7 +44,7 @@ func GetAllCustomers(c *gin.Context) {
 		return
 	}
 
-	c.JSON(http.StatusOK, gin.H{"response": res.DummyRes})
+	c.JSON(http.StatusOK, gin.H{"response": res.Res})
 
 }
 
@@ -124,7 +123,6 @@ func PostCustomer(c *gin.Context) {
 	})
 }
 
-
 // To place a new order
 func PostRestaurant(c *gin.Context) {
 	req := &orderpb.RestaurantRequest{}
@@ -142,7 +140,6 @@ func PostRestaurant(c *gin.Context) {
 		"response": res.DummyRes,
 	})
 }
-
 
 func main() {
 
