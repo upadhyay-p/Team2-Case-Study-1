@@ -1,7 +1,8 @@
 // to compile this file
+// export GOPATH=$(go env GOPATH)
+// go get -u github.com/golang/protobuf/proto
 // go get -u github.com/golang/protobuf/protoc-gen-go
-// find GOPATH using go env GOPATH
-// export PATH=$PATH:GOPATH/bin
+// export PATH=$PATH:$GOPATH/bin
 // protoc OrderProto/orderpb/order.proto --go_out=plugins=grpc:.
 syntax="proto3";
 
@@ -15,25 +16,25 @@ message Item {
 }
 
 message Order {
-    int64 OrderID = 1;
-	int64 CustomerID = 2;
-	string RestaurantID = 3;
+    int64 OrderId = 1;
+	int64 CustomerId = 2;
+	int64 RestaurantId = 3;
 	repeated Item ItemLine = 4;
 	float Price = 5;
-	int64 Discount = 7;
+	int64 Discount = 6;
 }
 
 message Customer {
-	int64 CustomerID = 1;
+	int64 CustomerId = 1;
 	string Name = 2;
 	string Phone = 3;
     string Address = 4;
 }
 
 message Restaurant {
-    int64 RestaurantID = 1;
+    int64 RestaurantId = 1;
     string Name = 2;
-    string Available = 3;
+    bool Available = 3;
     repeated Item ItemLine = 4;
     float Rating = 5;
     string Category = 6;
@@ -44,17 +45,17 @@ message OrderRequest{
 }
 
 message OrderResponse{
-    //repeated Order res = 1;
-    string dummyRes = 1;
+    repeated Order res = 1;
+    // string dummyRes = 1;
 }
 
 message CustomerRequest{
-   //Customer cust = 1;
+//    Customer cust = 1;
 }
 
 message CustomerResponse{
-    //repeated Customer res = 1;
-    string dummyRes = 1;
+    repeated Customer res = 1;
+    // string dummyRes = 2;
 }
 
 message RestaurantRequest{

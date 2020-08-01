@@ -1,4 +1,4 @@
-package Controller
+package DBInit
 
 import (
 	"Team2CaseStudy1/pkg/Customer/Models"

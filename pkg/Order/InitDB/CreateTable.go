@@ -1,4 +1,4 @@
-package Controller
+package DBInit
 
 import (
 	"fmt"
@@ -31,6 +31,6 @@ func OrderDBInit(db *dynamodb.DynamoDB, filename string) {
 		fmt.Println("Sorry, error creating table : ", err)
 	} else {
 		fmt.Println(resp)
-		MigrateCustomerData(db, filename)
+		MigrateOrderData(db, filename)
 	}
 }

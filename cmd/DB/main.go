@@ -1,8 +1,10 @@
 package main
 
 import (
-	CustomerController "Team2CaseStudy1/pkg/Customer/Controller"
-	OrderController "Team2CaseStudy1/pkg/Order/Controller"
+	CustomerDBInit "Team2CaseStudy1/pkg/Customer/InitDB"
+	OrderDBInit "Team2CaseStudy1/pkg/Order/InitDB"
+	"fmt"
+
 	"github.com/aws/aws-sdk-go/aws"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
@@ -14,6 +16,7 @@ func main() {
 		Region:   aws.String("us-east-1"),
 	}))
 	db := dynamodb.New(sess)
-	CustomerController.CustomerDBInit(db, "../../assets/customer.csv")
-	OrderController.OrderDBInit(db, "../../assets/orders.csv")
+	fmt.Println(db)
+	CustomerDBInit.CustomerDBInit(db, "../../assets/customer.csv")
+	OrderDBInit.OrderDBInit(db, "../../assets/orders.csv")
 }
