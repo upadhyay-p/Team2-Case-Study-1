@@ -67,3 +67,24 @@ func FetchOrderTable(db *dynamodb.DynamoDB) []*orderpb.Order {
 	return allOrders
 
 }
+
+func AddOrderDetails(db *dynamodb.DynamoDB, order OrderModels.Order) {
+
+	orderDynAttr, err := dynamodbattribute.MarshalMap(order)
+
+	if err != nil {
+		panic("Cannot map the values given in Order struct for post request...")
+	}
+
+	params := &dynamodb.PutItemInput{
+		TableName: aws.String("T2-Order"),
+		Item:      orderDynAttr,
+	}
+
+	_, err = db.PutItem(params)
+
+	if err != nil {
+		panic("Error in putting the order item")
+	}
+
+}

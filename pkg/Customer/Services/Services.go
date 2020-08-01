@@ -62,3 +62,24 @@ func FetchCustomerTable(db *dynamodb.DynamoDB) []*orderpb.Customer {
 	return allCustomers
 
 }
+
+func AddCustomerDetails(db *dynamodb.DynamoDB, customer CustomerModels.Customer) {
+
+	customerDynAttr, err := dynamodbattribute.MarshalMap(customer)
+
+	if err != nil {
+		panic("Cannot map the values given in Customer struct for post request...")
+	}
+
+	params := &dynamodb.PutItemInput{
+		TableName: aws.String("T2-Customer"),
+		Item:      customerDynAttr,
+	}
+
+	_, err = db.PutItem(params)
+
+	if err != nil {
+		panic("Error in putting the customer item")
+	}
+
+}
