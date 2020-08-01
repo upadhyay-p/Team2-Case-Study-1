@@ -67,3 +67,65 @@ func FetchOrderTable(db *dynamodb.DynamoDB) []*orderpb.Order {
 	return allOrders
 
 }
+
+func GetSpecificOrderDetails(db *dynamodb.DynamoDB, customerId int64) *orderpb.Order {
+
+	keyCond := expression.Key("OrderId").Equal(expression.Value(customerId))
+	proj := expression.NamesList(expression.Name("OrderId"), expression.Name("CustomerId"), expression.Name("RestaurantId"), expression.Name("ItemLine"), expression.Name("Price"), expression.Name("Discount"))
+	expr, err := expression.NewBuilder().WithKeyCondition(keyCond).WithProjection(proj).Build()
+
+	if err != nil {
+		fmt.Println("Got error building expression for getting specific Customer")
+		fmt.Println(err.Error())
+		os.Exit(1)
+	}
+
+	params := &dynamodb.QueryInput{
+		ExpressionAttributeNames:  expr.Names(),
+		ExpressionAttributeValues: expr.Values(),
+		KeyConditionExpression:    expr.KeyCondition(),
+		ProjectionExpression:      expr.Projection(),
+		TableName:                 aws.String("T2-Order"),
+	}
+
+	res, err := db.Query(params)
+
+	var orderDetails []OrderModels.Order
+
+	_ = dynamodbattribute.UnmarshalListOfMaps(res.Items, &orderDetails)
+
+	var order *orderpb.Order
+
+	if len(orderDetails) == 0 {
+		order = &orderpb.Order{}
+	} else {
+		orderItem := orderDetails[0]
+		var itemline []*orderpb.Item
+		for _, item := range orderItem.ItemLine {
+			itemline = append(itemline, &orderpb.Item{Name: item.Name, Price: item.Price})
+		}
+		order = &orderpb.Order{OrderId: orderItem.OrderId, CustomerId: orderItem.CustomerId, RestaurantId: orderItem.RestaurantId, ItemLine: itemline, Price: orderItem.Price, Discount: orderItem.Discount}
+	}
+	return order
+}
+
+func AddOrderDetails(db *dynamodb.DynamoDB, order OrderModels.Order) {
+
+	orderDynAttr, err := dynamodbattribute.MarshalMap(order)
+
+	if err != nil {
+		panic("Cannot map the values given in Order struct for post request...")
+	}
+
+	params := &dynamodb.PutItemInput{
+		TableName: aws.String("T2-Order"),
+		Item:      orderDynAttr,
+	}
+
+	_, err = db.PutItem(params)
+
+	if err != nil {
+		panic("Error in putting the order item")
+	}
+
+}

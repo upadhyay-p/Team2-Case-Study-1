@@ -41,21 +41,31 @@ message Restaurant {
 }
 
 message OrderRequest{
-   //Order ord = 1;
+   Order ord = 1;
 }
 
 message OrderResponse{
     repeated Order res = 1;
-    // string dummyRes = 1;
 }
 
 message CustomerRequest{
-//    Customer cust = 1;
+   Customer cust = 1;
 }
 
-message CustomerResponse{
+message CustomerPostResponse{
+    Customer res = 1;
+}
+
+message CustomerResponse {
+    Customer cust =  1;
+}
+
+message OrderPostResponse{
+    Order res = 1;
+}
+
+message CustomerAllResponse{
     repeated Customer res = 1;
-    // string dummyRes = 2;
 }
 
 message RestaurantRequest{
@@ -71,16 +81,34 @@ message NoParamRequest {
 
 }
 
+message SpecificCustomerRequest{
+    int64 custId = 1;
+ }
+
+message SpecificCustomerResponse{
+    Customer res = 1;
+}
+
+message SpecificOrderRequest {
+    int64 orderId = 1;
+}
+
+message SpecificOrderResponse{
+    Order res = 1;
+}
+
 message PostResponse {
-    string dummyRes = 1;
+    string res = 1;
 }
 
 service QueryService {
-    rpc AddOrder (OrderRequest) returns (PostResponse) {}
-    rpc AddCustomer (CustomerRequest) returns (PostResponse) {}
+    rpc AddOrder (OrderRequest) returns (OrderPostResponse) {}
+    rpc AddCustomer (CustomerRequest) returns (CustomerPostResponse) {}
     rpc AddRestaurant (RestaurantRequest) returns (PostResponse) {}
 
     rpc GetOrders (NoParamRequest) returns (OrderResponse) {}
-    rpc GetCustomers (NoParamRequest) returns (CustomerResponse) {}
+    rpc GetCustomers (NoParamRequest) returns (CustomerAllResponse) {}
     rpc GetRestaurants (NoParamRequest) returns (RestaurantResponse) {}
+    rpc GetACustomer (SpecificCustomerRequest) returns (SpecificCustomerResponse) {}
+    rpc GetAnOrder (SpecificOrderRequest) returns (SpecificOrderResponse) {}
 }

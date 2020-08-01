@@ -1,10 +1,15 @@
 package main
 
 import (
+	CustomerModels "Team2CaseStudy1/pkg/Customer/Models"
+	OrderModels "Team2CaseStudy1/pkg/Order/Models"
 	"Team2CaseStudy1/pkg/OrderProto/orderpb"
+	"encoding/json"
 	"fmt"
+	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"google.golang.org/grpc"
@@ -63,33 +68,80 @@ func GetAllRestaurants(c *gin.Context) {
 
 }
 
+// To get specific customer
+func GetSpecificCustomer(c *gin.Context) {
+	customerid, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+
+	req := &orderpb.SpecificCustomerRequest{CustId: customerid}
+
+	res, err := queryServiceClient.GetACustomer(c, req)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"response": res.Res})
+
+}
+
+// To get specific order
+func GetSpecificOrder(c *gin.Context) {
+	orderid, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+
+	req := &orderpb.SpecificOrderRequest{OrderId: orderid}
+
+	res, err := queryServiceClient.GetAnOrder(c, req)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"response": res.Res})
+
+}
+
 // To place a new order
 func PostOrder(c *gin.Context) {
-	//body := c.Request.Body
-	//byteContent, err := ioutil.ReadAll(body)
-	//if err != nil {
-	//	fmt.Println("Sorry no content found: ", err.Error())
-	//}
-	//var NewOrder Models.Order
-	//_ = json.Unmarshal(byteContent, &NewOrder)
-	//var items []*orderProto.OrderStruct_Item
-	//for j := range NewOrder.ItemLine {
-	//	items = append(items, &orderProto.OrderStruct_Item{Name: NewOrder.ItemLine[j].Name,
-	//		Price:    NewOrder.ItemLine[j].Price,
-	//		Quantity: NewOrder.ItemLine[j].Quantity})
-	//}
-	//req := &orderProto.PostRequest{Res: &orderProto.OrderStruct{
-	//	OrderID:    NewOrder.OrderID,
-	//	CustomerID: NewOrder.CustomerID,
-	//	Restaurant: NewOrder.Restaurant,
-	//	ItemLine:   items,
-	//	Price:      NewOrder.Price,
-	//	Quantity:   NewOrder.Quantity,
-	//	Discount:   NewOrder.Discount,
-	//	Date:       NewOrder.Date,
-	//},
-	//}
-	req := &orderpb.OrderRequest{}
+
+	body := c.Request.Body
+	byteContent, err := ioutil.ReadAll(body)
+	if err != nil {
+		fmt.Println("Sorry no content found: ", err.Error())
+	}
+
+	var NewOrder OrderModels.Order
+	_ = json.Unmarshal(byteContent, &NewOrder)
+
+	orderid := NewOrder.OrderId
+	customerid := NewOrder.CustomerId
+	restaurantid := NewOrder.RestaurantId
+	itemlist := NewOrder.ItemLine
+	price := NewOrder.Price
+	discount := NewOrder.Discount
+
+	var itemline []*orderpb.Item
+
+	for i := range itemlist {
+		itemline = append(itemline, &orderpb.Item{
+			Name:  itemlist[i].Name,
+			Price: itemlist[i].Price,
+		})
+	}
+
+	req := &orderpb.OrderRequest{Ord: &orderpb.Order{
+		OrderId:      orderid,
+		CustomerId:   customerid,
+		RestaurantId: restaurantid,
+		ItemLine:     itemline,
+		Price:        price,
+		Discount:     discount,
+	}}
 
 	res, err := queryServiceClient.AddOrder(c, req)
 
@@ -101,14 +153,30 @@ func PostOrder(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"response": res.DummyRes,
+		"response": res.Res,
 	})
 }
 
 // To add new customer
 func PostCustomer(c *gin.Context) {
 
-	req := &orderpb.CustomerRequest{}
+	body := c.Request.Body
+	byteContent, err := ioutil.ReadAll(body)
+	if err != nil {
+		fmt.Println("Sorry no content found: ", err.Error())
+	}
+
+	var NewCustomer CustomerModels.Customer
+
+	_ = json.Unmarshal(byteContent, &NewCustomer)
+
+	req := &orderpb.CustomerRequest{Cust: &orderpb.Customer{
+		CustomerId: NewCustomer.CustomerId,
+		Name:       NewCustomer.Name,
+		Address:    NewCustomer.Address,
+		Phone:      NewCustomer.Phone,
+	}}
+
 	res, err := queryServiceClient.AddCustomer(c, req)
 
 	if err != nil {
@@ -119,7 +187,7 @@ func PostCustomer(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"response": res.DummyRes,
+		"response": res.Res,
 	})
 }
 
@@ -137,7 +205,7 @@ func PostRestaurant(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{
-		"response": res.DummyRes,
+		"response": res.Res,
 	})
 }
 
@@ -164,6 +232,8 @@ func main() {
 	apiRouter.GET("/orders", GetAllOrders)
 	apiRouter.GET("/customers", GetAllCustomers)
 	apiRouter.GET("/restaurants", GetAllRestaurants)
+	apiRouter.GET("/order/:id", GetSpecificOrder)
+	apiRouter.GET("/customer/:id", GetSpecificCustomer)
 
 	apiRouter.POST("/new-order", PostOrder)
 	apiRouter.POST("/new-customer", PostCustomer)
