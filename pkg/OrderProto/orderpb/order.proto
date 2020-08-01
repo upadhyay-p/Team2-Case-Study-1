@@ -56,6 +56,10 @@ message CustomerPostResponse{
     Customer res = 1;
 }
 
+message CustomerResponse {
+    Customer cust =  1;
+}
+
 message OrderPostResponse{
     Order res = 1;
 }
@@ -77,6 +81,22 @@ message NoParamRequest {
 
 }
 
+message SpecificCustomerRequest{
+    int64 custId = 1;
+ }
+
+message SpecificCustomerResponse{
+    Customer res = 1;
+}
+
+message SpecificOrderRequest {
+    int64 orderId = 1;
+}
+
+message SpecificOrderResponse{
+    Order res = 1;
+}
+
 message PostResponse {
     string res = 1;
 }
@@ -89,4 +109,6 @@ service QueryService {
     rpc GetOrders (NoParamRequest) returns (OrderResponse) {}
     rpc GetCustomers (NoParamRequest) returns (CustomerAllResponse) {}
     rpc GetRestaurants (NoParamRequest) returns (RestaurantResponse) {}
+    rpc GetACustomer (SpecificCustomerRequest) returns (SpecificCustomerResponse) {}
+    rpc GetAnOrder (SpecificOrderRequest) returns (SpecificOrderResponse) {}
 }

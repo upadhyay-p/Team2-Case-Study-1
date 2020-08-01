@@ -9,6 +9,7 @@ import (
 	"io/ioutil"
 	"log"
 	"net/http"
+	"strconv"
 
 	"github.com/gin-gonic/gin"
 	"google.golang.org/grpc"
@@ -64,6 +65,44 @@ func GetAllRestaurants(c *gin.Context) {
 	}
 
 	c.JSON(http.StatusOK, gin.H{"response": res.DummyRes})
+
+}
+
+// To get specific customer
+func GetSpecificCustomer(c *gin.Context) {
+	customerid, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+
+	req := &orderpb.SpecificCustomerRequest{CustId: customerid}
+
+	res, err := queryServiceClient.GetACustomer(c, req)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"response": res.Res})
+
+}
+
+// To get specific order
+func GetSpecificOrder(c *gin.Context) {
+	orderid, _ := strconv.ParseInt(c.Param("id"), 10, 64)
+
+	req := &orderpb.SpecificOrderRequest{OrderId: orderid}
+
+	res, err := queryServiceClient.GetAnOrder(c, req)
+
+	if err != nil {
+		c.JSON(http.StatusInternalServerError, gin.H{
+			"error": err.Error(),
+		})
+		return
+	}
+
+	c.JSON(http.StatusOK, gin.H{"response": res.Res})
 
 }
 
@@ -193,6 +232,8 @@ func main() {
 	apiRouter.GET("/orders", GetAllOrders)
 	apiRouter.GET("/customers", GetAllCustomers)
 	apiRouter.GET("/restaurants", GetAllRestaurants)
+	apiRouter.GET("/order/:id", GetSpecificOrder)
+	apiRouter.GET("/customer/:id", GetSpecificCustomer)
 
 	apiRouter.POST("/new-order", PostOrder)
 	apiRouter.POST("/new-customer", PostCustomer)

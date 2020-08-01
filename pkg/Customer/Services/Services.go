@@ -63,6 +63,43 @@ func FetchCustomerTable(db *dynamodb.DynamoDB) []*orderpb.Customer {
 
 }
 
+func GetSpecificCustomerDetails(db *dynamodb.DynamoDB, customerId int64) *orderpb.Customer {
+
+	keyCond := expression.Key("CustomerId").Equal(expression.Value(customerId))
+	proj := expression.NamesList(expression.Name("CustomerId"), expression.Name("Name"), expression.Name("Address"), expression.Name("Phone"))
+	expr, err := expression.NewBuilder().WithKeyCondition(keyCond).WithProjection(proj).Build()
+
+	if err != nil {
+		fmt.Println("Got error building expression for getting specific Customer")
+		fmt.Println(err.Error())
+		os.Exit(1)
+	}
+
+	params := &dynamodb.QueryInput{
+		ExpressionAttributeNames:  expr.Names(),
+		ExpressionAttributeValues: expr.Values(),
+		KeyConditionExpression:    expr.KeyCondition(),
+		ProjectionExpression:      expr.Projection(),
+		TableName:                 aws.String("T2-Customer"),
+	}
+
+	res, err := db.Query(params)
+
+	var customerDetails []CustomerModels.Customer
+
+	_ = dynamodbattribute.UnmarshalListOfMaps(res.Items, &customerDetails)
+
+	var customer *orderpb.Customer
+
+	if len(customerDetails) == 0 {
+		customer = &orderpb.Customer{}
+	} else {
+		customerItem := customerDetails[0]
+		customer = &orderpb.Customer{CustomerId: customerItem.CustomerId, Name: customerItem.Name, Address: customerItem.Address, Phone: customerItem.Phone}
+	}
+	return customer
+}
+
 func AddCustomerDetails(db *dynamodb.DynamoDB, customer CustomerModels.Customer) {
 
 	customerDynAttr, err := dynamodbattribute.MarshalMap(customer)

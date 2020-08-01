@@ -45,6 +45,32 @@ func (*server) GetRestaurants(ctx context.Context, req *orderpb.NoParamRequest) 
 	return res, nil
 }
 
+func (*server) GetACustomer(ctx context.Context, req *orderpb.SpecificCustomerRequest) (*orderpb.SpecificCustomerResponse, error) {
+
+	fmt.Println("GetACustomer Function called... ")
+
+	customerid := req.GetCustId()
+	customerDetails := CustomerServices.GetSpecificCustomerDetails(db, customerid)
+
+	res := &orderpb.SpecificCustomerResponse{Res: customerDetails}
+
+	return res, nil
+
+}
+
+func (*server) GetAnOrder(ctx context.Context, req *orderpb.SpecificOrderRequest) (*orderpb.SpecificOrderResponse, error) {
+
+	fmt.Println("GetACustomer Function called... ")
+
+	orderid := req.GetOrderId()
+	orderDetails := OrderServices.GetSpecificOrderDetails(db, orderid)
+
+	res := &orderpb.SpecificOrderResponse{Res: orderDetails}
+
+	return res, nil
+
+}
+
 // add order to db
 func (*server) AddOrder(ctx context.Context, req *orderpb.OrderRequest) (*orderpb.OrderPostResponse, error) {
 	fmt.Println("AddOrders Function called... ")
