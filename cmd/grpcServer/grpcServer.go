@@ -1,4 +1,4 @@
-package main
+package grpcServer
 
 import (
 	CustomerModels "Team2CaseStudy1/pkg/Customer/Models"
@@ -22,30 +22,30 @@ var db *dynamodb.DynamoDB
 var allCustomers []*orderpb.Customer
 var allOrders []*orderpb.Order
 
-type server struct{}
+type Server struct{}
 
 // fetch orders from db and give it as response to client
-func (*server) GetOrders(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.OrderResponse, error) {
+func (*Server) GetOrders(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.OrderResponse, error) {
 	fmt.Println("GetOrders Function called... ")
 	res := &orderpb.OrderResponse{Res: allOrders}
 	return res, nil
 }
 
 // fetch customers from db and give it as response to client
-func (*server) GetCustomers(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.CustomerAllResponse, error) {
+func (*Server) GetCustomers(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.CustomerAllResponse, error) {
 	fmt.Println("GetCustomers Function called... ")
 	res := &orderpb.CustomerAllResponse{Res: allCustomers}
 	return res, nil
 }
 
 // fetch restaurants from db and give it as response to client
-func (*server) GetRestaurants(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.RestaurantResponse, error) {
+func (*Server) GetRestaurants(ctx context.Context, req *orderpb.NoParamRequest) (*orderpb.RestaurantResponse, error) {
 	fmt.Println("GetRestaurants Function called... ")
 	res := &orderpb.RestaurantResponse{DummyRes: "Hi this is a test call"}
 	return res, nil
 }
 
-func (*server) GetACustomer(ctx context.Context, req *orderpb.SpecificCustomerRequest) (*orderpb.SpecificCustomerResponse, error) {
+func (*Server) GetACustomer(ctx context.Context, req *orderpb.SpecificCustomerRequest) (*orderpb.SpecificCustomerResponse, error) {
 
 	fmt.Println("GetACustomer Function called... ")
 
@@ -58,11 +58,12 @@ func (*server) GetACustomer(ctx context.Context, req *orderpb.SpecificCustomerRe
 
 }
 
-func (*server) GetAnOrder(ctx context.Context, req *orderpb.SpecificOrderRequest) (*orderpb.SpecificOrderResponse, error) {
+func (*Server) GetAnOrder(ctx context.Context, req *orderpb.SpecificOrderRequest) (*orderpb.SpecificOrderResponse, error) {
 
 	fmt.Println("GetACustomer Function called... ")
 
 	orderid := req.GetOrderId()
+	fmt.Println("yahan aake fail hua?")
 	orderDetails := OrderServices.GetSpecificOrderDetails(db, orderid)
 
 	res := &orderpb.SpecificOrderResponse{Res: orderDetails}
@@ -72,7 +73,7 @@ func (*server) GetAnOrder(ctx context.Context, req *orderpb.SpecificOrderRequest
 }
 
 // add order to db
-func (*server) AddOrder(ctx context.Context, req *orderpb.OrderRequest) (*orderpb.OrderPostResponse, error) {
+func (*Server) AddOrder(ctx context.Context, req *orderpb.OrderRequest) (*orderpb.OrderPostResponse, error) {
 	fmt.Println("AddOrders Function called... ")
 
 	orderid := req.Ord.GetOrderId()
@@ -131,7 +132,7 @@ func (*server) AddOrder(ctx context.Context, req *orderpb.OrderRequest) (*orderp
 }
 
 // add customer to db
-func (*server) AddCustomer(ctx context.Context, req *orderpb.CustomerRequest) (*orderpb.CustomerPostResponse, error) {
+func (*Server) AddCustomer(ctx context.Context, req *orderpb.CustomerRequest) (*orderpb.CustomerPostResponse, error) {
 	fmt.Println("AddCustomer Function called... ")
 
 	customerid := req.Cust.GetCustomerId()
@@ -166,7 +167,7 @@ func (*server) AddCustomer(ctx context.Context, req *orderpb.CustomerRequest) (*
 }
 
 // add restaurant to db
-func (*server) AddRestaurant(ctx context.Context, req *orderpb.RestaurantRequest) (*orderpb.PostResponse, error) {
+func (*Server) AddRestaurant(ctx context.Context, req *orderpb.RestaurantRequest) (*orderpb.PostResponse, error) {
 	fmt.Println("AddRestaurant Function called... ")
 	res := &orderpb.PostResponse{Res: "Hi this is a test call"}
 	return res, nil
@@ -191,7 +192,7 @@ func main() {
 
 	s := grpc.NewServer()
 
-	orderpb.RegisterQueryServiceServer(s, &server{})
+	orderpb.RegisterQueryServiceServer(s, &Server{})
 
 	if s.Serve(lis); err != nil {
 		log.Fatalf("Failed to serve %v", err)
