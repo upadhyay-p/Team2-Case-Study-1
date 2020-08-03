@@ -22,6 +22,14 @@ var db *dynamodb.DynamoDB
 var allCustomers []*orderpb.Customer
 var allOrders []*orderpb.Order
 
+func initializeDB() {
+	sess := session.Must(session.NewSession(&aws.Config{
+		Endpoint: aws.String("http://localhost:8000"),
+		Region:   aws.String("us-east-1"),
+	}))
+	db = dynamodb.New(sess)
+}
+
 type Server struct{}
 
 // fetch orders from db and give it as response to client
@@ -50,6 +58,11 @@ func (*Server) GetACustomer(ctx context.Context, req *orderpb.SpecificCustomerRe
 	fmt.Println("GetACustomer Function called... ")
 
 	customerid := req.GetCustId()
+
+	if db==nil{
+		initializeDB()
+	}
+
 	customerDetails := CustomerServices.GetSpecificCustomerDetails(db, customerid)
 
 	res := &orderpb.SpecificCustomerResponse{Res: customerDetails}
@@ -63,7 +76,9 @@ func (*Server) GetAnOrder(ctx context.Context, req *orderpb.SpecificOrderRequest
 	fmt.Println("GetACustomer Function called... ")
 
 	orderid := req.GetOrderId()
-	fmt.Println("yahan aake fail hua?")
+	if db==nil{
+		initializeDB()
+	}
 	orderDetails := OrderServices.GetSpecificOrderDetails(db, orderid)
 
 	res := &orderpb.SpecificOrderResponse{Res: orderDetails}
@@ -125,7 +140,9 @@ func (*Server) AddOrder(ctx context.Context, req *orderpb.OrderRequest) (*orderp
 		Price:        price,
 		Discount:     discount,
 	}}
-
+	if db==nil{
+		initializeDB()
+	}
 	OrderServices.AddOrderDetails(db, orderDetails)
 
 	return res, nil
@@ -160,6 +177,9 @@ func (*Server) AddCustomer(ctx context.Context, req *orderpb.CustomerRequest) (*
 		Address:    address,
 		Phone:      phone,
 	})
+	if db==nil{
+		initializeDB()
+	}
 
 	CustomerServices.AddCustomerDetails(db, customerItem)
 
@@ -176,11 +196,7 @@ func (*Server) AddRestaurant(ctx context.Context, req *orderpb.RestaurantRequest
 func main() {
 	fmt.Println("Hello from grpc server.")
 
-	sess := session.Must(session.NewSession(&aws.Config{
-		Endpoint: aws.String("http://localhost:8000"),
-		Region:   aws.String("us-east-1"),
-	}))
-	db = dynamodb.New(sess)
+	initializeDB()
 
 	allCustomers = CustomerServices.FetchCustomerTable(db)
 	allOrders = OrderServices.FetchOrderTable(db)

@@ -1,0 +1,15 @@
+mode: set
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:28.108,32.2 3 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:35.117,39.2 3 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:42.118,46.2 3 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:48.131,65.2 7 1
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:67.123,83.2 7 1
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:86.109,99.26 10 1
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:112.2,145.17 7 1
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:99.26,110.3 4 1
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:149.118,186.2 12 1
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:189.114,193.2 3 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:195.13,208.16 7 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:212.2,216.30 3 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:208.16,210.3 1 0
+Team2CaseStudy1/cmd/grpcServer/grpcServer.go:216.30,218.3 1 0
