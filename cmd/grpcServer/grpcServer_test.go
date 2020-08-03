@@ -1,7 +1,7 @@
 package grpcServer_test
 
 import (
-	t "Team2CaseStudy1/cmd/grpcServer"
+	grpcServer "Team2CaseStudy1/cmd/grpcServer"
 	"Team2CaseStudy1/pkg/OrderProto/orderpb"
 	"context"
 	"testing"
@@ -20,9 +20,10 @@ const bufSize = 1024*1024
 var lis *bufconn.Listener
 
 func init(){
+	grpcServer.InitializeDB()
 	lis = bufconn.Listen(bufSize)
 	s := grpc.NewServer()
-	orderpb.RegisterQueryServiceServer(s, &t.Server{})
+	orderpb.RegisterQueryServiceServer(s, &grpcServer.Server{})
 	go func() {
 		if err := s.Serve(lis); err != nil {
 			log.Fatalf("Server exited with error: %v", err)
