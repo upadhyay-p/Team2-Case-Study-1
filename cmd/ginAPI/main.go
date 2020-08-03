@@ -12,12 +12,15 @@ import (
 	"strconv"
 
 	"github.com/gin-gonic/gin"
+	"github.com/prometheus/client_golang/prometheus"
+	"github.com/prometheus/client_golang/prometheus/promhttp"
 	"google.golang.org/grpc"
 )
 
 var queryServiceClient orderpb.QueryServiceClient
 
 func GetIndex(c *gin.Context) {
+	// apiHitcount.Inc()
 	c.JSON(http.StatusOK, gin.H{
 		"Team 2": "Hello from Aadithya, Abhishek, Priya, Shashi!",
 	})
@@ -209,8 +212,30 @@ func PostRestaurant(c *gin.Context) {
 	})
 }
 
+var (
+	cpuTemp = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "cpu_temperature_in_celsius",
+		Help: "Current teamperature of CPU in degree celsius",
+	})
+	apiHitcount = prometheus.NewGauge(prometheus.GaugeOpts{
+		Name: "total_api_hit_count",
+		Help: "Number of times APIs were hitted",
+	})
+)
+
+func init() {
+	prometheus.MustRegister(cpuTemp)
+	prometheus.MustRegister(apiHitcount)
+}
+
+func apiHitCountTracker(c *gin.Context) {
+	apiHitcount.Inc()
+	c.Next()
+}
+
 func main() {
 
+	cpuTemp.Set(65.3)
 	fmt.Println("hello from API INIT function")
 	conn, err := grpc.Dial("localhost:5051", grpc.WithInsecure())
 
@@ -226,7 +251,10 @@ func main() {
 	router.Use(gin.Logger())
 	router.Use(gin.Recovery())
 
+	router.GET("/metrics", gin.WrapH(promhttp.Handler()))
+
 	apiRouter := router.Group("/api")
+	apiRouter.Use(apiHitCountTracker)
 
 	apiRouter.GET("/", GetIndex)
 	apiRouter.GET("/orders", GetAllOrders)
