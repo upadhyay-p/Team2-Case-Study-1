@@ -6,7 +6,6 @@ import (
 	"Team2CaseStudy1/pkg/OrderProto/orderpb"
 	"encoding/json"
 	"fmt"
-	"io/ioutil"
 	"log"
 	"net/http"
 	"strconv"
@@ -111,9 +110,9 @@ func GetSpecificOrder(c *gin.Context) {
 
 // To place a new order
 func PostOrder(c *gin.Context) {
-
-	body := c.Request.Body
-	byteContent, err := ioutil.ReadAll(body)
+	byteContent := make([]byte, 1024)
+	len,err := c.Request.Body.Read(byteContent)
+	byteContent = byteContent[:len]
 	if err != nil {
 		fmt.Println("Sorry no content found: ", err.Error())
 	}
@@ -162,9 +161,9 @@ func PostOrder(c *gin.Context) {
 
 // To add new customer
 func PostCustomer(c *gin.Context) {
-
-	body := c.Request.Body
-	byteContent, err := ioutil.ReadAll(body)
+	byteContent := make([]byte, 1024)
+	len,err := c.Request.Body.Read(byteContent)
+	byteContent = byteContent[:len]
 	if err != nil {
 		fmt.Println("Sorry no content found: ", err.Error())
 	}
@@ -195,22 +194,22 @@ func PostCustomer(c *gin.Context) {
 }
 
 // To place a new order
-func PostRestaurant(c *gin.Context) {
-	req := &orderpb.RestaurantRequest{}
-
-	res, err := queryServiceClient.AddRestaurant(c, req)
-
-	if err != nil {
-		c.JSON(http.StatusInternalServerError, gin.H{
-			"error": err.Error(),
-		})
-		return
-	}
-
-	c.JSON(http.StatusOK, gin.H{
-		"response": res.Res,
-	})
-}
+//func PostRestaurant(c *gin.Context) {
+//	req := &orderpb.RestaurantRequest{}
+//
+//	res, err := queryServiceClient.AddRestaurant(c, req)
+//
+//	if err != nil {
+//		c.JSON(http.StatusInternalServerError, gin.H{
+//			"error": err.Error(),
+//		})
+//		return
+//	}
+//
+//	c.JSON(http.StatusOK, gin.H{
+//		"response": res.Res,
+//	})
+//}
 
 var (
 	cpuTemp = prometheus.NewGauge(prometheus.GaugeOpts{
@@ -237,7 +236,7 @@ func main() {
 
 	cpuTemp.Set(65.3)
 	fmt.Println("hello from API INIT function")
-	conn, err := grpc.Dial("192.168.0.3:5051", grpc.WithInsecure())
+	conn, err := grpc.Dial("0.0.0.0:5051", grpc.WithInsecure())
 
 	if err != nil {
 		log.Fatalf("Sorry client cannot talk to server: %v", err)
@@ -247,6 +246,12 @@ func main() {
 
 	queryServiceClient = orderpb.NewQueryServiceClient(conn)
 
+	router := SetupRoutes()
+
+	router.Run("0.0.0.0:9001")
+}
+
+func SetupRoutes() *gin.Engine {
 	router := gin.New()
 	router.Use(gin.Logger())
 	router.Use(gin.Recovery())
@@ -265,7 +270,6 @@ func main() {
 
 	apiRouter.POST("/new-order", PostOrder)
 	apiRouter.POST("/new-customer", PostCustomer)
-	apiRouter.POST("/new-restaurant", PostRestaurant)
-
-	router.Run("0.0.0.0:9001")
+	//apiRouter.POST("/new-restaurant", PostRestaurant)
+	return router
 }
