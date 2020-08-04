@@ -1,8 +1,8 @@
 {
     "AttributeDefinitions": [
         {
-            "AttributeName": "_id",
-            "AttributeType": "S"
+            "AttributeName": "ID",
+            "AttributeType": "N"
         }
     ],
     "ProvisionedThroughput": {
@@ -13,7 +13,7 @@
     "KeySchema": [
         {
             "KeyType": "HASH",
-            "AttributeName": "_id"
+            "AttributeName": "ID"
         }
     ]
 }

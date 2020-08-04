@@ -1,0 +1,5 @@
+FROM golang:1.14
+WORKDIR /go/bin
+ADD bin/api /go/bin
+ENTRYPOINT ["/go/bin/api"]
+EXPOSE 9001
