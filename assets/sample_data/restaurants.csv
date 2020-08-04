@@ -1,0 +1,1001 @@
+RestID,Name,Availability,ItemRest,Price,Rating,Category
+1,Eidel,Close,The Pop Shoppe - Root Beer,244,4.2,Italian
+1,Eidel,Close,Ginsing - Fresh,445,4.2,Italian
+1,Eidel,Close,Sugar - Palm,375,4.2,Italian
+1,Eidel,Close,Island Oasis - Pina Colada,148,4.2,Italian
+1,Eidel,Close,Wine - Champagne Brut Veuve,414,4.2,Italian
+1,Eidel,Close,Soy Protein,187,4.2,Italian
+1,Eidel,Close,Mcgillicuddy Vanilla Schnap,196,4.2,Italian
+1,Eidel,Close,Curry Powder,343,4.2,Italian
+2,Oyondu,Open,"Doilies - 8, Paper",236,5,Italian
+2,Oyondu,Open,Lotus Leaves,311,5,Italian
+2,Oyondu,Open,"Mushroom - Shitake, Fresh",265,5,Italian
+2,Oyondu,Open,Wine - Mondavi Coastal Private,127,5,Italian
+2,Oyondu,Open,Wine - Cousino Macul Antiguas,80,5,Italian
+2,Oyondu,Open,"Asparagus - Green, Fresh",364,5,Italian
+2,Oyondu,Open,"Gin - Gilbeys London, Dry",256,5,Italian
+2,Oyondu,Open,Mushroom - Portebello,380,5,Italian
+2,Oyondu,Open,Bread - Pumpernickel,256,5,Italian
+2,Oyondu,Open,Veal - Leg,198,5,Italian
+2,Oyondu,Open,Bar Mix - Lime,84,5,Italian
+2,Oyondu,Open,Beer - Camerons Cream Ale,314,5,Italian
+2,Oyondu,Open,Lid Tray - 12in Dome,342,5,Italian
+2,Oyondu,Open,Beer - Upper Canada Lager,127,5,Italian
+2,Oyondu,Open,Neckerchief Blck,86,5,Italian
+2,Oyondu,Open,Cheese - Mascarpone,216,5,Italian
+2,Oyondu,Open,Gatorade - Cool Blue Raspberry,470,5,Italian
+3,Voolith,Open,"Mushroom - Enoki, Fresh",396,2.6,Chinese
+3,Voolith,Open,Lamb - Loin Chops,490,2.6,Chinese
+3,Voolith,Open,Dried Peach,485,2.6,Chinese
+3,Voolith,Open,Cheese - Mascarpone,216,2.6,Chinese
+3,Voolith,Open,Pepper - Red Bell,215,2.6,Chinese
+3,Voolith,Open,Bonito Flakes - Toku Katsuo,257,2.6,Chinese
+3,Voolith,Open,Aspic - Clear,473,2.6,Chinese
+3,Voolith,Open,"Beef - Roasted, Cooked",269,2.6,Chinese
+3,Voolith,Open,Aspic - Clear,473,2.6,Chinese
+3,Voolith,Open,Chip - Potato Dill Pickle,478,2.6,Chinese
+3,Voolith,Open,Foie Gras,200,2.6,Chinese
+3,Voolith,Open,Beer - Creemore,120,2.6,Chinese
+4,Wikido,Close,Calypso - Lemonade,440,3.5,Mexican
+4,Wikido,Close,Cheese - Swiss Sliced,81,3.5,Mexican
+4,Wikido,Close,Barramundi,91,3.5,Mexican
+4,Wikido,Close,Table Cloth 144x90 White,319,3.5,Mexican
+4,Wikido,Close,Bread - Kimel Stick Poly,146,3.5,Mexican
+4,Wikido,Close,"Rum - Coconut, Malibu",106,3.5,Mexican
+4,Wikido,Close,Tea - English Breakfast,367,3.5,Mexican
+4,Wikido,Close,Cheese - La Sauvagine,499,3.5,Mexican
+5,Talane,Open,Cookie Dough - Peanut Butter,110,3.4,North Indian
+5,Talane,Open,Parasol Pick Stir Stick,468,3.4,North Indian
+5,Talane,Open,Chocolate - Milk,345,3.4,North Indian
+5,Talane,Open,Canada Dry,258,3.4,North Indian
+5,Talane,Open,Beef - Top Butt Aaa,72,3.4,North Indian
+5,Talane,Open,Salmon Steak - Cohoe 8 Oz,202,3.4,North Indian
+5,Talane,Open,"Rum - Coconut, Malibu",106,3.4,North Indian
+5,Talane,Open,Fond - Chocolate,305,3.4,North Indian
+5,Talane,Open,"Star Anise, Whole",67,3.4,North Indian
+5,Talane,Open,V8 Pet,68,3.4,North Indian
+5,Talane,Open,Soupfoamcont12oz 112con,174,3.4,North Indian
+5,Talane,Open,Bread - Pumpernickel,256,3.4,North Indian
+5,Talane,Open,Eggplant Oriental,491,3.4,North Indian
+5,Talane,Open,Oil - Cooking Spray,382,3.4,North Indian
+6,Livefish,Close,Salmon - Sockeye Raw,245,4.2,Chinese
+6,Livefish,Close,Calypso - Strawberry Lemonade,402,4.2,Chinese
+6,Livefish,Close,Chocolate - Mi - Amere Semi,146,4.2,Chinese
+6,Livefish,Close,Ham - Cooked Italian,57,4.2,Chinese
+6,Livefish,Close,Cheese - Comtomme,139,4.2,Chinese
+6,Livefish,Close,Thermometer Digital,491,4.2,Chinese
+6,Livefish,Close,"Nut - Hazelnut, Whole",385,4.2,Chinese
+6,Livefish,Close,Wine - Sawmill Creek Autumn,65,4.2,Chinese
+7,Camido,Close,Sour Puss Raspberry,94,4.3,Mexican
+7,Camido,Close,Soup Campbells Beef With Veg,471,4.3,Mexican
+7,Camido,Close,Gelatine Powder,239,4.3,Mexican
+7,Camido,Close,"Fish - Base, Bouillion",104,4.3,Mexican
+7,Camido,Close,Beans - Wax,144,4.3,Mexican
+7,Camido,Close,Beer - Muskoka Cream Ale,211,4.3,Mexican
+7,Camido,Close,Wine - Shiraz Wolf Blass Premium,214,4.3,Mexican
+7,Camido,Close,Soup Knorr Chili With Beans,378,4.3,Mexican
+7,Camido,Close,Cheese - Pied De Vents,110,4.3,Mexican
+7,Camido,Close,Wine - Chablis 2003 Champs,121,4.3,Mexican
+7,Camido,Close,Ice Cream - Fudge Bars,223,4.3,Mexican
+8,Voonyx,Open,Container - Foam Dixie 12 Oz,58,4.3,Italian
+8,Voonyx,Open,Bagelers - Cinn / Brown Sugar,472,4.3,Italian
+8,Voonyx,Open,Compound - Passion Fruit,238,4.3,Italian
+8,Voonyx,Open,"Wine - Niagara,vqa Reisling",231,4.3,Italian
+8,Voonyx,Open,"Vinegar - Balsamic, White",178,4.3,Italian
+8,Voonyx,Open,Pastry - Choclate Baked,463,4.3,Italian
+8,Voonyx,Open,Pastry - Chocolate Marble Tea,119,4.3,Italian
+8,Voonyx,Open,Nacho Chips,398,4.3,Italian
+8,Voonyx,Open,Wine - Magnotta - Belpaese,462,4.3,Italian
+8,Voonyx,Open,Lamb - Bones,138,4.3,Italian
+8,Voonyx,Open,Bagels Poppyseed,267,4.3,Italian
+8,Voonyx,Open,"Pasta - Fettuccine, Dry",258,4.3,Italian
+8,Voonyx,Open,Tea - Mint,423,4.3,Italian
+8,Voonyx,Open,Loquat,361,4.3,Italian
+8,Voonyx,Open,Sesame Seed,487,4.3,Italian
+8,Voonyx,Open,Alize Red Passion,448,4.3,Italian
+9,Voolia,Close,"Bread - Bagels, Plain",457,2.9,Chinese
+9,Voolia,Close,"Cheese - Mozzarella, Shredded",167,2.9,Chinese
+9,Voolia,Close,Pastry - Choclate Baked,463,2.9,Chinese
+9,Voolia,Close,Pumpkin - Seed,409,2.9,Chinese
+9,Voolia,Close,Vinegar - Rice,160,2.9,Chinese
+9,Voolia,Close,Silicone Parch. 16.3x24.3,477,2.9,Chinese
+9,Voolia,Close,Yoghurt Tubes,137,2.9,Chinese
+9,Voolia,Close,"Bread - Dark Rye, Loaf",111,2.9,Chinese
+9,Voolia,Close,Beer - Heinekin,64,2.9,Chinese
+9,Voolia,Close,Crush - Cream Soda,295,2.9,Chinese
+9,Voolia,Close,Longos - Grilled Veg Sandwiches,174,2.9,Chinese
+10,Roodel,Close,Ocean Spray - Kiwi Strawberry,466,4.2,North Indian
+10,Roodel,Close,Huck White Towels,476,4.2,North Indian
+10,Roodel,Close,Muffin Batt - Choc Chk,431,4.2,North Indian
+10,Roodel,Close,Cake - Mini Cheesecake,496,4.2,North Indian
+10,Roodel,Close,Pasta - Cheese / Spinach Bauletti,78,4.2,North Indian
+10,Roodel,Close,Beef - Top Sirloin,153,4.2,North Indian
+10,Roodel,Close,Pepper - Red Chili,272,4.2,North Indian
+10,Roodel,Close,Table Cloth 54x54 Colour,366,4.2,North Indian
+10,Roodel,Close,Cardamon Ground,206,4.2,North Indian
+10,Roodel,Close,Kumquat,280,4.2,North Indian
+11,LiveZ,Open,"Octopus - Baby, Cleaned",433,3.4,South Indian
+11,LiveZ,Open,Lettuce - Escarole,307,3.4,South Indian
+11,LiveZ,Open,Bread - Italian Corn Meal Poly,50,3.4,South Indian
+11,LiveZ,Open,Beef - Striploin Aa,74,3.4,South Indian
+11,LiveZ,Open,Pear - Prickly,101,3.4,South Indian
+11,LiveZ,Open,Puff Pastry - Slab,158,3.4,South Indian
+11,LiveZ,Open,"Wine - Red, Concha Y Toro",148,3.4,South Indian
+11,LiveZ,Open,Red Cod Fillets - 225g,185,3.4,South Indian
+11,LiveZ,Open,Carroway Seed,247,3.4,South Indian
+11,LiveZ,Open,Wine - Casablanca Valley,255,3.4,South Indian
+11,LiveZ,Open,Prunes - Pitted,235,3.4,South Indian
+11,LiveZ,Open,Trueblue - Blueberry Cranberry,162,3.4,South Indian
+12,Talane,Open,Potatoes - Idaho 80 Count,444,3.9,South Indian
+12,Talane,Open,"Pasta - Detalini, White, Fresh",401,3.9,South Indian
+12,Talane,Open,Salmon - Sockeye Raw,245,3.9,South Indian
+12,Talane,Open,Fenngreek Seed,479,3.9,South Indian
+12,Talane,Open,Food Colouring - Red,131,3.9,South Indian
+12,Talane,Open,"Water, Tap",182,3.9,South Indian
+12,Talane,Open,Bread - Corn Muffaleta Onion,302,3.9,South Indian
+12,Talane,Open,Grapefruit - White,95,3.9,South Indian
+13,Ooba,Open,Bread - Focaccia Quarter,284,2.5,Mexican
+13,Ooba,Open,"Mushroom - Chantrelle, Fresh",187,2.5,Mexican
+13,Ooba,Open,Wine - Merlot Vina Carmen,491,2.5,Mexican
+13,Ooba,Open,"Crab - Claws, 26 - 30",309,2.5,Mexican
+13,Ooba,Open,Chives - Fresh,408,2.5,Mexican
+13,Ooba,Open,Kumquat,280,2.5,Mexican
+13,Ooba,Open,"Doilies - 12, Paper",52,2.5,Mexican
+13,Ooba,Open,Cabbage Roll,99,2.5,Mexican
+13,Ooba,Open,Beer - Tetleys,374,2.5,Mexican
+13,Ooba,Open,"Tea - Darjeeling, Azzura",143,2.5,Mexican
+13,Ooba,Open,Coffee - Flavoured,94,2.5,Mexican
+13,Ooba,Open,Puree - Guava,189,2.5,Mexican
+14,Bubbletube,Open,Cape Capensis - Fillet,328,2.8,North Indian
+14,Bubbletube,Open,Garam Masala Powder,57,2.8,North Indian
+14,Bubbletube,Open,"Pork - Bacon, Double Smoked",367,2.8,North Indian
+14,Bubbletube,Open,Bread - Calabrese Baguette,437,2.8,North Indian
+14,Bubbletube,Open,Cloves - Whole,191,2.8,North Indian
+14,Bubbletube,Open,Aspic - Clear,473,2.8,North Indian
+14,Bubbletube,Open,Chicken - Wieners,312,2.8,North Indian
+14,Bubbletube,Open,Tart - Butter Plain Squares,183,2.8,North Indian
+14,Bubbletube,Open,"Roe - Lump Fish, Black",197,2.8,North Indian
+14,Bubbletube,Open,Remy Red,114,2.8,North Indian
+14,Bubbletube,Open,"Cheese - Mozzarella, Shredded",167,2.8,North Indian
+15,Pixonyx,Open,Cookie - Dough Variety,400,3.3,South Indian
+15,Pixonyx,Open,Energy Drink - Franks Original,82,3.3,South Indian
+15,Pixonyx,Open,"Lamb - Leg, Diced",225,3.3,South Indian
+15,Pixonyx,Open,Butter Sweet,156,3.3,South Indian
+15,Pixonyx,Open,Wine - Vidal Icewine Magnotta,120,3.3,South Indian
+15,Pixonyx,Open,Seaweed Green Sheets,97,3.3,South Indian
+15,Pixonyx,Open,Maple Syrup,457,3.3,South Indian
+15,Pixonyx,Open,Ice Cream - Vanilla,329,3.3,South Indian
+16,Wordware,Open,"Crab - Back Fin Meat, Canned",135,3.2,North Indian
+16,Wordware,Open,Pepper - Pablano,395,3.2,North Indian
+16,Wordware,Open,"Bread - Sticks, Thin, Plain",304,3.2,North Indian
+16,Wordware,Open,"Yeast - Fresh, Fleischman",101,3.2,North Indian
+16,Wordware,Open,Apple - Custard,322,3.2,North Indian
+16,Wordware,Open,Puff Pastry - Sheets,97,3.2,North Indian
+16,Wordware,Open,Flower - Daisies,355,3.2,North Indian
+16,Wordware,Open,Pork Ham Prager,369,3.2,North Indian
+16,Wordware,Open,Beans - Soya Bean,494,3.2,North Indian
+16,Wordware,Open,Pork - European Side Bacon,380,3.2,North Indian
+17,Brainlounge,Close,Food Colouring - Orange,90,2.5,Chinese
+17,Brainlounge,Close,Red Currant Jelly,290,2.5,Chinese
+17,Brainlounge,Close,"Pasta - Canelloni, Single Serve",341,2.5,Chinese
+17,Brainlounge,Close,Beef Wellington,167,2.5,Chinese
+17,Brainlounge,Close,Pectin,403,2.5,Chinese
+17,Brainlounge,Close,Muffin Batt - Carrot Spice,55,2.5,Chinese
+17,Brainlounge,Close,Smoked Tongue,71,2.5,Chinese
+17,Brainlounge,Close,Breakfast Quesadillas,130,2.5,Chinese
+18,Podcat,Open,Wine - Chateau Aqueria Tavel,295,2.8,Mexican
+18,Podcat,Open,Napkin - Beverage 1 Ply,416,2.8,Mexican
+18,Podcat,Open,Salt And Pepper Mix - White,181,2.8,Mexican
+18,Podcat,Open,Barramundi,91,2.8,Mexican
+18,Podcat,Open,Melon - Cantaloupe,195,2.8,Mexican
+18,Podcat,Open,Nacho Chips,398,2.8,Mexican
+19,Photobean,Close,Icecream - Dstk Cml And Fdg,401,4,Italian
+19,Photobean,Close,Tea - English Breakfast,367,4,Italian
+19,Photobean,Close,Wine - Magnotta - Bel Paese White,472,4,Italian
+19,Photobean,Close,"Cheese - Boursin, Garlic / Herbs",100,4,Italian
+19,Photobean,Close,Cheese - Shred Cheddar / Mozza,221,4,Italian
+19,Photobean,Close,"Artichoke - Hearts, Canned",72,4,Italian
+19,Photobean,Close,Gelatine Leaves - Bulk,344,4,Italian
+19,Photobean,Close,Flower - Potmums,309,4,Italian
+19,Photobean,Close,Chips Potato Reg 43g,52,4,Italian
+19,Photobean,Close,"Wine - Red, Cabernet Sauvignon",378,4,Italian
+19,Photobean,Close,Yoplait Drink,344,4,Italian
+20,Eire,Open,Beef - Prime Rib Aaa,231,3.2,South Indian
+20,Eire,Open,Bok Choy - Baby,195,3.2,South Indian
+20,Eire,Open,Beef - Tenderloin Tails,119,3.2,South Indian
+20,Eire,Open,Cognac - Courvaisier,127,3.2,South Indian
+20,Eire,Open,Russian Prince,88,3.2,South Indian
+20,Eire,Open,Ice Cream - Turtles Stick Bar,114,3.2,South Indian
+20,Eire,Open,Ham - Procutinni,481,3.2,South Indian
+21,Zoonoodle,Close,Tea Leaves - Oolong,191,4.9,Chinese
+21,Zoonoodle,Close,"Gingerale - Schweppes, 355 Ml",257,4.9,Chinese
+21,Zoonoodle,Close,Pepper - Roasted Red,215,4.9,Chinese
+21,Zoonoodle,Close,Truffle Paste,175,4.9,Chinese
+21,Zoonoodle,Close,Remy Red Berry Infusion,368,4.9,Chinese
+21,Zoonoodle,Close,Cheese - Marble,91,4.9,Chinese
+21,Zoonoodle,Close,Cabbage - Green,261,4.9,Chinese
+22,Quire,Close,"Quail - Eggs, Fresh",372,4.5,Italian
+22,Quire,Close,Syrup - Chocolate,199,4.5,Italian
+22,Quire,Close,Sausage - Chorizo,92,4.5,Italian
+22,Quire,Close,Cheese - Bocconcini,307,4.5,Italian
+22,Quire,Close,Lime Cordial - Roses,360,4.5,Italian
+22,Quire,Close,Petite Baguette,426,4.5,Italian
+23,Eire,Close,Chickensplit Half,98,4.5,Italian
+23,Eire,Close,Wine - Sauvignon Blanc Oyster,109,4.5,Italian
+23,Eire,Close,Eel Fresh,350,4.5,Italian
+23,Eire,Close,Beer - True North Lager,226,4.5,Italian
+23,Eire,Close,Mini - Vol Au Vents,284,4.5,Italian
+23,Eire,Close,Cheese - Mascarpone,216,4.5,Italian
+23,Eire,Close,Nut - Pumpkin Seeds,453,4.5,Italian
+24,InnoZ,Open,Coffee - Flavoured,94,3.3,Chinese
+24,InnoZ,Open,Nacho Chips,398,3.3,Chinese
+24,InnoZ,Open,Sprouts - Alfalfa,138,3.3,Chinese
+24,InnoZ,Open,Salt - Seasoned,273,3.3,Chinese
+24,InnoZ,Open,Chick Peas - Dried,267,3.3,Chinese
+24,InnoZ,Open,Lid Tray - 16in Dome,157,3.3,Chinese
+24,InnoZ,Open,"Zucchini - Mini, Green",90,3.3,Chinese
+24,InnoZ,Open,Pasta - Canelloni,113,3.3,Chinese
+24,InnoZ,Open,"Pasta - Cappellini, Dry",479,3.3,Chinese
+24,InnoZ,Open,Vinegar - Cider,214,3.3,Chinese
+25,JumpXS,Close,Island Oasis - Raspberry,182,4.5,Chinese
+25,JumpXS,Close,Nacho Chips,398,4.5,Chinese
+25,JumpXS,Close,"Soup - Beef, Base Mix",104,4.5,Chinese
+25,JumpXS,Close,Tea - Herbal - 6 Asst,281,4.5,Chinese
+25,JumpXS,Close,Tea - Black Currant,130,4.5,Chinese
+25,JumpXS,Close,Skewers - Bamboo,382,4.5,Chinese
+26,Skipstorm,Close,Eel Fresh,350,3.1,North Indian
+26,Skipstorm,Close,Cheese - Swiss,396,3.1,North Indian
+26,Skipstorm,Close,Wine - Black Tower Qr,365,3.1,North Indian
+26,Skipstorm,Close,Beef Ground Medium,68,3.1,North Indian
+27,Dabfeed,Close,Shiratamako - Rice Flour,381,2.9,Italian
+27,Dabfeed,Close,Barramundi,91,2.9,Italian
+27,Dabfeed,Close,Beef - Tenderloin - Aa,294,2.9,Italian
+27,Dabfeed,Close,Potatoes - Yukon Gold 5 Oz,320,2.9,Italian
+27,Dabfeed,Close,Bread - Burger,241,2.9,Italian
+27,Dabfeed,Close,Slt - Individual Portions,119,2.9,Italian
+27,Dabfeed,Close,"Bread - Pumpernickle, Rounds",320,2.9,Italian
+27,Dabfeed,Close,Flower - Carnations,426,2.9,Italian
+28,Meezzy,Close,"Mushroom - Shitake, Fresh",265,2.9,Mexican
+28,Meezzy,Close,Orange - Blood,104,2.9,Mexican
+28,Meezzy,Close,Coffee - Espresso,266,2.9,Mexican
+28,Meezzy,Close,Muskox - French Rack,151,2.9,Mexican
+28,Meezzy,Close,Wine - Chianti Classica Docg,377,2.9,Mexican
+28,Meezzy,Close,Sobe - Green Tea,297,2.9,Mexican
+28,Meezzy,Close,Pork - Kidney,166,2.9,Mexican
+28,Meezzy,Close,Sugar - Invert,418,2.9,Mexican
+28,Meezzy,Close,Table Cloth - 53x69 Colour,417,2.9,Mexican
+28,Meezzy,Close,Longos - Cheese Tortellini,344,2.9,Mexican
+29,Yabox,Open,Pork - Hock And Feet Attached,132,4,South Indian
+29,Yabox,Open,Wine - Segura Viudas Aria Brut,234,4,South Indian
+29,Yabox,Open,Yeast Dry - Fleischman,117,4,South Indian
+29,Yabox,Open,Poppy Seed,264,4,South Indian
+29,Yabox,Open,Beef - Ground Lean Fresh,236,4,South Indian
+29,Yabox,Open,"Wine - White, Lindemans Bin 95",63,4,South Indian
+29,Yabox,Open,Beef Flat Iron Steak,437,4,South Indian
+29,Yabox,Open,Oil - Coconut,287,4,South Indian
+29,Yabox,Open,Sausage - Chorizo,92,4,South Indian
+30,Photobean,Close,Spice - Paprika,472,2.7,Italian
+30,Photobean,Close,Foam Cup 6 Oz,240,2.7,Italian
+30,Photobean,Close,Cheese - Pied De Vents,110,2.7,Italian
+30,Photobean,Close,Onions Granulated,449,2.7,Italian
+30,Photobean,Close,Cookie Choc,307,2.7,Italian
+30,Photobean,Close,"Nut - Hazelnut, Ground, Natural",445,2.7,Italian
+30,Photobean,Close,Kale - Red,455,2.7,Italian
+30,Photobean,Close,Bread - Raisin Walnut Oval,207,2.7,Italian
+30,Photobean,Close,Cup Translucent 9 Oz,386,2.7,Italian
+30,Photobean,Close,Cheese - Swiss,396,2.7,Italian
+30,Photobean,Close,Rappini - Andy Boy,83,2.7,Italian
+30,Photobean,Close,Garlic,491,2.7,Italian
+30,Photobean,Close,V8 - Vegetable Cocktail,110,2.7,Italian
+31,Voonix,Open,"Tart Shells - Sweet, 4",343,2.5,South Indian
+31,Voonix,Open,Muffin Batt - Ban Dream Zero,389,2.5,South Indian
+31,Voonix,Open,Devonshire Cream,465,2.5,South Indian
+31,Voonix,Open,Cocoa Butter,74,2.5,South Indian
+31,Voonix,Open,"Vermouth - Sweet, Cinzano",148,2.5,South Indian
+31,Voonix,Open,Sauce - Oyster,285,2.5,South Indian
+31,Voonix,Open,Icecream - Dstk Cml And Fdg,401,2.5,South Indian
+31,Voonix,Open,Pimento - Canned,165,2.5,South Indian
+32,Leenti,Open,Container Clear 8 Oz,268,4,North Indian
+32,Leenti,Open,Turnip - Mini,412,4,North Indian
+32,Leenti,Open,Muffin - Mix - Strawberry Rhubarb,85,4,North Indian
+32,Leenti,Open,Pur Source,53,4,North Indian
+32,Leenti,Open,"Juice - Pineapple, 48 Oz",331,4,North Indian
+32,Leenti,Open,Yoplait Drink,344,4,North Indian
+32,Leenti,Open,Carbonated Water - White Grape,144,4,North Indian
+32,Leenti,Open,Sauce - Vodka Blush,216,4,North Indian
+32,Leenti,Open,Yams,364,4,North Indian
+32,Leenti,Open,Paper - Brown Paper Mini Cups,242,4,North Indian
+32,Leenti,Open,Wine - Two Oceans Cabernet,433,4,North Indian
+33,Twimm,Close,"Nut - Pine Nuts, Whole",258,2.6,North Indian
+33,Twimm,Close,Coffee Beans - Chocolate,417,2.6,North Indian
+33,Twimm,Close,Longos - Chicken Cordon Bleu,422,2.6,North Indian
+34,Fliptune,Close,Plasticknivesblack,153,2.5,Chinese
+34,Fliptune,Close,Fennel,344,2.5,Chinese
+34,Fliptune,Close,Beer - Original Organic Lager,189,2.5,Chinese
+34,Fliptune,Close,Cream - 35%,387,2.5,Chinese
+34,Fliptune,Close,Tray - 12in Rnd Blk,215,2.5,Chinese
+34,Fliptune,Close,"Appetizer - Mini Egg Roll, Shrimp",410,2.5,Chinese
+34,Fliptune,Close,Sausage - Chorizo,92,2.5,Chinese
+34,Fliptune,Close,"Turkey - Breast, Double",272,2.5,Chinese
+34,Fliptune,Close,Brandy - Bar,333,2.5,Chinese
+34,Fliptune,Close,Chinese Foods - Chicken,255,2.5,Chinese
+34,Fliptune,Close,Baking Powder,170,2.5,Chinese
+34,Fliptune,Close,Campari,174,2.5,Chinese
+34,Fliptune,Close,Aspic - Light,391,2.5,Chinese
+34,Fliptune,Close,Sprouts Dikon,489,2.5,Chinese
+34,Fliptune,Close,Soup - Campbells Beef Stew,465,2.5,Chinese
+35,Zoovu,Close,Veal - Leg,198,3.5,North Indian
+35,Zoovu,Close,Wiberg Super Cure,484,3.5,North Indian
+35,Zoovu,Close,"Pasta - Lasagna Noodle, Frozen",411,3.5,North Indian
+35,Zoovu,Close,Coffee Decaf Colombian,388,3.5,North Indian
+35,Zoovu,Close,Pop - Club Soda Can,410,3.5,North Indian
+35,Zoovu,Close,Horseradish Root,236,3.5,North Indian
+35,Zoovu,Close,Puff Pastry - Sheets,97,3.5,North Indian
+35,Zoovu,Close,Banana - Leaves,406,3.5,North Indian
+35,Zoovu,Close,"Wine - White, Pelee Island",231,3.5,North Indian
+36,Yabox,Close,Vacuum Bags 12x16,230,3.8,North Indian
+36,Yabox,Close,The Pop Shoppe - Root Beer,244,3.8,North Indian
+36,Yabox,Close,Beer - Creemore,120,3.8,North Indian
+36,Yabox,Close,Ginger - Pickled,388,3.8,North Indian
+36,Yabox,Close,Bread - Pumpernickel,256,3.8,North Indian
+36,Yabox,Close,"Pork - Loin, Bone - In",169,3.8,North Indian
+36,Yabox,Close,Veal - Liver,387,3.8,North Indian
+36,Yabox,Close,"Plate - Foam, Bread And Butter",69,3.8,North Indian
+36,Yabox,Close,Juice - Lemon,97,3.8,North Indian
+36,Yabox,Close,Curry Paste - Madras,334,3.8,North Indian
+37,Jaxbean,Open,Lobak,214,4.6,Chinese
+37,Jaxbean,Open,Onions - Red Pearl,281,4.6,Chinese
+37,Jaxbean,Open,Wine - Red Oakridge Merlot,477,4.6,Chinese
+37,Jaxbean,Open,Mackerel Whole Fresh,108,4.6,Chinese
+37,Jaxbean,Open,"Water - Mineral, Natural",341,4.6,Chinese
+37,Jaxbean,Open,Tomato Puree,79,4.6,Chinese
+37,Jaxbean,Open,Shichimi Togarashi Peppeers,155,4.6,Chinese
+37,Jaxbean,Open,Compound - Strawberry,123,4.6,Chinese
+37,Jaxbean,Open,Snapple - Mango Maddness,417,4.6,Chinese
+37,Jaxbean,Open,Pastry - Cherry Danish - Mini,106,4.6,Chinese
+37,Jaxbean,Open,"Oil - Food, Lacquer Spray",362,4.6,Chinese
+37,Jaxbean,Open,"Soup - Knorr, Chicken Gumbo",79,4.6,Chinese
+38,Gigazoom,Open,Ecolab Digiclean Mild Fm,52,4.3,Mexican
+38,Gigazoom,Open,Sausage - Breakfast,273,4.3,Mexican
+38,Gigazoom,Open,"Juice - Apple, 1.36l",207,4.3,Mexican
+38,Gigazoom,Open,Wine - Guy Sage Touraine,69,4.3,Mexican
+38,Gigazoom,Open,Wine - Red Oakridge Merlot,477,4.3,Mexican
+38,Gigazoom,Open,Sea Bass - Whole,430,4.3,Mexican
+38,Gigazoom,Open,Bread - Crusty Italian Poly,151,4.3,Mexican
+39,Podcat,Open,"Red Snapper - Fresh, Whole",200,2.5,Chinese
+39,Podcat,Open,Milk - 2% 250 Ml,230,2.5,Chinese
+39,Podcat,Open,Egg Patty Fried,499,2.5,Chinese
+39,Podcat,Open,"Mushroom - Enoki, Dry",450,2.5,Chinese
+39,Podcat,Open,"Veal - Inside Round / Top, Lean",160,2.5,Chinese
+39,Podcat,Open,Sobe - Lizard Fuel,234,2.5,Chinese
+39,Podcat,Open,Beef Flat Iron Steak,437,2.5,Chinese
+39,Podcat,Open,"Melon - Watermelon, Seedless",323,2.5,Chinese
+39,Podcat,Open,Soup - Campbells - Chicken Noodle,159,2.5,Chinese
+39,Podcat,Open,"Bread - Pita, Mini",400,2.5,Chinese
+40,Jayo,Open,Chips Potato Swt Chilli Sour,118,3.4,South Indian
+40,Jayo,Open,Steam Pan Full Lid,257,3.4,South Indian
+40,Jayo,Open,Sausage - Meat,443,3.4,South Indian
+40,Jayo,Open,"Soup - Knorr, Ministrone",272,3.4,South Indian
+40,Jayo,Open,"Water, Tap",182,3.4,South Indian
+40,Jayo,Open,"Mushroom - Morels, Dry",53,3.4,South Indian
+40,Jayo,Open,Thyme - Dried,162,3.4,South Indian
+40,Jayo,Open,Beef Striploin Aaa,402,3.4,South Indian
+40,Jayo,Open,Ham - Procutinni,481,3.4,South Indian
+40,Jayo,Open,Mudslide,167,3.4,South Indian
+40,Jayo,Open,Trueblue - Blueberry Cranberry,162,3.4,South Indian
+41,Thoughtsphere,Open,"Mushroom - Enoki, Dry",450,3.5,North Indian
+41,Thoughtsphere,Open,"Syrup - Monin, Irish Cream",72,3.5,North Indian
+41,Thoughtsphere,Open,"Juice - Clamato, 341 Ml",197,3.5,North Indian
+41,Thoughtsphere,Open,"Pail - 15l White, With Handle",350,3.5,North Indian
+41,Thoughtsphere,Open,"Pasta - Linguini, Dry",121,3.5,North Indian
+41,Thoughtsphere,Open,Chocolate Eclairs,292,3.5,North Indian
+41,Thoughtsphere,Open,"Pork - Chop, Frenched",243,3.5,North Indian
+41,Thoughtsphere,Open,Nantucket - Pomegranate Pear,53,3.5,North Indian
+41,Thoughtsphere,Open,Gherkin,404,3.5,North Indian
+41,Thoughtsphere,Open,Muffin - Banana Nut Individual,189,3.5,North Indian
+42,Brainverse,Open,Apricots - Dried,428,5,North Indian
+42,Brainverse,Open,Sauce - Thousand Island,452,5,North Indian
+42,Brainverse,Open,Whmis Spray Bottle Graduated,416,5,North Indian
+42,Brainverse,Open,"Marjoram - Dried, Rubbed",298,5,North Indian
+42,Brainverse,Open,Coffee - Dark Roast,72,5,North Indian
+42,Brainverse,Open,Chips Potato Reg 43g,52,5,North Indian
+42,Brainverse,Open,Soup Campbells - Italian Wedding,293,5,North Indian
+42,Brainverse,Open,Pomello,198,5,North Indian
+42,Brainverse,Open,Island Oasis - Pina Colada,148,5,North Indian
+42,Brainverse,Open,Fiddlehead - Frozen,435,5,North Indian
+42,Brainverse,Open,Veal - Liver,387,5,North Indian
+42,Brainverse,Open,Spic And Span All Purpose,127,5,North Indian
+42,Brainverse,Open,"Pasta - Penne, Lisce, Dry",135,5,North Indian
+43,Brainsphere,Open,"Napkin - Dinner, White",155,2.7,Chinese
+43,Brainsphere,Open,Tea - Decaf 1 Cup,338,2.7,Chinese
+43,Brainsphere,Open,"Shrimp - 16/20, Peeled Deviened",436,2.7,Chinese
+43,Brainsphere,Open,Cauliflower,251,2.7,Chinese
+43,Brainsphere,Open,Remy Red,114,2.7,Chinese
+43,Brainsphere,Open,Lotus Leaves,311,2.7,Chinese
+43,Brainsphere,Open,Wine - Toasted Head,130,2.7,Chinese
+43,Brainsphere,Open,"Cup - 6oz, Foam",407,2.7,Chinese
+43,Brainsphere,Open,Turnip - White,99,2.7,Chinese
+43,Brainsphere,Open,Turkey - Ground. Lean,62,2.7,Chinese
+43,Brainsphere,Open,Bagel - Ched Chs Presliced,174,2.7,Chinese
+43,Brainsphere,Open,Corn Kernels - Frozen,424,2.7,Chinese
+43,Brainsphere,Open,Veal - Insides Provini,134,2.7,Chinese
+43,Brainsphere,Open,"Cup - 6oz, Foam",407,2.7,Chinese
+44,Buzzbean,Open,Steampan - Foil,248,4.1,Italian
+44,Buzzbean,Open,Cookies - Amaretto,59,4.1,Italian
+44,Buzzbean,Open,Vinegar - Sherry,72,4.1,Italian
+44,Buzzbean,Open,Sachet,384,4.1,Italian
+44,Buzzbean,Open,"Carrots - Mini, Stem On",374,4.1,Italian
+44,Buzzbean,Open,"Gingerale - Schweppes, 355 Ml",257,4.1,Italian
+44,Buzzbean,Open,Sage Ground Wiberg,473,4.1,Italian
+45,Yamia,Open,"Pasta - Penne, Rigate, Dry",50,4.9,Chinese
+45,Yamia,Open,"Radish - Black, Winter, Organic",470,4.9,Chinese
+45,Yamia,Open,Cookie Double Choco,241,4.9,Chinese
+45,Yamia,Open,"Flour - Corn, Fine",217,4.9,Chinese
+45,Yamia,Open,Wine - Ice Wine,137,4.9,Chinese
+45,Yamia,Open,"Beef - Baby, Liver",314,4.9,Chinese
+45,Yamia,Open,Lettuce - Romaine,374,4.9,Chinese
+45,Yamia,Open,"Bread - Sticks, Thin, Plain",304,4.9,Chinese
+45,Yamia,Open,Wine - Cotes Du Rhone,238,4.9,Chinese
+45,Yamia,Open,Dried Apple,450,4.9,Chinese
+45,Yamia,Open,Sauce - Mint,166,4.9,Chinese
+46,Aibox,Open,Tea - Herbal Sweet Dreams,455,5,Chinese
+46,Aibox,Open,Soup - Base Broth Beef,399,5,Chinese
+46,Aibox,Open,"Turkey - Breast, Bone - In",247,5,Chinese
+46,Aibox,Open,Figs,440,5,Chinese
+46,Aibox,Open,Wine - Two Oceans Cabernet,433,5,Chinese
+46,Aibox,Open,Creme De Menthe Green,138,5,Chinese
+46,Aibox,Open,Cup - 4oz Translucent,245,5,Chinese
+46,Aibox,Open,"Soup - Knorr, Veg / Beef",204,5,Chinese
+46,Aibox,Open,"Wine - White, Pinot Grigio",415,5,Chinese
+46,Aibox,Open,"Bread - Dark Rye, Loaf",111,5,Chinese
+46,Aibox,Open,Spinach - Baby,351,5,Chinese
+47,Kwilith,Close,Rice - Sushi,173,4,Italian
+47,Kwilith,Close,Cabbage - Savoy,357,4,Italian
+47,Kwilith,Close,Pate - Peppercorn,187,4,Italian
+47,Kwilith,Close,Wine - Saint Emilion Calvet,132,4,Italian
+47,Kwilith,Close,Carbonated Water - Blackcherry,436,4,Italian
+47,Kwilith,Close,Pasta - Fusili Tri - Coloured,321,4,Italian
+47,Kwilith,Close,Bread Ww Cluster,347,4,Italian
+47,Kwilith,Close,"Mushroom - Shitake, Fresh",265,4,Italian
+48,Voomm,Close,Towel Multifold,274,4.4,North Indian
+48,Voomm,Close,"Cheese - Woolwich Goat, Log",372,4.4,North Indian
+48,Voomm,Close,Pepper - Green Thai,244,4.4,North Indian
+48,Voomm,Close,Sugar - Cubes,467,4.4,North Indian
+48,Voomm,Close,Juice - V8 Splash,486,4.4,North Indian
+48,Voomm,Close,Cornish Hen,176,4.4,North Indian
+48,Voomm,Close,Evaporated Milk - Skim,377,4.4,North Indian
+48,Voomm,Close,Cheese - Asiago,273,4.4,North Indian
+48,Voomm,Close,Juice - Lagoon Mango,250,4.4,North Indian
+48,Voomm,Close,Cups 10oz Trans,449,4.4,North Indian
+48,Voomm,Close,Fudge - Cream Fudge,65,4.4,North Indian
+48,Voomm,Close,Beef Dry Aged Tenderloin Aaa,417,4.4,North Indian
+48,Voomm,Close,"Champagne - Brights, Dry",401,4.4,North Indian
+49,Skimia,Close,Foil Cont Round,420,3.6,Chinese
+49,Skimia,Close,"Croissant, Raw - Mini",163,3.6,Chinese
+49,Skimia,Close,Nougat - Paste / Cream,419,3.6,Chinese
+49,Skimia,Close,Appetizer - Mango Chevre,240,3.6,Chinese
+49,Skimia,Close,Island Oasis - Wildberry,333,3.6,Chinese
+49,Skimia,Close,Wine - Ej Gallo Sierra Valley,293,3.6,Chinese
+49,Skimia,Close,Vinegar - Champagne,55,3.6,Chinese
+49,Skimia,Close,Tea - Herbal Sweet Dreams,455,3.6,Chinese
+50,Zoonoodle,Open,Towel Multifold,274,2.9,Chinese
+50,Zoonoodle,Open,"Fish - Atlantic Salmon, Cold",157,2.9,Chinese
+50,Zoonoodle,Open,Wine - Pinot Grigio Collavini,64,2.9,Chinese
+50,Zoonoodle,Open,Gherkin,404,2.9,Chinese
+50,Zoonoodle,Open,"Quail - Eggs, Fresh",372,2.9,Chinese
+50,Zoonoodle,Open,Chicken - Tenderloin,139,2.9,Chinese
+50,Zoonoodle,Open,Wine - Ej Gallo Sierra Valley,293,2.9,Chinese
+50,Zoonoodle,Open,Muffin Batt - Choc Chk,431,2.9,Chinese
+50,Zoonoodle,Open,Sprouts - Peppercress,177,2.9,Chinese
+51,Fivechat,Open,Guava,403,4.5,Mexican
+51,Fivechat,Open,Puff Pastry - Sheets,97,4.5,Mexican
+51,Fivechat,Open,Liqueur - Melon,261,4.5,Mexican
+52,Gabtune,Open,Container - Hngd Cll Blk 7x7x3,103,4.9,Chinese
+52,Gabtune,Open,Table Cloth 62x114 Colour,61,4.9,Chinese
+52,Gabtune,Open,Chips Potato Reg 43g,52,4.9,Chinese
+52,Gabtune,Open,Plate Foam Laminated 9in Blk,489,4.9,Chinese
+52,Gabtune,Open,Squash - Acorn,136,4.9,Chinese
+52,Gabtune,Open,Beans - Kidney White,383,4.9,Chinese
+52,Gabtune,Open,Pepper - Green,373,4.9,Chinese
+52,Gabtune,Open,Mustard - Pommery,333,4.9,Chinese
+52,Gabtune,Open,Flour - Chickpea,294,4.9,Chinese
+52,Gabtune,Open,Coffee Cup 12oz 5342cd,298,4.9,Chinese
+52,Gabtune,Open,Beef - Eye Of Round,225,4.9,Chinese
+52,Gabtune,Open,Spice - Onion Powder Granulated,152,4.9,Chinese
+52,Gabtune,Open,Bread - Raisin Walnut Oval,207,4.9,Chinese
+52,Gabtune,Open,"Artichokes - Knobless, White",311,4.9,Chinese
+52,Gabtune,Open,Chips Potato All Dressed - 43g,470,4.9,Chinese
+53,Yacero,Open,Wine - Penfolds Koonuga Hill,89,4.4,Chinese
+53,Yacero,Open,Pop Shoppe Cream Soda,289,4.4,Chinese
+53,Yacero,Open,Danishes - Mini Cheese,237,4.4,Chinese
+53,Yacero,Open,Table Cloth 54x54 Colour,366,4.4,Chinese
+53,Yacero,Open,Miso - Soy Bean Paste,283,4.4,Chinese
+53,Yacero,Open,"Mushroom - Shitake, Dry",438,4.4,Chinese
+54,Browsezoom,Open,Chips Potato Swt Chilli Sour,118,3,Mexican
+54,Browsezoom,Open,Pepper - Green,373,3,Mexican
+54,Browsezoom,Open,"Cheese - Havarti, Roasted Garlic",197,3,Mexican
+54,Browsezoom,Open,Apple - Custard,322,3,Mexican
+54,Browsezoom,Open,Wine - Black Tower Qr,365,3,Mexican
+54,Browsezoom,Open,Food Colouring - Orange,90,3,Mexican
+54,Browsezoom,Open,Lotus Rootlets - Canned,318,3,Mexican
+54,Browsezoom,Open,"Juice - Orange, Concentrate",147,3,Mexican
+55,Wordify,Close,Icecream - Dibs,170,4.2,Mexican
+55,Wordify,Close,Wine - Casablanca Valley,255,4.2,Mexican
+55,Wordify,Close,Silicone Parch. 16.3x24.3,477,4.2,Mexican
+55,Wordify,Close,Veal - Slab Bacon,336,4.2,Mexican
+55,Wordify,Close,Sauce - Demi Glace,271,4.2,Mexican
+56,Yakijo,Open,"Doilies - 8, Paper",236,2.7,Mexican
+56,Yakijo,Open,"Apple - Delicious, Golden",302,2.7,Mexican
+56,Yakijo,Open,Grapefruit - White,95,2.7,Mexican
+56,Yakijo,Open,Cut Wakame - Hanawakaba,243,2.7,Mexican
+56,Yakijo,Open,Wine - Sake,99,2.7,Mexican
+56,Yakijo,Open,Schnappes Peppermint - Walker,167,2.7,Mexican
+56,Yakijo,Open,"Beef - Ground, Extra Lean, Fresh",51,2.7,Mexican
+56,Yakijo,Open,Arctic Char - Fillets,173,2.7,Mexican
+56,Yakijo,Open,Red Currant Jelly,290,2.7,Mexican
+56,Yakijo,Open,Truffle Shells - White Chocolate,469,2.7,Mexican
+56,Yakijo,Open,Pepper - Cubanelle,366,2.7,Mexican
+56,Yakijo,Open,Madeira,343,2.7,Mexican
+57,Shuffledrive,Close,Pepper - Green Thai,244,3.3,Chinese
+57,Shuffledrive,Close,Cake Sheet Combo Party Pack,224,3.3,Chinese
+57,Shuffledrive,Close,Potatoes - Fingerling 4 Oz,178,3.3,Chinese
+57,Shuffledrive,Close,Spinach - Frozen,414,3.3,Chinese
+57,Shuffledrive,Close,Salt - Sea,219,3.3,Chinese
+57,Shuffledrive,Close,Compound - Strawberry,123,3.3,Chinese
+57,Shuffledrive,Close,Juice - Ocean Spray Cranberry,372,3.3,Chinese
+57,Shuffledrive,Close,Pepper - Orange,57,3.3,Chinese
+57,Shuffledrive,Close,Roe - Flying Fish,488,3.3,Chinese
+58,Photobug,Open,Pears - Anjou,480,3.7,North Indian
+58,Photobug,Open,Vinegar - White,422,3.7,North Indian
+58,Photobug,Open,Cod - Black Whole Fillet,141,3.7,North Indian
+59,Lazz,Open,Madeira,343,2.7,South Indian
+59,Lazz,Open,Lobster - Tail 6 Oz,103,2.7,South Indian
+59,Lazz,Open,Chocolate Bar - Coffee Crisp,58,2.7,South Indian
+59,Lazz,Open,Appetizer - Mushroom Tart,94,2.7,South Indian
+59,Lazz,Open,"Chicken - White Meat, No Tender",477,2.7,South Indian
+59,Lazz,Open,Arctic Char - Fillets,173,2.7,South Indian
+59,Lazz,Open,Vinegar - White Wine,236,2.7,South Indian
+59,Lazz,Open,Bread - 10 Grain Parisian,214,2.7,South Indian
+59,Lazz,Open,Halibut - Fletches,136,2.7,South Indian
+59,Lazz,Open,Cornflakes,236,2.7,South Indian
+60,Zoomzone,Open,Peach - Halves,461,4.9,South Indian
+60,Zoomzone,Open,Chicken - Livers,150,4.9,South Indian
+60,Zoomzone,Open,"Club Soda - Schweppes, 355 Ml",216,4.9,South Indian
+60,Zoomzone,Open,Cream - 18%,254,4.9,South Indian
+60,Zoomzone,Open,Beef Wellington,167,4.9,South Indian
+60,Zoomzone,Open,Dried Peach,485,4.9,South Indian
+60,Zoomzone,Open,Chicken Breast Halal,288,4.9,South Indian
+60,Zoomzone,Open,Mix - Cappucino Cocktail,325,4.9,South Indian
+60,Zoomzone,Open,"Hickory Smoke, Liquid",473,4.9,South Indian
+60,Zoomzone,Open,Sour Puss - Tangerine,291,4.9,South Indian
+60,Zoomzone,Open,Soup - Boston Clam Chowder,186,4.9,South Indian
+60,Zoomzone,Open,Sprouts - Bean,481,4.9,South Indian
+60,Zoomzone,Open,"Glass - Wine, Plastic, Clear 5 Oz",224,4.9,South Indian
+60,Zoomzone,Open,Hummus - Spread,257,4.9,South Indian
+60,Zoomzone,Open,Soup - Campbells Asian Noodle,95,4.9,South Indian
+61,Jabbertype,Close,Breadfruit,54,4.4,Mexican
+61,Jabbertype,Close,Ostrich - Prime Cut,499,4.4,Mexican
+61,Jabbertype,Close,Kellogs Special K Cereal,301,4.4,Mexican
+61,Jabbertype,Close,Appetizer - Veg Assortment,216,4.4,Mexican
+61,Jabbertype,Close,Bagel - Sesame Seed Presliced,411,4.4,Mexican
+61,Jabbertype,Close,Lemon Pepper,78,4.4,Mexican
+61,Jabbertype,Close,Yokaline,402,4.4,Mexican
+61,Jabbertype,Close,"Chilli Paste, Ginger Garlic",494,4.4,Mexican
+61,Jabbertype,Close,Cheese - Wine,345,4.4,Mexican
+61,Jabbertype,Close,Nutmeg - Ground,133,4.4,Mexican
+61,Jabbertype,Close,Red Currant Jelly,290,4.4,Mexican
+61,Jabbertype,Close,Cookie Choc,307,4.4,Mexican
+61,Jabbertype,Close,Tomatoes - Grape,116,4.4,Mexican
+61,Jabbertype,Close,"Tart Shells - Sweet, 3",293,4.4,Mexican
+61,Jabbertype,Close,Cheese - Perron Cheddar,465,4.4,Mexican
+61,Jabbertype,Close,Wine - Winzer Krems Gruner,493,4.4,Mexican
+62,Tagtune,Close,Soup - Campbells Chili Veg,159,3.2,Italian
+62,Tagtune,Close,Tomato Puree,79,3.2,Italian
+62,Tagtune,Close,Beer - Blue Light,317,3.2,Italian
+62,Tagtune,Close,"Nut - Hazelnut, Ground, Natural",445,3.2,Italian
+62,Tagtune,Close,"Doilies - 8, Paper",236,3.2,Italian
+62,Tagtune,Close,"Beans - Black Bean, Canned",191,3.2,Italian
+62,Tagtune,Close,Cheese - Shred Cheddar / Mozza,221,3.2,Italian
+62,Tagtune,Close,Pork - Backs - Boneless,187,3.2,Italian
+62,Tagtune,Close,Longos - Chicken Cordon Bleu,422,3.2,Italian
+62,Tagtune,Close,Compound - Passion Fruit,238,3.2,Italian
+62,Tagtune,Close,Shark - Loin,249,3.2,Italian
+63,Quinu,Close,Lettuce - Arugula,296,2.6,South Indian
+63,Quinu,Close,Beer - Fruli,180,2.6,South Indian
+63,Quinu,Close,Shrimp - Black Tiger 8 - 12,139,2.6,South Indian
+63,Quinu,Close,Soup Campbells Turkey Veg.,287,2.6,South Indian
+63,Quinu,Close,"Nut - Pecan, Pieces",284,2.6,South Indian
+63,Quinu,Close,"Iced Tea - Lemon, 460 Ml",130,2.6,South Indian
+64,Jayo,Close,"Jam - Raspberry,jar",365,3.4,Chinese
+64,Jayo,Close,Paste - Black Olive,91,3.4,Chinese
+64,Jayo,Close,Vinegar - Red Wine,184,3.4,Chinese
+64,Jayo,Close,"Rosemary - Primerba, Paste",193,3.4,Chinese
+64,Jayo,Close,Pears - Bosc,52,3.4,Chinese
+64,Jayo,Close,Cheese - Cambozola,422,3.4,Chinese
+64,Jayo,Close,Red Currant Jelly,290,3.4,Chinese
+64,Jayo,Close,Cloves - Ground,352,3.4,Chinese
+65,Meevee,Open,"Pasta - Spaghetti, Dry",358,2.7,Chinese
+65,Meevee,Open,Appetizer - Chicken Satay,168,2.7,Chinese
+65,Meevee,Open,Seabream Whole Farmed,119,2.7,Chinese
+65,Meevee,Open,Lamb Tenderloin Nz Fr,256,2.7,Chinese
+65,Meevee,Open,Cookies - Amaretto,59,2.7,Chinese
+66,Skimia,Close,"Fish - Base, Bouillion",104,3.1,South Indian
+66,Skimia,Close,Compound - Orange,194,3.1,South Indian
+66,Skimia,Close,Tea - Earl Grey,215,3.1,South Indian
+66,Skimia,Close,"Jam - Raspberry,jar",365,3.1,South Indian
+66,Skimia,Close,"Tomatoes - Diced, Canned",375,3.1,South Indian
+66,Skimia,Close,Spaghetti Squash,462,3.1,South Indian
+66,Skimia,Close,Tea - Herbal Sweet Dreams,455,3.1,South Indian
+66,Skimia,Close,Langers - Cranberry Cocktail,466,3.1,South Indian
+66,Skimia,Close,Dc Hikiage Hira Huba,492,3.1,South Indian
+66,Skimia,Close,Rappini - Andy Boy,83,3.1,South Indian
+66,Skimia,Close,Cocktail Napkin Blue,131,3.1,South Indian
+66,Skimia,Close,Truffle Shells - Semi - Sweet,157,3.1,South Indian
+66,Skimia,Close,"Bread - Dark Rye, Loaf",111,3.1,South Indian
+66,Skimia,Close,"Vermouth - Sweet, Cinzano",148,3.1,South Indian
+66,Skimia,Close,"Chicken - Wings, Tip Off",199,3.1,South Indian
+67,Oba,Close,Cleaner - Comet,181,4.6,Chinese
+67,Oba,Close,Cheese - Goat,285,4.6,Chinese
+67,Oba,Close,Okra,330,4.6,Chinese
+67,Oba,Close,"Nut - Almond, Blanched, Sliced",416,4.6,Chinese
+67,Oba,Close,Teriyaki Sauce,95,4.6,Chinese
+67,Oba,Close,Hersey Shakes,112,4.6,Chinese
+67,Oba,Close,Towel - Roll White,266,4.6,Chinese
+68,Photolist,Open,Sambuca - Ramazzotti,412,3.4,Chinese
+68,Photolist,Open,Curry Paste - Madras,334,3.4,Chinese
+68,Photolist,Open,"Pepper - Paprika, Hungarian",254,3.4,Chinese
+68,Photolist,Open,Zucchini - Yellow,316,3.4,Chinese
+68,Photolist,Open,Beer - Sleeman Fine Porter,286,3.4,Chinese
+68,Photolist,Open,"Pasta - Cappellini, Dry",479,3.4,Chinese
+68,Photolist,Open,Plate Pie Foil,403,3.4,Chinese
+69,Shuffletag,Open,"Chicken - Leg, Boneless",60,4.9,North Indian
+69,Shuffletag,Open,"Peas - Pigeon, Dry",172,4.9,North Indian
+69,Shuffletag,Open,"Sprite, Diet - 355ml",266,4.9,North Indian
+69,Shuffletag,Open,"Pepper - Paprika, Spanish",188,4.9,North Indian
+69,Shuffletag,Open,Cheese - Brie,473,4.9,North Indian
+69,Shuffletag,Open,Milk - Skim,326,4.9,North Indian
+69,Shuffletag,Open,Honey - Comb,403,4.9,North Indian
+69,Shuffletag,Open,Ecolab - Balanced Fusion,265,4.9,North Indian
+69,Shuffletag,Open,Skirt - 24 Foot,289,4.9,North Indian
+70,Zoonoodle,Open,Apple - Custard,322,4.7,South Indian
+70,Zoonoodle,Open,Beef - Inside Round,490,4.7,South Indian
+70,Zoonoodle,Open,Pork - Ham Hocks - Smoked,98,4.7,South Indian
+70,Zoonoodle,Open,Celery Root,104,4.7,South Indian
+70,Zoonoodle,Open,Daikon Radish,181,4.7,South Indian
+70,Zoonoodle,Open,"Wine - White, Colubia Cresh",125,4.7,South Indian
+70,Zoonoodle,Open,Table Cloth 54x54 White,478,4.7,South Indian
+70,Zoonoodle,Open,Mayonnaise,292,4.7,South Indian
+70,Zoonoodle,Open,Seaweed Green Sheets,97,4.7,South Indian
+70,Zoonoodle,Open,"Pasta - Cannelloni, Sheets, Fresh",300,4.7,South Indian
+70,Zoonoodle,Open,"Rum - Light, Captain Morgan",393,4.7,South Indian
+70,Zoonoodle,Open,"Trout - Rainbow, Frozen",175,4.7,South Indian
+70,Zoonoodle,Open,Whmis Spray Bottle Graduated,416,4.7,South Indian
+71,Plajo,Open,Mustard - Pommery,333,4.7,North Indian
+71,Plajo,Open,Passion Fruit,228,4.7,North Indian
+71,Plajo,Open,Anisette - Mcguiness,495,4.7,North Indian
+71,Plajo,Open,"Tomatoes - Plum, Canned",290,4.7,North Indian
+71,Plajo,Open,"Cheese - Cheddar, Old White",488,4.7,North Indian
+71,Plajo,Open,Sauce - Caesar Dressing,417,4.7,North Indian
+71,Plajo,Open,"Loaf Pan - 2 Lb, Foil",254,4.7,North Indian
+71,Plajo,Open,Beef - Top Butt,366,4.7,North Indian
+71,Plajo,Open,"Pork - Tenderloin, Frozen",151,4.7,North Indian
+71,Plajo,Open,Muffin Batt - Blueberry Passion,390,4.7,North Indian
+72,Babbleblab,Open,Sun - Dried Tomatoes,449,3.1,South Indian
+72,Babbleblab,Open,Beer - Original Organic Lager,189,3.1,South Indian
+72,Babbleblab,Open,Fiddlehead - Frozen,435,3.1,South Indian
+72,Babbleblab,Open,Garam Masala Powder,57,3.1,South Indian
+72,Babbleblab,Open,"Pasta - Cappellini, Dry",479,3.1,South Indian
+72,Babbleblab,Open,Shopper Bag - S - 4,103,3.1,South Indian
+72,Babbleblab,Open,Tomatoes - Orange,407,3.1,South Indian
+72,Babbleblab,Open,Bread - Olive Dinner Roll,316,3.1,South Indian
+72,Babbleblab,Open,Ecolab Crystal Fusion,290,3.1,South Indian
+73,Aivee,Close,Neckerchief Blck,86,4.6,Chinese
+73,Aivee,Close,Yoghurt Tubes,137,4.6,Chinese
+73,Aivee,Close,"Jam - Strawberry, 20 Ml Jar",466,4.6,Chinese
+73,Aivee,Close,Wine - Pinot Noir Mondavi Coastal,483,4.6,Chinese
+73,Aivee,Close,Shrimp - Black Tiger 26/30,440,4.6,Chinese
+73,Aivee,Close,Venison - Striploin,361,4.6,Chinese
+73,Aivee,Close,Beef Flat Iron Steak,437,4.6,Chinese
+73,Aivee,Close,Appetizer - Lobster Phyllo Roll,154,4.6,Chinese
+73,Aivee,Close,Sugar - White Packet,200,4.6,Chinese
+73,Aivee,Close,Wine - Vouvray Cuvee Domaine,271,4.6,Chinese
+73,Aivee,Close,Eggplant - Asian,212,4.6,Chinese
+74,Dabjam,Open,Dried Cranberries,195,3.6,Italian
+74,Dabjam,Open,Amarula Cream,282,3.6,Italian
+74,Dabjam,Open,"Chilli Paste, Hot Sambal Oelek",335,3.6,Italian
+74,Dabjam,Open,Cheese - Le Cheve Noir,77,3.6,Italian
+74,Dabjam,Open,Silicone Parch. 16.3x24.3,477,3.6,Italian
+74,Dabjam,Open,Crab Brie In Phyllo,148,3.6,Italian
+74,Dabjam,Open,Easy Off Oven Cleaner,474,3.6,Italian
+74,Dabjam,Open,Cakes Assorted,429,3.6,Italian
+74,Dabjam,Open,Chocolate - Sugar Free Semi Choc,311,3.6,Italian
+74,Dabjam,Open,Sauce - Ranch Dressing,351,3.6,Italian
+74,Dabjam,Open,Chocolate Bar - Oh Henry,365,3.6,Italian
+74,Dabjam,Open,Alize Red Passion,448,3.6,Italian
+74,Dabjam,Open,Stainless Steel Cleaner Vision,116,3.6,Italian
+74,Dabjam,Open,Mangoes,264,3.6,Italian
+74,Dabjam,Open,Bread - Burger,241,3.6,Italian
+74,Dabjam,Open,Island Oasis - Banana Daiquiri,295,3.6,Italian
+75,Thoughtstorm,Close,Juice - Lemon,97,3.4,Italian
+75,Thoughtstorm,Close,"Juice - Apple, 500 Ml",448,3.4,Italian
+75,Thoughtstorm,Close,"Chicken - Base, Ultimate",172,3.4,Italian
+75,Thoughtstorm,Close,Oranges,193,3.4,Italian
+75,Thoughtstorm,Close,Muffin Batt - Ban Dream Zero,389,3.4,Italian
+75,Thoughtstorm,Close,Coffee Beans - Chocolate,417,3.4,Italian
+75,Thoughtstorm,Close,Cheese - Sheep Milk,102,3.4,Italian
+76,Oyoyo,Close,Dooleys Toffee,107,4.4,Chinese
+76,Oyoyo,Close,Jameson - Irish Whiskey,107,4.4,Chinese
+76,Oyoyo,Close,Plastic Arrow Stir Stick,483,4.4,Chinese
+76,Oyoyo,Close,Liquid Aminios Acid - Braggs,470,4.4,Chinese
+76,Oyoyo,Close,Wine - Pinot Noir Stoneleigh,426,4.4,Chinese
+76,Oyoyo,Close,"Wine - White, Ej",290,4.4,Chinese
+76,Oyoyo,Close,Cheese - Valancey,297,4.4,Chinese
+76,Oyoyo,Close,Beans - Kidney White,383,4.4,Chinese
+76,Oyoyo,Close,Shrimp - Prawn,328,4.4,Chinese
+76,Oyoyo,Close,"Wine - Magnotta - Red, Baco",466,4.4,Chinese
+76,Oyoyo,Close,"Bread - Bagels, Mini",111,4.4,Chinese
+77,Jabbersphere,Open,Longos - Assorted Sandwich,451,2.5,Mexican
+77,Jabbersphere,Open,Worcestershire Sauce,117,2.5,Mexican
+77,Jabbersphere,Open,Pepper - Chili Powder,252,2.5,Mexican
+77,Jabbersphere,Open,Pie Filling - Cherry,353,2.5,Mexican
+77,Jabbersphere,Open,Wine - Zonnebloem Pinotage,454,2.5,Mexican
+77,Jabbersphere,Open,Cheese - Mix,402,2.5,Mexican
+77,Jabbersphere,Open,Gatorade - Orange,343,2.5,Mexican
+77,Jabbersphere,Open,"Wine - Red, Antinori Santa",176,2.5,Mexican
+77,Jabbersphere,Open,Wine - Chardonnay Mondavi,358,2.5,Mexican
+78,Browsebug,Open,"Yogurt - Raspberry, 175 Gr",254,2.6,North Indian
+78,Browsebug,Open,Sour Cream,304,2.6,North Indian
+78,Browsebug,Open,Rice - Long Grain,182,2.6,North Indian
+78,Browsebug,Open,Mint - Fresh,270,2.6,North Indian
+78,Browsebug,Open,Table Cloth 120 Round White,322,2.6,North Indian
+78,Browsebug,Open,Salt - Celery,320,2.6,North Indian
+78,Browsebug,Open,Beef - Shank,490,2.6,North Indian
+79,Yakitri,Close,Ice Cream - Super Sandwich,232,4.9,South Indian
+79,Yakitri,Close,"Artichoke - Hearts, Canned",72,4.9,South Indian
+79,Yakitri,Close,Wine - Vovray Sec Domaine Huet,278,4.9,South Indian
+79,Yakitri,Close,Energy Drink - Franks Original,82,4.9,South Indian
+79,Yakitri,Close,Beans - Green,62,4.9,South Indian
+79,Yakitri,Close,Salt And Pepper Mix - White,181,4.9,South Indian
+79,Yakitri,Close,Chutney Sauce,459,4.9,South Indian
+79,Yakitri,Close,Sprouts - Alfalfa,138,4.9,South Indian
+79,Yakitri,Close,Goat - Whole Cut,439,4.9,South Indian
+79,Yakitri,Close,Pastry - Apple Large,215,4.9,South Indian
+79,Yakitri,Close,Steel Wool S.o.s,254,4.9,South Indian
+79,Yakitri,Close,"Beef - Roasted, Cooked",269,4.9,South Indian
+80,Zooveo,Close,Couscous,395,3.1,Chinese
+80,Zooveo,Close,Muffin Mix - Oatmeal,497,3.1,Chinese
+80,Zooveo,Close,"Trout - Rainbow, Fresh",67,3.1,Chinese
+80,Zooveo,Close,Fenngreek Seed,479,3.1,Chinese
+80,Zooveo,Close,Milk - Chocolate 250 Ml,436,3.1,Chinese
+80,Zooveo,Close,Veal - Knuckle,151,3.1,Chinese
+80,Zooveo,Close,Soup - Campbells Bean Medley,446,3.1,Chinese
+80,Zooveo,Close,Water - Tonic,198,3.1,Chinese
+80,Zooveo,Close,Calypso - Strawberry Lemonade,402,3.1,Chinese
+80,Zooveo,Close,Shrimp - Black Tiger 26/30,440,3.1,Chinese
+81,Flipbug,Close,Pepper - Jalapeno,461,3.6,North Indian
+81,Flipbug,Close,Beer - Camerons Cream Ale,314,3.6,North Indian
+81,Flipbug,Close,"Mushroom - Enoki, Fresh",396,3.6,North Indian
+81,Flipbug,Close,"Lamb - Pieces, Diced",284,3.6,North Indian
+81,Flipbug,Close,Milk - Chocolate 250 Ml,436,3.6,North Indian
+81,Flipbug,Close,Sauce - Hollandaise,139,3.6,North Indian
+81,Flipbug,Close,"Pepper - Black, Crushed",88,3.6,North Indian
+81,Flipbug,Close,Icecream - Dstk Strw Chseck,206,3.6,North Indian
+81,Flipbug,Close,Muffin Hinge - 211n,458,3.6,North Indian
+81,Flipbug,Close,Bay Leaf Ground,322,3.6,North Indian
+81,Flipbug,Close,Skewers - Bamboo,382,3.6,North Indian
+81,Flipbug,Close,Muffin Mix - Banana Nut,286,3.6,North Indian
+81,Flipbug,Close,Wine - Rhine Riesling Wolf Blass,485,3.6,North Indian
+82,Myworks,Open,"Sugar - Sweet N Low, Individual",463,3.9,Chinese
+82,Myworks,Open,Olives - Kalamata,392,3.9,Chinese
+82,Myworks,Open,Cake - Dulce De Leche,149,3.9,Chinese
+82,Myworks,Open,"Coconut - Shredded, Sweet",74,3.9,Chinese
+82,Myworks,Open,Cheese - Mozzarella,396,3.9,Chinese
+82,Myworks,Open,Hagen Daza - Dk Choocolate,241,3.9,Chinese
+82,Myworks,Open,Milk - Homo,422,3.9,Chinese
+82,Myworks,Open,Black Currants,399,3.9,Chinese
+82,Myworks,Open,"Tendrils - Baby Pea, Organic",107,3.9,Chinese
+82,Myworks,Open,Wine - Guy Sage Touraine,69,3.9,Chinese
+82,Myworks,Open,Longos - Assorted Sandwich,451,3.9,Chinese
+82,Myworks,Open,Juice - Apple Cider,88,3.9,Chinese
+82,Myworks,Open,Versatainer Nc - 8288,200,3.9,Chinese
+82,Myworks,Open,Bread - Mini Hamburger Bun,389,3.9,Chinese
+82,Myworks,Open,Muffin - Zero Transfat,433,3.9,Chinese
+83,Kayveo,Open,"Lemonade - Natural, 591 Ml",443,2.9,Italian
+83,Kayveo,Open,"Bread - Pumpernickle, Rounds",320,2.9,Italian
+83,Kayveo,Open,Mahi Mahi,417,2.9,Italian
+83,Kayveo,Open,Bagelers,483,2.9,Italian
+83,Kayveo,Open,Pickerel - Fillets,208,2.9,Italian
+83,Kayveo,Open,Wasabi Powder,135,2.9,Italian
+83,Kayveo,Open,Vinegar - Rice,160,2.9,Italian
+83,Kayveo,Open,"Sprite, Diet - 355ml",266,2.9,Italian
+83,Kayveo,Open,Irish Cream - Butterscotch,177,2.9,Italian
+83,Kayveo,Open,"Tomatoes - Vine Ripe, Yellow",281,2.9,Italian
+83,Kayveo,Open,"Capon - Breast, Wing On",500,2.9,Italian
+83,Kayveo,Open,Banana - Green,312,2.9,Italian
+83,Kayveo,Open,"Bar Mix - Pina Colada, 355 Ml",398,2.9,Italian
+83,Kayveo,Open,Oil - Canola,496,2.9,Italian
+83,Kayveo,Open,Table Cloth 53x53 White,297,2.9,Italian
+84,Twimbo,Close,Squid - U - 10 Thailand,140,3,South Indian
+84,Twimbo,Close,Wine - Prosecco Valdobiaddene,472,3,South Indian
+84,Twimbo,Close,Wine - Balbach Riverside,288,3,South Indian
+84,Twimbo,Close,Cake - Cake Sheet Macaroon,239,3,South Indian
+84,Twimbo,Close,Dried Cherries,131,3,South Indian
+84,Twimbo,Close,"Pepper - Black, Ground",121,3,South Indian
+84,Twimbo,Close,Pineapple - Regular,416,3,South Indian
+84,Twimbo,Close,Beef - Flank Steak,116,3,South Indian
+84,Twimbo,Close,Pears - Bosc,52,3,South Indian
+84,Twimbo,Close,Plums - Red,500,3,South Indian
+84,Twimbo,Close,Dried Apple,450,3,South Indian
+85,Zooveo,Close,Sprouts - Pea,305,3.5,Chinese
+85,Zooveo,Close,"Noodles - Cellophane, Thin",285,3.5,Chinese
+85,Zooveo,Close,"Tarragon - Primerba, Paste",211,3.5,Chinese
+85,Zooveo,Close,Green Scrubbie Pad H.duty,84,3.5,Chinese
+85,Zooveo,Close,Piping - Bags Quizna,166,3.5,Chinese
+85,Zooveo,Close,Honey - Lavender,212,3.5,Chinese
+85,Zooveo,Close,Table Cloth 53x69 White,385,3.5,Chinese
+85,Zooveo,Close,Caviar - Salmon,236,3.5,Chinese
+85,Zooveo,Close,The Pop Shoppe Pinapple,112,3.5,Chinese
+85,Zooveo,Close,Cheese - Gouda Smoked,63,3.5,Chinese
+85,Zooveo,Close,"Veal - Tenderloin, Untrimmed",480,3.5,Chinese
+85,Zooveo,Close,Spice - Greek 1 Step,215,3.5,Chinese
+85,Zooveo,Close,Soup - Campbells,163,3.5,Chinese
+85,Zooveo,Close,"Lid - Translucent, 3.5 And 6 Oz",176,3.5,Chinese
+86,Topdrive,Open,Spring Roll Wrappers,202,2.7,Italian
+86,Topdrive,Open,"Beans - Turtle, Black, Dry",407,2.7,Italian
+86,Topdrive,Open,Tomatoes - Orange,407,2.7,Italian
+86,Topdrive,Open,Wine - Marlbourough Sauv Blanc,92,2.7,Italian
+86,Topdrive,Open,Vinegar - White Wine,236,2.7,Italian
+86,Topdrive,Open,"Crab - Dungeness, Whole, live",286,2.7,Italian
+86,Topdrive,Open,Carbonated Water - Lemon Lime,83,2.7,Italian
+87,Zoomzone,Open,Salmon - Sockeye Raw,245,2.7,North Indian
+87,Zoomzone,Open,Juice - Cranberry 284ml,206,2.7,North Indian
+87,Zoomzone,Open,"Yeast - Fresh, Fleischman",101,2.7,North Indian
+87,Zoomzone,Open,Pork - Ham Hocks - Smoked,98,2.7,North Indian
+87,Zoomzone,Open,Swordfish Loin Portions,84,2.7,North Indian
+87,Zoomzone,Open,Island Oasis - Peach Daiquiri,219,2.7,North Indian
+87,Zoomzone,Open,Sea Bass - Whole,430,2.7,North Indian
+87,Zoomzone,Open,Longos - Chicken Cordon Bleu,422,2.7,North Indian
+87,Zoomzone,Open,Cheese - Le Cheve Noir,77,2.7,North Indian
+87,Zoomzone,Open,"Pasta - Rotini, Dry",324,2.7,North Indian
+88,Skinder,Open,Coffee - Decaffeinato Coffee,374,3.3,South Indian
+88,Skinder,Open,"Wine - White, Schroder And Schyl",374,3.3,South Indian
+88,Skinder,Open,Cardamon Seed / Pod,361,3.3,South Indian
+88,Skinder,Open,Wine - Sauvignon Blanc,179,3.3,South Indian
+88,Skinder,Open,"Stock - Veal, White",381,3.3,South Indian
+88,Skinder,Open,Oil - Coconut,287,3.3,South Indian
+88,Skinder,Open,"Yogurt - Banana, 175 Gr",297,3.3,South Indian
+88,Skinder,Open,Cabbage Roll,99,3.3,South Indian
+89,Voonte,Open,Appetizer - Chicken Satay,168,5,Italian
+89,Voonte,Open,"Lobster - Tail, 3 - 4 Oz",420,5,Italian
+89,Voonte,Open,Wine - Beaujolais Villages,291,5,Italian
+89,Voonte,Open,Onions - Vidalia,103,5,Italian
+89,Voonte,Open,Bread - Corn Muffaletta,367,5,Italian
+89,Voonte,Open,"Veal - Tenderloin, Untrimmed",480,5,Italian
+89,Voonte,Open,Cookie Double Choco,241,5,Italian
+89,Voonte,Open,Nantucket Apple Juice,84,5,Italian
+89,Voonte,Open,Bagel - Sesame Seed Presliced,411,5,Italian
+89,Voonte,Open,Cookie Dough - Oatmeal Rasin,281,5,Italian
+90,Twitterbeat,Open,Chicken Breast Halal,288,3.9,South Indian
+90,Twitterbeat,Open,Pernod,485,3.9,South Indian
+90,Twitterbeat,Open,Wine - Fat Bastard Merlot,211,3.9,South Indian
+90,Twitterbeat,Open,Oil - Peanut,241,3.9,South Indian
+90,Twitterbeat,Open,Juice - V8 Splash,486,3.9,South Indian
+90,Twitterbeat,Open,"Salsify, Organic",298,3.9,South Indian
+90,Twitterbeat,Open,"Sparkling Wine - Rose, Freixenet",334,3.9,South Indian
+90,Twitterbeat,Open,Lamb Tenderloin Nz Fr,256,3.9,South Indian
+90,Twitterbeat,Open,"Ranchero - Primerba, Paste",254,3.9,South Indian
+90,Twitterbeat,Open,Lobak,214,3.9,South Indian
+91,Mita,Open,"Soup - Knorr, Country Bean",390,2.7,Mexican
+91,Mita,Open,Wine - Fume Blanc Fetzer,179,2.7,Mexican
+91,Mita,Open,"Thyme - Lemon, Fresh",58,2.7,Mexican
+91,Mita,Open,"Chicken - Wings, Tip Off",199,2.7,Mexican
+91,Mita,Open,Egg Patty Fried,499,2.7,Mexican
+91,Mita,Open,Cheese - Brie Roitelet,258,2.7,Mexican
+91,Mita,Open,Venison - Striploin,361,2.7,Mexican
+91,Mita,Open,Lamb - Bones,138,2.7,Mexican
+91,Mita,Open,"Tortillas - Flour, 8",122,2.7,Mexican
+91,Mita,Open,Chips Potato All Dressed - 43g,470,2.7,Mexican
+91,Mita,Open,"Orange - Canned, Mandarin",353,2.7,Mexican
+91,Mita,Open,Shrimp - Tiger 21/25,353,2.7,Mexican
+92,Yakitri,Close,Cheese - Cheddarsliced,285,4.2,Mexican
+92,Yakitri,Close,"Pasta - Elbows, Macaroni, Dry",53,4.2,Mexican
+92,Yakitri,Close,V8 Pet,68,4.2,Mexican
+92,Yakitri,Close,"Pepper - White, Ground",332,4.2,Mexican
+92,Yakitri,Close,Beer - Mill St Organic,249,4.2,Mexican
+92,Yakitri,Close,Beer - Guiness,175,4.2,Mexican
+92,Yakitri,Close,Soy Protein,187,4.2,Mexican
+93,Youspan,Open,Venison - Striploin,361,4.6,South Indian
+93,Youspan,Open,Coffee Decaf Colombian,388,4.6,South Indian
+93,Youspan,Open,Bacon Strip Precooked,418,4.6,South Indian
+93,Youspan,Open,Table Cloth 72x144 White,177,4.6,South Indian
+93,Youspan,Open,Cheese - Wine,345,4.6,South Indian
+93,Youspan,Open,Tart - Pecan Butter Squares,440,4.6,South Indian
+93,Youspan,Open,Bread - White Epi Baguette,260,4.6,South Indian
+93,Youspan,Open,"Lobster - Tail, 3 - 4 Oz",420,4.6,South Indian
+93,Youspan,Open,Scallops - In Shell,251,4.6,South Indian
+93,Youspan,Open,Cranberries - Fresh,91,4.6,South Indian
+93,Youspan,Open,"Basil - Dry, Rubbed",384,4.6,South Indian
+94,Wikivu,Close,Bread - 10 Grain,170,4.8,Chinese
+94,Wikivu,Close,Chocolate - Dark Callets,134,4.8,Chinese
+94,Wikivu,Close,Chips Potato Reg 43g,52,4.8,Chinese
+94,Wikivu,Close,Broccoli - Fresh,189,4.8,Chinese
+94,Wikivu,Close,Milk - 2%,278,4.8,Chinese
+94,Wikivu,Close,Ginsing - Fresh,445,4.8,Chinese
+94,Wikivu,Close,"Wine - Red, Mosaic Zweigelt",145,4.8,Chinese
+94,Wikivu,Close,"Shrimp - Baby, Warm Water",254,4.8,Chinese
+94,Wikivu,Close,Tuna - Fresh,182,4.8,Chinese
+94,Wikivu,Close,Beef - Ox Tongue,414,4.8,Chinese
+94,Wikivu,Close,Samosa - Veg,367,4.8,Chinese
+94,Wikivu,Close,Irish Cream - Baileys,358,4.8,Chinese
+94,Wikivu,Close,Bar Mix - Lime,84,4.8,Chinese
+94,Wikivu,Close,Blue Curacao - Marie Brizard,483,4.8,Chinese
+95,Mybuzz,Open,"Nut - Walnut, Chopped",277,3.1,Italian
+95,Mybuzz,Open,Cookies Almond Hazelnut,114,3.1,Italian
+95,Mybuzz,Open,Black Currants,399,3.1,Italian
+95,Mybuzz,Open,"Yeast - Fresh, Fleischman",101,3.1,Italian
+95,Mybuzz,Open,Soap - Hand Soap,91,3.1,Italian
+95,Mybuzz,Open,Pop - Club Soda Can,410,3.1,Italian
+95,Mybuzz,Open,"Bread - Multigrain, Loaf",483,3.1,Italian
+96,Avaveo,Open,Flour - Pastry,327,3.6,North Indian
+96,Avaveo,Open,"Artichokes - Knobless, White",311,3.6,North Indian
+96,Avaveo,Open,Tea Leaves - Oolong,191,3.6,North Indian
+96,Avaveo,Open,Garbage Bags - Clear,190,3.6,North Indian
+96,Avaveo,Open,Beans - Fava Fresh,366,3.6,North Indian
+96,Avaveo,Open,"Soup - Knorr, Veg / Beef",204,3.6,North Indian
+96,Avaveo,Open,Beans - Green,62,3.6,North Indian
+96,Avaveo,Open,Chocolate - Compound Coating,403,3.6,North Indian
+96,Avaveo,Open,Sausage - Liver,181,3.6,North Indian
+96,Avaveo,Open,Bread - Malt,382,3.6,North Indian
+96,Avaveo,Open,"Lamb - Loin, Trimmed, Boneless",180,3.6,North Indian
+96,Avaveo,Open,"Pasta - Canelloni, Single Serve",341,3.6,North Indian
+96,Avaveo,Open,Easy Off Oven Cleaner,474,3.6,North Indian
+96,Avaveo,Open,Papayas,120,3.6,North Indian
+96,Avaveo,Open,Oil - Peanut,241,3.6,North Indian
+97,Flipbug,Close,Fireball Whisky,365,4.5,South Indian
+97,Flipbug,Close,"Bread - Dark Rye, Loaf",111,4.5,South Indian
+97,Flipbug,Close,Beans - Soya Bean,494,4.5,South Indian
+97,Flipbug,Close,Table Cloth 62x120 White,307,4.5,South Indian
+97,Flipbug,Close,Tea - Vanilla Chai,301,4.5,South Indian
+97,Flipbug,Close,Wine - Red Oakridge Merlot,477,4.5,South Indian
+97,Flipbug,Close,Mahi Mahi,417,4.5,South Indian
+97,Flipbug,Close,Ham Black Forest,320,4.5,South Indian
+97,Flipbug,Close,Tomatoes - Yellow Hot House,493,4.5,South Indian
+97,Flipbug,Close,Nut - Pumpkin Seeds,453,4.5,South Indian
+97,Flipbug,Close,Shiratamako - Rice Flour,381,4.5,South Indian
+97,Flipbug,Close,Marzipan 50/50,179,4.5,South Indian
+97,Flipbug,Close,Soup - Cream Of Broccoli,298,4.5,South Indian
+97,Flipbug,Close,"Soup - Campbells, Classic Chix",84,4.5,South Indian
+97,Flipbug,Close,"Tart Shells - Sweet, 2",208,4.5,South Indian
+97,Flipbug,Close,"Liqueur Banana, Ramazzotti",82,4.5,South Indian
+98,Riffpath,Open,Foil Cont Round,420,2.6,North Indian
+98,Riffpath,Open,Pork - Back Ribs,120,2.6,North Indian
+98,Riffpath,Open,Truffle Cups - Brown,231,2.6,North Indian
+98,Riffpath,Open,"Coke - Classic, 355 Ml",489,2.6,North Indian
+98,Riffpath,Open,Oneshot Automatic Soap System,351,2.6,North Indian
+98,Riffpath,Open,"Soup - Knorr, Ministrone",272,2.6,North Indian
+98,Riffpath,Open,Sugar - Monocystal / Rock,212,2.6,North Indian
+98,Riffpath,Open,Gooseberry,214,2.6,North Indian
+98,Riffpath,Open,Tea - Apple Green Tea,314,2.6,North Indian
+98,Riffpath,Open,"Lemonade - Natural, 591 Ml",443,2.6,North Indian
+99,Oyonder,Close,Coffee - Espresso,266,4.6,South Indian
+99,Oyonder,Close,Scallops - In Shell,251,4.6,South Indian
+99,Oyonder,Close,"Potatoes - Purple, Organic",444,4.6,South Indian
+99,Oyonder,Close,Oil - Sunflower,149,4.6,South Indian
+99,Oyonder,Close,Sage - Ground,302,4.6,South Indian
+99,Oyonder,Close,Pomello,198,4.6,South Indian
+99,Oyonder,Close,Beef - Salted,459,4.6,South Indian
+99,Oyonder,Close,Soup Knorr Chili With Beans,378,4.6,South Indian
+99,Oyonder,Close,"Doilies - 7, Paper",104,4.6,South Indian
+99,Oyonder,Close,Coffee - Dark Roast,72,4.6,South Indian
+99,Oyonder,Close,Tea - Mint,423,4.6,South Indian
+99,Oyonder,Close,Wine - Trimbach Pinot Blanc,83,4.6,South Indian
+100,Vipe,Close,Wine - Delicato Merlot,347,4.3,Chinese
+100,Vipe,Close,"Tea - Darjeeling, Azzura",143,4.3,Chinese
+100,Vipe,Close,Salmon - Fillets,480,4.3,Chinese
+100,Vipe,Close,Shiratamako - Rice Flour,381,4.3,Chinese
+100,Vipe,Close,Pickerel - Fillets,208,4.3,Chinese
+100,Vipe,Close,Beef Flat Iron Steak,437,4.3,Chinese
+100,Vipe,Close,"Rum - Light, Captain Morgan",393,4.3,Chinese
+100,Vipe,Close,Potatoes - Parissienne,314,4.3,Chinese
+100,Vipe,Close,Wine - Gato Negro Cabernet,254,4.3,Chinese
+100,Vipe,Close,Vinegar - Cider,214,4.3,Chinese

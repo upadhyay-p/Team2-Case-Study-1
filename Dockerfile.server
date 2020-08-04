@@ -1,0 +1,5 @@
+FROM golang:1.14
+WORKDIR /go/bin
+ADD bin/server /go/bin
+ENTRYPOINT ["/go/bin/server"]
+EXPOSE 5051
