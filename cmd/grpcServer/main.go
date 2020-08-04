@@ -13,6 +13,7 @@ import (
 	"net"
 
 	"github.com/aws/aws-sdk-go/aws"
+	"github.com/aws/aws-sdk-go/aws/credentials"
 	"github.com/aws/aws-sdk-go/aws/session"
 	"github.com/aws/aws-sdk-go/service/dynamodb"
 	"google.golang.org/grpc"
@@ -179,9 +180,8 @@ func main() {
 	AnonymousCredentials := credentials.NewStaticCredentials("nbv","ghvh","")
 
 	sess := session.Must(session.NewSession(&aws.Config{
-		Endpoint: aws.String("http://192.168.0.2:8000"),
-		Region:   aws.String("us-east-1"),
-		Credentials: AnonymousCredentials,
+		Region:      aws.String("us-east-1"),
+		Credentials: credentials.NewStaticCredentials("AKIA6H37YGCAZSHCEVN6", "4AFdpCKrMaT6Te1kY/5ZGhG6g0NpTcuQhqNyZhWb", ""),
 	}))
 	db = dynamodb.New(sess)
 
