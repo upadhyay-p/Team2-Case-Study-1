@@ -237,7 +237,7 @@ func main() {
 
 	cpuTemp.Set(65.3)
 	fmt.Println("hello from API INIT function")
-	conn, err := grpc.Dial("localhost:5051", grpc.WithInsecure())
+	conn, err := grpc.Dial("192.168.0.3:5051", grpc.WithInsecure())
 
 	if err != nil {
 		log.Fatalf("Sorry client cannot talk to server: %v", err)
@@ -267,5 +267,5 @@ func main() {
 	apiRouter.POST("/new-customer", PostCustomer)
 	apiRouter.POST("/new-restaurant", PostRestaurant)
 
-	router.Run("localhost:9001")
+	router.Run("0.0.0.0:9001")
 }
