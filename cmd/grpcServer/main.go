@@ -5,6 +5,7 @@ import (
 	CustomerServices "Team2CaseStudy1/pkg/Customer/Services"
 	OrderModels "Team2CaseStudy1/pkg/Order/Models"
 	OrderServices "Team2CaseStudy1/pkg/Order/Services"
+	"github.com/aws/aws-sdk-go/aws/credentials"
 	"Team2CaseStudy1/pkg/OrderProto/orderpb"
 	"context"
 	"fmt"
@@ -174,10 +175,13 @@ func (*server) AddRestaurant(ctx context.Context, req *orderpb.RestaurantRequest
 
 func main() {
 	fmt.Println("Hello from grpc server.")
+	
+	AnonymousCredentials := credentials.NewStaticCredentials("nbv","ghvh","")
 
 	sess := session.Must(session.NewSession(&aws.Config{
-		Endpoint: aws.String("http://localhost:8000"),
+		Endpoint: aws.String("http://192.168.0.2:8000"),
 		Region:   aws.String("us-east-1"),
+		Credentials: AnonymousCredentials,
 	}))
 	db = dynamodb.New(sess)
 
