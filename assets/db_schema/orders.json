@@ -11,9 +11,9 @@
     ],
     "ProvisionedThroughput": {
         "WriteCapacityUnits": 10,
-        "ReadCapacityUnits": 5
+        "ReadCapacityUnits": 10
     },
-    "TableName": "orders",
+    "TableName": "Team2-ORDERS",
     "KeySchema": [
         {
             "KeyType": "HASH",

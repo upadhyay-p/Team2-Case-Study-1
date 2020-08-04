@@ -1,0 +1,37 @@
+syntax="proto3";
+
+package order;
+
+option go_package = "pkg/order";
+
+message Item{
+    string Name=1;
+    float Price=2;
+}
+
+message Order {
+    int64 ID = 1;
+	int64 C_ID = 2;
+	int64 R_ID = 3;
+	repeated Item ItemLine = 4;
+	float Price = 5;
+	int64 Discount = 7;
+}
+
+message IDRequest{
+	int64 ID = 1;
+}
+
+message NoParamRequest{
+
+}
+
+message Orders{
+	repeated Order orders=1;
+}
+
+service OrderService {
+    rpc AddOrder (Order) returns (Order) {}
+	rpc GetOrders (NoParamRequest) returns (Orders) {}
+	rpc GetOrder (IDRequest) returns (Order) {}
+}

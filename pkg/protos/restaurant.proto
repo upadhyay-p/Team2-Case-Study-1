@@ -1,0 +1,37 @@
+syntax="proto3";
+
+package restaurant;
+
+option go_package = "pkg/restaurant";
+
+message Item{
+    string Name=1;
+    float Price=2;
+}
+
+message Restaurant {
+    int64 ID = 1;
+    string Name = 2;
+    bool Online = 3;
+    repeated Item Menu = 4;
+    float Rating = 5;
+    string Category = 6;
+}
+
+message Restaurants{
+    repeated Restaurant restaurants=1;
+}
+
+message IDRequest{
+	int64 ID = 1;
+}
+
+message NoParamRequest{
+
+}
+
+service RestaurantService {
+    // rpc AddRestaurant (Restaurant) returns (Restaurant) {}
+	rpc GetRestaurants (NoParamRequest) returns (Restaurants) {}
+	rpc GetRestaurant (IDRequest) returns (Restaurant) {}
+}
