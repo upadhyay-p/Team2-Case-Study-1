@@ -62,5 +62,5 @@ func Add(c *gin.Context) {
 		c.JSON(http.StatusInternalServerError, gin.H{"error": err.Error()})
 		return
 	}
-	c.JSON(http.StatusOK, gin.H{"_": res})
+	c.JSON(http.StatusCreated, gin.H{"_": res})
 }

@@ -33,8 +33,8 @@ func CreateDBSession(filename string) *dynamodb.DynamoDB {
 	byteValue, _ := ioutil.ReadAll(secretsFile)
 	json.Unmarshal(byteValue, &secret)
 	sess := session.Must(session.NewSession(&aws.Config{
-		Region:      aws.String(secret.REGION),
-		Endpoint:    aws.String("http://localhost:8000"), // [for local should be http] remove this line to connect to cloud dynamodDB with creds in secrets.json file
+		Endpoint: aws.String("http://localhost:8000"), // uncomment this to use outside the container
+		// Endpoint:    aws.String("http://192.168.0.2:8000"), // [use http] comment this to connect to cloud dynamodDB
 		Credentials: credentials.NewStaticCredentials(secret.AWS_KEY_ID, secret.AWS_SECRET_KEY, ""),
 	}))
 	db := dynamodb.New(sess)

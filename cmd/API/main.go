@@ -48,7 +48,8 @@ func main() {
 
 	cpuTemp.Set(65.3)
 	fmt.Println("Hello from the ginAPI :)")
-	conn, err := grpc.Dial("0.0.0.0:5051", grpc.WithInsecure())
+	conn, err := grpc.Dial("0.0.0.0:5051", grpc.WithInsecure()) // uncomment this to use it outside the container
+	// conn, err := grpc.Dial("192.168.0.3:5051", grpc.WithInsecure()) // uncomment this to use it inside the container
 
 	if err != nil {
 		log.Fatalf("Sorry client cannot talk to server: %v", err)
@@ -63,7 +64,8 @@ func main() {
 
 	router := SetupRoutes(true) // called if flag = true to enable authentication
 
-	router.Run("localhost:9001")
+	router.Run("localhost:9001") // uncomment this to run outside the container
+	// router.Run("0.0.0.0:9001") // uncomment this to run inside the container
 }
 
 // setting up the routes exposed by the API

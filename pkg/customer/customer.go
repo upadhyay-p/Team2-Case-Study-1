@@ -56,5 +56,5 @@ func Add(c *gin.Context) {
 		})
 		return
 	}
-	c.JSON(http.StatusOK, gin.H{"_": res})
+	c.JSON(http.StatusCreated, gin.H{"_": res})
 }
