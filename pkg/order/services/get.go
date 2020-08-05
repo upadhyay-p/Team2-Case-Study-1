@@ -12,6 +12,7 @@ import (
 	"github.com/shashijangra22/Team2-Case-Study-1/pkg/order"
 )
 
+// database handler to get a particular order
 func GetOne(db *dynamodb.DynamoDB, id int64) *order.Order {
 	condition := expression.Key("ID").Equal(expression.Value(id))
 	proj := expression.NamesList(expression.Name("ID"), expression.Name("C_ID"), expression.Name("R_ID"), expression.Name("ItemLine"), expression.Name("Price"), expression.Name("Discount"))
@@ -44,6 +45,7 @@ func GetOne(db *dynamodb.DynamoDB, id int64) *order.Order {
 	return ord
 }
 
+// database handler to get all orders
 func GetAll(db *dynamodb.DynamoDB) []*order.Order {
 	var allOrders []*order.Order
 	// Create the Expression to fill the input struct with.

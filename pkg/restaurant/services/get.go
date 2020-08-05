@@ -12,6 +12,7 @@ import (
 	"github.com/shashijangra22/Team2-Case-Study-1/pkg/restaurant"
 )
 
+// db handler to get a particular restaurant
 func GetOne(db *dynamodb.DynamoDB, id int64) *restaurant.Restaurant {
 	condition := expression.Key("ID").Equal(expression.Value(id))
 	proj := expression.NamesList(expression.Name("ID"), expression.Name("Name"), expression.Name("Menu"), expression.Name("Rating"), expression.Name("Category"))
@@ -44,6 +45,7 @@ func GetOne(db *dynamodb.DynamoDB, id int64) *restaurant.Restaurant {
 	return rest
 }
 
+// db handler to get all restaurants
 func GetAll(db *dynamodb.DynamoDB) []*restaurant.Restaurant {
 	var allRestaurants []*restaurant.Restaurant
 	// Create the Expression to fill the input struct with.

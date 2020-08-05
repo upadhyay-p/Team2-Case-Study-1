@@ -29,7 +29,7 @@ message IDRequest{
 message NoParamRequest{
 
 }
-
+// services supported by restaurant API
 service RestaurantService {
     // rpc AddRestaurant (Restaurant) returns (Restaurant) {}
 	rpc GetRestaurants (NoParamRequest) returns (Restaurants) {}

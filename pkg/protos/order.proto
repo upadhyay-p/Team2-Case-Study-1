@@ -29,7 +29,7 @@ message NoParamRequest{
 message Orders{
 	repeated Order orders=1;
 }
-
+// services supported by order API
 service OrderService {
     rpc AddOrder (Order) returns (Order) {}
 	rpc GetOrders (NoParamRequest) returns (Orders) {}

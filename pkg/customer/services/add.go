@@ -7,6 +7,7 @@ import (
 	"github.com/shashijangra22/Team2-Case-Study-1/pkg/Models"
 )
 
+// database handler to add a new customer
 func AddOne(db *dynamodb.DynamoDB, cst Models.Customer) {
 	cstItem, err := dynamodbattribute.MarshalMap(cst)
 	if err != nil {

@@ -12,6 +12,7 @@ import (
 	"github.com/shashijangra22/Team2-Case-Study-1/pkg/customer"
 )
 
+// database handler to get a particular customer
 func GetOne(db *dynamodb.DynamoDB, id int64) *customer.Customer {
 	condition := expression.Key("ID").Equal(expression.Value(id))
 	proj := expression.NamesList(expression.Name("ID"), expression.Name("Name"), expression.Name("Address"), expression.Name("Phone"))
@@ -39,6 +40,7 @@ func GetOne(db *dynamodb.DynamoDB, id int64) *customer.Customer {
 	return cst
 }
 
+// database handler to get all customers
 func GetAll(db *dynamodb.DynamoDB) []*customer.Customer {
 	var allCustomers []*customer.Customer
 	// Create the Expression to fill the input struct with.

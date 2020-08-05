@@ -66,6 +66,7 @@ func main() {
 	router.Run("localhost:9001")
 }
 
+// setting up the routes exposed by the API
 func SetupRoutes(authFlag bool) *gin.Engine {
 	router := gin.Default()
 	router.GET("/metrics", gin.WrapH(promhttp.Handler()))

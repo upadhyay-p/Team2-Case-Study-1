@@ -7,6 +7,7 @@ import (
 	"github.com/shashijangra22/Team2-Case-Study-1/pkg/Models"
 )
 
+// database handler to add an order
 func Add(db *dynamodb.DynamoDB, ord Models.Order) {
 	orderDynAttr, err := dynamodbattribute.MarshalMap(ord)
 	if err != nil {

@@ -25,6 +25,7 @@ type Server struct{}
 
 var DB *dynamodb.DynamoDB
 
+// AWS STRUCT to save credentials
 type AWS_STRUCT struct {
 	AWS_KEY_ID     string
 	AWS_SECRET_KEY string
@@ -33,7 +34,8 @@ type AWS_STRUCT struct {
 
 var secret AWS_STRUCT
 
-func createDBSession(filename string) *dynamodb.DynamoDB {
+// initialises the DB with credentials stored in filename
+func CreateDBSession(filename string) *dynamodb.DynamoDB {
 	secretsFile, err := os.Open(filename)
 	if err != nil {
 		fmt.Println("Error opening secrets.json! from path: ", filename)
@@ -53,9 +55,10 @@ func createDBSession(filename string) *dynamodb.DynamoDB {
 
 func init() {
 	path, _ := os.Getwd()
-	DB = createDBSession(path + "/secrets.json")
+	DB = CreateDBSession(path + "/secrets.json")
 }
 
+// gRPC Core method implementing the AddCustomer interface
 func (*Server) AddCustomer(ctx context.Context, req *customer.Customer) (*customer.Customer, error) {
 	fmt.Println("AddCustomer Function called... ")
 	id := req.GetID()
@@ -67,6 +70,7 @@ func (*Server) AddCustomer(ctx context.Context, req *customer.Customer) (*custom
 	return req, nil
 }
 
+// gRPC Core method implementing the GetCustomer interface
 func (*Server) GetCustomer(ctx context.Context, req *customer.IDRequest) (*customer.Customer, error) {
 	fmt.Println("GetCustomer is called... ")
 	id := req.GetID()
@@ -74,7 +78,7 @@ func (*Server) GetCustomer(ctx context.Context, req *customer.IDRequest) (*custo
 	return res, nil
 }
 
-// fetch customers from db and give it as response to client
+// gRPC Core method implementing the GetCustomers interface
 func (*Server) GetCustomers(ctx context.Context, req *customer.NoParamRequest) (*customer.Customers, error) {
 	fmt.Println("GetCustomers is called... ")
 	allCustomers := CustomerServices.GetAll(DB)
@@ -82,6 +86,7 @@ func (*Server) GetCustomers(ctx context.Context, req *customer.NoParamRequest) (
 	return res, nil
 }
 
+// gRPC Core method implementing the AddOrder interface
 func (*Server) AddOrder(ctx context.Context, req *order.Order) (*order.Order, error) {
 	fmt.Println("AddOrder Function called... ")
 	itemlist := req.GetItemLine()
@@ -97,6 +102,7 @@ func (*Server) AddOrder(ctx context.Context, req *order.Order) (*order.Order, er
 	return req, nil
 }
 
+// gRPC Core method implementing the GetOrder interface
 func (*Server) GetOrder(ctx context.Context, req *order.IDRequest) (*order.Order, error) {
 	fmt.Println("GetOrder Function called... ")
 	id := req.GetID()
@@ -104,6 +110,7 @@ func (*Server) GetOrder(ctx context.Context, req *order.IDRequest) (*order.Order
 	return res, nil
 }
 
+// gRPC Core method implementing the GetOrders interface
 func (*Server) GetOrders(ctx context.Context, req *order.NoParamRequest) (*order.Orders, error) {
 	fmt.Println("GetOrders is called...")
 	allOrders := OrderServices.GetAll(DB)
@@ -111,6 +118,7 @@ func (*Server) GetOrders(ctx context.Context, req *order.NoParamRequest) (*order
 	return res, nil
 }
 
+// gRPC Core method implementing the GetRestaurant interface
 func (*Server) GetRestaurant(ctx context.Context, req *restaurant.IDRequest) (*restaurant.Restaurant, error) {
 	fmt.Println("GetRestaurant Function called... ")
 	id := req.GetID()
@@ -118,6 +126,7 @@ func (*Server) GetRestaurant(ctx context.Context, req *restaurant.IDRequest) (*r
 	return res, nil
 }
 
+// gRPC Core method implementing the GetRestaurants interface
 func (*Server) GetRestaurants(ctx context.Context, req *restaurant.NoParamRequest) (*restaurant.Restaurants, error) {
 	fmt.Println("GetRestaurants is called...")
 	allRestaurants := RestaurantServices.GetAll(DB)

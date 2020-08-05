@@ -13,6 +13,7 @@ import (
 	"github.com/shashijangra22/Team2-Case-Study-1/pkg/populate"
 )
 
+// AWS_STRUCTURE to store credentials
 type AWS_STRUCT struct {
 	AWS_KEY_ID     string
 	AWS_SECRET_KEY string
@@ -21,7 +22,8 @@ type AWS_STRUCT struct {
 
 var secret AWS_STRUCT
 
-func createDBSession(filename string) *dynamodb.DynamoDB {
+// reading aws credentials from secrets.json and initialising DB instance
+func CreateDBSession(filename string) *dynamodb.DynamoDB {
 	secretsFile, err := os.Open(filename)
 	if err != nil {
 		fmt.Println("Error opening secrets.json!")
@@ -41,7 +43,7 @@ func createDBSession(filename string) *dynamodb.DynamoDB {
 
 func main() {
 	path, _ := os.Getwd()
-	db := createDBSession(path + "/secrets.json")
+	db := CreateDBSession(path + "/secrets.json")
 	args := os.Args[1:]
 	if len(args) == 1 {
 		populate.Customers(db, path+"/"+args[0]+"/customers.csv", "Team2-CUSTOMERS")

@@ -22,20 +22,21 @@ type LoginRequest struct {
 	Password string
 }
 
+// Parse and Verify the token stored in header
 func VerifyUser(c *gin.Context) {
 
-	token, err := ParseTokenFromHeader(c.Request)
+	token, err := parseTokenFromHeader(c.Request)
 	if err != nil {
 		c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"error": err.Error()})
 		return
 	}
-	_, err = VerifyToken(token)
+	_, err = verifyToken(token)
 	if err != nil {
 		c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"error": err.Error()})
 	}
 }
 
-func VerifyToken(token *jwt.Token) (string, error) {
+func verifyToken(token *jwt.Token) (string, error) {
 	if _, ok := token.Claims.(jwt.Claims); !ok && !token.Valid {
 		return "", errors.New("Invalid token")
 	}
@@ -50,7 +51,7 @@ func VerifyToken(token *jwt.Token) (string, error) {
 	return "", nil
 }
 
-func ParseTokenFromHeader(r *http.Request) (*jwt.Token, error) {
+func parseTokenFromHeader(r *http.Request) (*jwt.Token, error) {
 	tokenString := r.Header.Get("Authorization")
 	tokenArr := strings.Split(tokenString, " ")
 	if len(tokenArr) != 2 {
@@ -69,6 +70,7 @@ func ParseTokenFromHeader(r *http.Request) (*jwt.Token, error) {
 	return token, nil
 }
 
+// returns the token to be used in subsequent api calls
 func Login(c *gin.Context) {
 	var loginReq LoginRequest
 	if err := c.ShouldBindJSON(&loginReq); err != nil {
@@ -89,6 +91,7 @@ func Login(c *gin.Context) {
 	c.AbortWithStatusJSON(http.StatusUnauthorized, gin.H{"error": "Invalid Payload"})
 }
 
+// creates the jwt token and stores it in jwt claims
 func CreateToken(username string) (string, error) {
 	claims := jwt.MapClaims{}
 	claims["admin"] = true

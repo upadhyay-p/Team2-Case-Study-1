@@ -23,7 +23,7 @@ message IDRequest{
 message NoParamRequest{
 
 }
-
+// services supported by Customer API
 service CustomerService {
 	rpc AddCustomer (Customer) returns (Customer) {}
 	rpc GetCustomers (NoParamRequest) returns (Customers) {}

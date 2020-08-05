@@ -33,6 +33,7 @@ func readCSV(filename string) [][]string {
 	return records
 }
 
+// populates the DB with sample customer data
 func Customers(db *dynamodb.DynamoDB, filename string, tableName string) {
 	fmt.Println("Populating Customer table with " + filename)
 
@@ -54,6 +55,7 @@ func Customers(db *dynamodb.DynamoDB, filename string, tableName string) {
 	fmt.Println("Done")
 }
 
+// populates the DB with sample order data
 func Orders(db *dynamodb.DynamoDB, filename string, tableName string) {
 	fmt.Println("Populating Orders table with " + filename)
 
@@ -76,6 +78,7 @@ func Orders(db *dynamodb.DynamoDB, filename string, tableName string) {
 	fmt.Println("Done")
 }
 
+// populates the DB with sample restaurant data
 func Restaurants(db *dynamodb.DynamoDB, filename string, tableName string) {
 	fmt.Println("Populating Restaurant table with " + filename)
 
