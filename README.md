@@ -1,15 +1,23 @@
-# Team2-Case-Study-1
-Repository for Team2-Case-Study-1
+# bootcamp-project
+Repository for bootcamp-project
 
 ![Screenshot](assets/arch.png)
 
-### To run this project, follow the below steps :
--  Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
+### To run this project on local machine, follow the below steps :
+-  Clone this repo : `git clone github.com/shashijangra22/bootcamp-project`
 -  Make sure u have an instance of dynamodb running on port 8000.
 -  Initialise the DB [if empty] : `make db`
 -  Build the application : `make app`
 -  Start the Server : `bin/server`
 -  Start the API : `bin/api`
+
+### To run this project in a docker container
+- Build the server : `make docker-server`
+- Built the api : `make docker-api`
+- Create a bridge network on docker for communication b/w containers : `make docker-net`
+- Run DynamoDB image : `docker run -p 8000:8000 --net=mynet amazon/dynamodb-local`
+- Run the SERVER : `docker run -p 5051:5051 --net=mynet mygoapp-server`
+- Run the API : `docker run -p 9001:9001 --net=mynet mygoapp-api`
 
 ### To Perform Testing :
 - API Testing: run `make api-tests`
