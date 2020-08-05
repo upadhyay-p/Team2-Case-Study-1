@@ -1,6 +1,8 @@
 # Team2-Case-Study-1
 Repository for Team2-Case-Study-1
 
+![Screenshot](assets/arch.png)
+
 ### To run this project, follow the below steps :
 -  Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
 -  Make sure u have an instance of dynamodb running on port 8000.
