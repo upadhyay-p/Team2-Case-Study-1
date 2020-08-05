@@ -1,5 +1,5 @@
-# End point for DB
-EP = --endpoint http://localhost:8000
+# End point for DB [remove this to push changes as oer your aws configuration]
+EP = --endpoint=http://localhost:8000
 
 # Table names
 TABLE1 = assets/db_schema/customers.json
@@ -51,8 +51,20 @@ server:
 
 # one single rule to build application ready to run
 app:
-	make protos api server
+	make api server
 
 # one single rule to buid application ready to run on linux
 app-linux:
 	env GOOS=linux make app
+
+docker-server:
+	docker build -f Dockerfile.server -t mygoapp-server .
+
+docker-api:
+	docker build -f Dockerfile.api -t mygoapp-api .
+
+docker-net:
+	docker network create -d bridge --subnet 192.168.0.0/24 --gateway 192.168.0.1 mynet
+
+api-tests:
+	go test cmd/API -coverprofile=coverage.out

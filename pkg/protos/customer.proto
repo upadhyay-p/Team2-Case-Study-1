@@ -1,0 +1,31 @@
+syntax="proto3";
+
+package customer;
+
+option go_package = "pkg/customer";
+
+message Customer 
+{	
+	int64 ID = 1;
+	string Name = 2;
+	string Phone = 3;
+	string Address = 4;
+}
+
+message Customers{
+	repeated Customer customers=1;
+}
+
+message IDRequest{
+	int64 ID = 1;
+}
+
+message NoParamRequest{
+
+}
+// services supported by Customer API
+service CustomerService {
+	rpc AddCustomer (Customer) returns (Customer) {}
+	rpc GetCustomers (NoParamRequest) returns (Customers) {}
+	rpc GetCustomer (IDRequest) returns (Customer) {}
+}

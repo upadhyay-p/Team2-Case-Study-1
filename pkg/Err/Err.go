@@ -1,10 +1,8 @@
 package Err
 
-import "os"
-
+// panics if there is an error
 func CheckError(err error) {
 	if err != nil {
-		panic(err.Error())
-		os.Exit(1)
+		panic(err)
 	}
 }

@@ -7,9 +7,9 @@
     ],
     "ProvisionedThroughput": {
         "WriteCapacityUnits": 10,
-        "ReadCapacityUnits": 5
+        "ReadCapacityUnits": 10
     },
-    "TableName": "restaurants",
+    "TableName": "Team2-RESTAURANTS",
     "KeySchema": [
         {
             "KeyType": "HASH",
