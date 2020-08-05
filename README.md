@@ -1,10 +1,10 @@
-# bootcamp-project
-Repository for bootcamp-project
+# Team2-Case-Study-1
+Repository for Team2-Case-Study-1
 
 ![Screenshot](assets/arch.png)
 
 ### To run this project on local machine, follow the below steps :
--  Clone this repo : `git clone github.com/shashijangra22/bootcamp-project`
+-  Clone this repo : `git clone github.com/shashijangra22/Team2-Case-Study-1`
 -  Make sure u have an instance of dynamodb running on port 8000.
 -  Initialise the DB [if empty] : `make db`
 -  Build the application : `make app`
