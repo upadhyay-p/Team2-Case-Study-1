@@ -1,0 +1,27 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "ID",
+            "AttributeType": "N"
+        },
+        {
+            "AttributeName": "C_ID",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 10,
+        "ReadCapacityUnits": 10
+    },
+    "TableName": "Team2-ORDERS",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "ID"
+        },
+        {
+            "KeyType": "RANGE",
+            "AttributeName": "C_ID"
+        }
+    ]
+}

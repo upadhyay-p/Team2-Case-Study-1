@@ -1,0 +1,19 @@
+{
+    "AttributeDefinitions": [
+        {
+            "AttributeName": "ID",
+            "AttributeType": "N"
+        }
+    ],
+    "ProvisionedThroughput": {
+        "WriteCapacityUnits": 10,
+        "ReadCapacityUnits": 10
+    },
+    "TableName": "Team2-RESTAURANTS",
+    "KeySchema": [
+        {
+            "KeyType": "HASH",
+            "AttributeName": "ID"
+        }
+    ]
+}
